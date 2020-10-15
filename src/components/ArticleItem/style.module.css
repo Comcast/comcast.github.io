@@ -1,0 +1,51 @@
+.article {
+  display: flex;
+  overflow: hidden;
+}
+
+.articleLink {
+  color: #0089cf;
+  color: #006fa8;
+}
+
+.articleLink:hover,
+.articleLink:focus {
+  color: #666;
+  text-decoration: none;
+}
+
+a.articleLink:hover .articleTitle,
+a.articleLink:focus .articleTitle {
+  text-decoration: underline;
+}
+
+.articleTitle {
+  font-weight: 400;
+  margin: 0;
+}
+
+.articleDate {
+  margin: 0 0 1rem;
+}
+
+.articleMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 66%;
+}
+
+.articleDescription {
+  margin: 0 0 auto;
+}
+
+.articleImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 9rem;
+  margin: 0 2rem 1rem 0;
+  width: 15rem;
+  position: relative;
+}

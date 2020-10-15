@@ -1,0 +1,186 @@
+.jumbotron {
+  background: #0089cf;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, rgba(253,185,19,1) 16.666%, rgba(243,112,33,1) 16.666%, rgba(243,112,33,1) 33.333%, rgba(180,40,70,1) 33.333%, rgba(180,40,70,1) 49.999%, rgba(100,95,170,1) 49.999%, rgba(100,95,170,1) 66.666%, rgba(0,137,207,1) 66.666%, rgba(0,137,207,1) 83.333%, rgba(13,177,75,1) 83.333%);
+  color: #fff;
+  margin: -2rem -3rem 3rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  max-width: 100vw;
+}
+
+.jumbotronTabs {
+  display: none;
+}
+
+.jumbotronPanel {
+  display: block;
+  min-height: 400px;
+}
+
+.card {
+  padding: 1.5rem 1.5rem 3rem;
+}
+
+.cta {
+  color: #fff;
+  outline: .2rem solid rgba(255,255,255,0);
+}
+
+.cta:hover,
+.cta:focus {
+  color: #fff;
+}
+
+.cta:after {
+  color: #fff;
+  content: "\E900";
+  display: inline-block;
+  font-family: comcorp-icons !important;
+  font-size: 1.5em;
+  margin-left: .5rem;
+  transform: translate(0, 20%);
+  transition: transform 0.2s ease-out;
+}
+
+.cta:hover:after,
+.cta:focus:after {
+  color: #fff;
+  outline: 0 solid #fff0;
+  transform: translate(1.125rem, 20%);
+}
+
+@media (min-width: 640px) {
+  .jumbotron {
+    height: 29rem;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 0 1rem rgba(0,0,102,.27), 0 0 0.1rem #006;
+    width: 100vw;
+  }
+
+  .jumbotronTabs {
+    bottom: 0;
+    display: flex;
+    height: 6rem;
+    justify-content: space-around;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .jumbotronTab {
+    background-color: transparent;
+    border: none;
+    border-bottom: 0 solid rgba(0,0,0,0);
+    border-top: .5rem solid rgba(0,0,0,0);
+    color: #fff;
+    cursor: pointer;
+    font-family: lineto-brown, Futura, sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 1rem .5rem 2rem;
+    outline: none;
+    text-shadow: 0 0 1rem rgba(0,0,102,.27), 0 0 0.1rem #006;
+    transition: .3s transform ease-out, .3s border ease-out;
+    transform: translateY(.45rem) scale(.85);
+    width: 16.666%;
+  }
+
+  .jumbotronTab:hover,
+  .jumbotronTab:focus,
+  .jumbotronTab.selected {
+    border-bottom-width: .5rem;
+    border-top-width: 0;
+    transform: translateY(.35rem) scale(.9);
+  }
+
+  .jumbotronTab.selected:hover,
+  .jumbotronTab.selected:focus {
+    transform: translateY(0rem) scale(1);
+  }
+
+  .jumbotronTab:nth-of-type(1) {
+    border-bottom-color: rgba(253,185,19,1);
+  }
+  .jumbotronTab:nth-of-type(2) {
+    border-bottom-color: rgba(243,112,33,1);
+  }
+  .jumbotronTab:nth-of-type(3) {
+    border-bottom-color: rgba(180,40,70,1) ;
+  }
+  .jumbotronTab:nth-of-type(4) {
+    border-bottom-color: rgba(100,95,170,1);
+  }
+  .jumbotronTab:nth-of-type(5) {
+    border-bottom-color: rgba(0,137,207,1);
+  }
+  .jumbotronTab:nth-of-type(6) {
+    border-bottom-color: rgba(13,177,75,1);
+  }
+
+  .jumbotronPanel {
+    display: none;
+    outline: none;
+    position: relative;
+    transition: .5s transform ease-in-out;
+    z-index: 1;
+  }
+
+  .jumbotronPanel:focus-within {
+    transform: scale(1.025);
+  }
+
+  .jumbotronPanel.selected {
+    display: block;
+  }
+
+  .card {
+    padding: 6rem 3rem 3rem;
+    padding-right: 44.444%;
+  }
+
+  .cardTitle {
+    font-size: 2.625rem;
+    font-weight: 400;
+    letter-spacing: .025rem;
+    line-height: 1.33;
+    margin: 0 0 1rem;
+    font-weight: 400;
+  }
+
+  .featuredImage {
+    animation: zoom-out 2s ease-in-out forwards;
+    animation-delay: 300ms;
+    height: 29rem;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(1.1) rotate(1deg);
+    width: 100%;
+    z-index: -1;
+  }
+
+  .featuredImage:before {
+    content: '';
+    display: block;
+    background-image: linear-gradient(to bottom, #0002, #0006);
+    position: absolute;
+    z-index: 2;
+    height: 30rem;
+    width: 100%;
+  }
+}
+
+@keyframes zoom-out {
+  from {
+    transform: scale(1.1) rotate(1deg);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}

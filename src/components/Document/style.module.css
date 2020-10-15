@@ -1,0 +1,32 @@
+.document {
+  padding: 3rem;
+  background-color: #f4f4f4;
+  border-left-style: solid;
+  border-left-width: .2rem;
+}
+
+.document > h3:first-child {
+  margin-top: 0;
+}
+
+.document h4 {
+  margin-top: 3rem;
+}
+
+.document ol,
+.document ul {
+  margin-bottom: 2rem;
+}
+
+.document li {
+  margin-bottom: 1rem;
+}
+
+.document a {
+  color: rgba(0,116,182,1); /* a11y 4.5 */
+  font-weight: 400;
+}
+
+.document hr {
+  margin: 3rem 0 1rem;
+}

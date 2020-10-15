@@ -1,0 +1,160 @@
+{
+  "title": "Comcast Open Source Blog",
+  "overview": "The Comcast Labs blog is a place where Comcast technologists talk about the work they are doing, the products, infrastructure, and services they are building, and the trends and developments that are changing how we experience entertainment.",
+  "description": "",
+  "featuredImage": "/images/blog/featured.jpg",
+  "color": "green",
+  "blogTitle": "Blogs posts",
+  "blogList": [
+    {
+      "title": "Comparing the Similarities and Differences between InnerSource and Open Source by Nithya Ruff",
+      "date": "November 27, 2020",
+      "url": "https://opensource.com/article/20/11/inner-source",
+      "image": "/images/blog/posts/whiteboard-brainstorming-brainmapping-design-thinking-postits-kanban.jpg"
+    },
+    {
+      "title": "RealLIST Engineers 2020: Meet 21 influential technologists building a better Philadelphia by Paige Gross",
+      "date": "November 17, 2020",
+      "url": "https://technical.ly/philly/2020/11/17/reallist-engineers-2020-influential-technologists-philadelphia/",
+      "image": "/images/blog/posts/RealLIST-Engineers-Philly-2020.jpg"
+    },
+    {
+      "title": "Open Source For Business Podcast with Nithya Ruff, Chair of The Linux Foundation & Head of Comcast’s Open Source Program Office",
+      "date": "November 17, 2020",
+      "url": "https://podcasts.apple.com/us/podcast/e08-nithya-ruff-chair-linux-foundation-head-comcasts/id1525973271?i=1000498842461",
+      "image": "/images/blog/posts/mza_15502101781722997149.jpg"
+    },
+    {
+      "title": "Expert advice on open source from Google, Microsoft, and Comcast by Matt Asay",
+      "date": "November 16, 2020",
+      "url": "https://www.techrepublic.com/article/expert-advice-on-open-source-from-google-microsoft-and-comcast/",
+      "image": "/images/blog/posts/open-source-linux-code.jpg"
+    },
+    {
+      "title": "Three ways managers can build a team culture around open source by Shishir Kamboj",
+      "date": "November 13, 2020",
+      "url": "https://opensource.com/article/20/11/selfless-culture",
+      "image": "/images/blog/posts/handshake_teamwork_meeting_office_space.jpg"
+    },
+    {
+      "title": "Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
+      "date": "October 16, 2020",
+      "url": "https://www.techrepublic.com/article/googles-kelsey-hightower-offers-tips-on-how-to-centralize-and-evolve-it-practices/",
+      "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg"
+    },
+    {
+      "title": "Podcast: The Business of Cloud Native with Emily Omier and Nithya Ruff",
+      "date": "October 14, 2020",
+      "url": "https://open.spotify.com/show/5ZGTCyhjpnyZk5RDVH4WjS",
+      "image": ""
+    },
+    {
+      "title": "GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater Predictability in Open Source Licensing",
+      "date": "September 11, 2020",
+      "url": "https://www.redhat.com/en/about/press-releases/gpl-initiative-grows-over-40-more-60-companies-have-joined-campaign-greater-predictability-open-source-licensing?sc_cid=701f2000000tyBjAAI",
+      "image": ""
+    },
+    {
+      "title": "Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference",
+      "date": "September 10, 2020",
+      "url": "https://technical.ly/philly/2020/09/10/meet-11-tech-companies-hiring-september-23-developers-conference-philly-tech-week-2020/",
+      "image": ""
+    },
+    {
+      "title": "The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.",
+      "date": "September 3, 2020",
+      "url": "https://www.prnewswire.com/news-releases/the-linux-foundation-announces-the-full-line-up-of-sessions-for-the-open-source-summit--embedded-linux-conference-europe-2020-virtual-experience-october-26---29-open-for-all---anytime-anywhere-301123877.html",
+      "image": ""
+    },
+    {
+      "title": "Why Comcast open sourced its DNS management tool by Paul James Cleary",
+      "date": "August 28, 2020",
+      "url": "https://opensource.com/article/20/9/open-source-dns",
+      "image": ""
+    },
+    {
+      "title": "Why Your OSPO Needs to Invest in More Than Compliance",
+      "date": "August 19, 2020",
+      "url": "https://www.finos.org/blog/posts/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast",
+      "image": ""
+    },
+    {
+      "title": "Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler",
+      "date": "August 17, 2020",
+      "url": "https://technical.ly/philly/2020/08/17/code-for-philly-new-technical-fellowship-paid-skills-development-mentorship/",
+      "image": ""
+    },
+    {
+      "title": "Modernize network function development with this Rust-based framework by Zeeshan Lakhani",
+      "date": "August 5, 2020",
+      "url": "https://opensource.com/article/20/8/capsule-networking",
+      "image": ""
+    },
+    {
+      "title": "Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
+      "date": "July 30, 2020",
+      "url": "https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/",
+      "image": ""
+    },
+    {
+      "title": "Open source contributions face friction over company IP",
+      "date": "July 6, 2020",
+      "url": "https://searchitoperations.techtarget.com/news/252485541/Open-source-contributions-face-friction-over-company-IP",
+      "image": ""
+    },
+    {
+      "title": "Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace",
+      "date": "July 2, 2020",
+      "url": "https://www.mobileworldmagazine.com/interviews/comcasts-larry-maccherone-driving-digital-transformation",
+      "image": ""
+    },
+    {
+      "title": "Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace",
+      "date": "July 1, 2020",
+      "url": "https://www.mobileworldmagazine.com/company/comcast-introducing-devsecops-scale",
+      "image": ""
+    },
+    {
+      "title": "K8s KPIs with Kuberhealthy by Joshulyne Park, Eric Greer",
+      "date": "May 29, 2020",
+      "url": "https://kubernetes.io/blog/posts/2020/05/29/k8s-kpis-with-kuberhealthy/",
+      "image": ""
+    },
+    {
+      "title": "A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!",
+      "date": "May 12, 2020",
+      "url": "https://events.linuxfoundation.org/2020/05/12/a-big-thank-you-to-our-open-source-summit-embedded-linux-conference-north-america-2020-program-committee-members/",
+      "image": ""
+    },
+    {
+      "title": "Committing to innovation: Comcast’s Nithya Ruff talks Open Source with GitHub COO Erica Brescia",
+      "date": "May 6, 2020",
+      "url": "https://www.linkedin.com/pulse/committing-innovation-comcasts-nithya-ruff-talks-open-erica-brescia/?trackingId=05hzrZWrTW%2B0Nl2FMcRpDg%3D%3D",
+      "image": ""
+    },
+    {
+      "title": "Collaboration for a Cause by Shilla Saebi",
+      "date": "March 27, 2020",
+      "url": "https://medium.com/@ShillaSaebi/collaboration-for-a-cause-beedfab787ca",
+      "image": ""
+    },
+    {
+      "title": "Black History Month: Hear from 5 Technology Innovators by Shilla Saebi",
+      "date": "February 28, 2020",
+      "url": "https://medium.com/@ShillaSaebi/black-history-month-hear-from-5-technology-innovators-ec6954ca2d61",
+      "image": ""
+    },
+    {
+      "title": "4 technologists on careers in tech for minorities by Shilla Saebi",
+      "date": "February 28, 2020",
+      "url": "https://opensource.com/article/20/2/careers-tech-minorities",
+      "image": ""
+    },
+    {
+      "title": "Meet the Community Devroom Speakers Alison & Shilla by Leslie Hawthorn & Laura Czajkowsk",
+      "date": "January 29, 2020",
+      "url": "https://medium.com/@leslielauralive/meet-the-community-devroom-speakers-alison-shilla-28f9a8b129e9",
+      "image": ""
+    }
+  ]
+}

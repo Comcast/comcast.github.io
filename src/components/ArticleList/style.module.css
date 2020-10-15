@@ -1,0 +1,8 @@
+.articleList > article {
+  border-bottom: .05rem solid #ccc;
+  padding: 2rem 0;
+}
+
+.articleList > article:first-child {
+  border-top: .05rem solid #ccc;
+}

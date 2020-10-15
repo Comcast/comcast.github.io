@@ -1,0 +1,106 @@
+
+.yellowColor {
+  color: rgba(253,185,19,1);
+  color: rgba(194,139,19,1); /* a11y 3.0 */
+}
+.orangeColor {
+  color: rgba(243,112,33,1);
+  color: rgba(240,110,33,1); /* a11y 3.0 */
+}
+.redColor {
+  color: rgba(180,40,70,1) ;
+}
+.purpleColor {
+  color: rgba(100,95,170,1);
+}
+.blueColor {
+  color: rgba(0,137,207,1);
+}
+.greenColor {
+  color: rgba(13,177,75,1);
+  color: rgba(13,171,75,1); /* a11y 3.0 */
+}
+.blackColor {
+  color: rgba(0,0,0,1);
+}
+.mineshaftColor {
+  color: rgba(37,37,37,1);
+}
+.carbonColor {
+  color: rgba(132,132,132,1);
+}
+.mercuryColor {
+  color: rgba(233,233,233,1);
+}
+.whiteColor {
+  color: rgba(255,255,255,1);
+}
+
+.yellowBg {
+  background-color: rgba(253,185,19,1);
+}
+.orangeBg {
+  background-color: rgba(243,112,33,1);
+}
+.redBg {
+  background-color: rgba(180,40,70,1);
+}
+.purpleBg {
+  background-color: rgba(100,95,170,1);
+}
+.blueBg {
+  background-color: rgba(0,137,207,1);
+  background-color: rgba(0,124,194,1); /* a11y 4.5 */
+}
+.greenBg {
+  background-color: rgba(13,177,75,1);
+}
+.blackBg {
+  background-color: rgba(0,0,0,1);
+}
+.mineshaftBg {
+  background-color: rgba(37,37,37,1);
+}
+.carbonBg {
+  background-color: rgba(132,132,132,1);
+}
+.mercuryBg {
+  background-color: rgba(233,233,233,1);
+}
+.whiteBg {
+  background-color: rgba(255,255,255,1);
+}
+
+.yellowBorder {
+  border-color: rgba(253,185,19,1);
+}
+.orangeBorder {
+  border-color: rgba(243,112,33,1);
+}
+.redBorder {
+  border-color: rgba(180,40,70,1);
+}
+.purpleBorder {
+  border-color: rgba(100,95,170,1);
+}
+.blueBorder {
+  border-color: rgba(0,137,207,1);
+}
+.greenBorder {
+  border-color: rgba(13,177,75,1);
+}
+.blackBorder {
+  border-color: rgba(0,0,0,1);
+}
+.mineshaftBorder {
+  border-color: rgba(37,37,37,1);
+}
+.carbonBorder {
+  border-color: rgba(132,132,132,1);
+}
+.mercuryBorder {
+  border-color: rgba(233,233,233,1);
+}
+.whiteBorder {
+  border-color: rgba(255,255,255,1);
+}

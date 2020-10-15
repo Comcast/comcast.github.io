@@ -1,0 +1,54 @@
+.pagination {
+  color: #666;
+  display: flex;
+  font-size: .9rem;
+  font-weight: 400;
+  justify-content: space-between;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.repoCount,
+.paginationButtons,
+.pagesCount {
+  margin: 0 0 .1rem;
+}
+
+.repoCount,
+.pagesCount {
+  white-space: nowrap;
+  width: 15%;
+}
+.paginationButtons {
+  text-align: center;
+  width: 70%;
+}
+.pagesCount {
+  text-align: right;
+}
+
+.page {
+  background-color: transparent;
+  border-bottom: .15rem solid #ccc;
+  border: 0;
+  font-family: 'lineto-brown';
+  font-size: .8rem;
+  line-height: .8;
+  margin: 0 .25rem;
+  padding: .1rem .5rem .25rem;
+}
+
+button.page:hover {
+  cursor: pointer;
+  border-bottom: .15rem solid #ccc;
+}
+
+button.page:focus {
+  border-bottom: .15rem solid #f37021;
+  outline: none;
+}
+
+.selected {
+  border-bottom: .15rem solid #0089cf;
+}

@@ -1,0 +1,36 @@
+.project {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+  padding: 1rem .5rem 2rem;
+  text-align: center;
+  width: 31%;
+}
+
+.content {
+  margin: 0;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.number > img {
+  vertical-align: middle;
+}
+
+.title {
+  font-size: .8rem;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@media (max-width: 639px) {
+  .project {
+    width: 48%;
+  }
+}

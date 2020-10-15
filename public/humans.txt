@@ -1,0 +1,71 @@
+/* TEAM v2 */
+
+	Hacktoberfest Volunteer: Brittany Istenes
+	From: 
+
+	Hacktoberfest Volunteer: Krithika SureshBabu 
+	From: 
+
+	Hacktoberfest Volunteer: Nathan Lilly
+	GitHub: github.com/nelilly
+	From: Philadelphia, Pennsylvania, USA
+
+	Hacktoberfest Volunteer: Shiju Daniel
+	From: 
+
+	Hacktoberfest Volunteer: Shilla Saebi
+	From: 
+
+/* THANKS */
+		
+	Thanks to all the developers who continued to code under the most difficult of circumstances. 
+	
+	Dedicated to everyone who helped us get through 2020.
+
+/* SITE v2 */
+	Last update: 2020/10/31
+	Language: English
+	Doctype: HTML5
+
+
+/* TEAM v1 */
+
+	Lab Week Volunteer: Bin Mei
+	From: Seattle, Washington, USA
+
+	Lab Week Volunteer: Brennan Batalla
+	From: Philadelphia, Pennsylvania, USA
+
+	Lab Week Volunteer: John Riviello
+	From: Philadelphia, Pennsylvania, USA
+
+	Lab Week Volunteer: Krista Khare
+	From: Philadelphia, Pennsylvania, USA
+
+	Lab Week Volunteer: Lise Kenfack
+	From: Seattle, Washington, USA
+
+	Lab Week Volunteer: Michael Bundschuh
+	From: Seattle, Washington, USA
+
+	Lab Week Volunteer: Paul Dahlke
+	From: Seattle, Washington, USA
+
+	Lab Week Volunteer: Prabha Krishnamurthy
+	From: Philadelphia, Pennsylvania, USA
+
+	Lab Week Volunteer: Shilla Saebi
+	From: Philadelphia, Pennsylvania, USA
+
+	Lab Week Volunteer: Trevor Menagh
+	From: Seattle, Washington, USA
+
+/* THANKS v1 */
+		
+	Open Source Developers: You know who you are!
+	From: Everywhere!
+
+/* SITE v1 */
+	Last update: 2017/07/21
+	Language: English
+	Doctype: HTML5

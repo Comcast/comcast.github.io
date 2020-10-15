@@ -1,0 +1,67 @@
+.superbutton {
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  display: inline-block;
+  overflow: hidden;
+  padding: 1rem;
+  text-shadow: 0 0 1rem #0064, 0 0 .1rem #006 ;
+}
+
+.square {
+  height: 12rem;
+  width: 12rem;
+}
+
+.superbutton:hover,
+.superbutton:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+.text {
+  font-size: 1.1rem;
+  margin-top: 80%;
+  transition: .3s transform ease-in-out;
+}
+
+.superbutton:hover .text,
+.superbutton:focus .text {
+  transform: translateY(-2rem);
+}
+
+.title {
+  line-height: 1;
+  margin: 0;
+}
+
+.superbutton:hover .cta,
+.superbutton:focus .cta {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cta {
+  font-size: .75rem;
+  line-height: 1;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(1rem);
+  transition: .3s transform ease-in-out, .3s opacity ease-in-out;
+}
+
+.cta:after {
+  content: "\E900";
+  display: inline-block;
+  font-family: comcorp-icons !important;
+  font-size: 1.75em;
+  margin-left: .5rem;
+  transform: translate(0, .25em);
+  transition: transform 0.2s ease-out;
+}
+
+.cta:hover:after,
+.cta:focus:after {
+  outline: 0px solid #fff0;
+  transform: translate(1.125rem, .25em);
+}

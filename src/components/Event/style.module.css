@@ -1,0 +1,39 @@
+.conference {
+  background: #252525;
+  color: #fff;
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  max-width: 100vw;
+  padding: 3rem 5rem 6rem;
+  width: 100vw;
+}
+
+.card {
+  background-color: #e9e9e9;
+  color: #252525;
+  padding: 2rem;
+  margin: 1rem 10% 4rem;
+}
+
+.overview {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: .025rem;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.speakerList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (max-width: 639px) {
+  .conference {
+    padding: 3rem 2.5rem 6rem;
+  }
+  .card {
+    margin: 1rem 5% 4rem;
+  }
+}

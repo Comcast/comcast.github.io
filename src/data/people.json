@@ -1,0 +1,126 @@
+{
+  "title": "People",
+  "overview": "Comcast NBCUniversal brings together engineers, designers, creators, storytellers, and entrepreneurs who are shaping the future of media and technology.",
+  "description": "We encourage and support our software engineers in open-sourcing the projects they develop at Comcast. The people who power our teams are the people who power the Open Source community through the sharing of information online, in presentations, and at conferences.",
+  "featuredImage": "/images/people/featured.jpg",
+  "color": "red",
+  "conference": [
+    {
+      "title": "Winter 2020",
+      "confTopic": "The Open Source Cloud",
+      "image": "/images/carousel/corporate_10G-HeroImage_5x2_v5.png",
+      "topicKey": "cloud",
+      "beginDate": "2020-12-21",
+      "endDate": "2021-03-21",
+      "openingRemarksOverview": "We’re pleased to welcome you to the inital quarterly virtual conference digest.",
+      "openingRemarksDescription": "Each quarter the Comcast Open Source Program Office will highlight a curated list of presentations and talks given by the people of Comcast NBCUniversal at various events on topics in Open Source Software. For Winter 2020, we submit to you presentations on the topic of “Open Source in the Cloud”. Are Cloud Services the Future of Open Source? ...",
+      "keynote": "Why your OSPO needs to invest in more than just compliance",
+      "specificTalks": [
+        "InnerSource is Established, Now What",
+        "InnerSource at Comcast",
+        "Open Source Summit - Growing Sustainable Contributions Through Ambassador Networks"
+      ]
+    }
+  ],
+  "talksTitle": "Talks",
+  "talksList": [
+    {
+      "title": "When ViewModels Go to Die: Saving ViewModel State",
+      "date": "November 19, 2020",
+      "author": "Sumayyah Ahmed",
+      "url": "https://www.droidcon.com/media-detail?video=481205520",
+      "image": "/images/people/talks/droidcon_nov2020.jpg"
+    },
+    {
+      "title": "Extending Automation towards Self-Service CDNs",
+      "date": "October 15, 2020",
+      "author": "Jonathan Gray",
+      "url": "https://www.youtube.com/watch?v=TO0N9sPZdnU",
+      "image": "/images/people/talks/extending_automation_towards_self-service_cdns.jpg"
+    },
+    {
+      "title": "Kuberhealthy: An operator for synthetic monitoring in Kubernetes",
+      "author": "Joshulyne Park",
+      "date": "September 17, 2020",
+      "url": "https://www.comcastlabsconnect.com/2020-cloud-schedule/kuberhealthy-an-operator-for-synthentic-monitoring-in-kubernetes-by-joshulyne-park-of-comcast",
+      "image": "/images/people/talks/comcast_labs.png"
+    },
+    {
+      "title": "Cloud Beyond Comcast",
+      "date": "September 16, 2020",
+      "author": "Roberto Moral",
+      "url": "https://www.comcastlabsconnect.com/2020-cloud-schedule/lightning-talks",
+      "image": "/images/people/talks/comcast_labs.png"
+    },
+    {
+      "title": "InnerSource is Established, Now What",
+      "date": "September 15, 2020",
+      "author": "Brittany Istenes",
+      "url": "https://www.youtube.com/watch?v=RenQ8B7aX84",
+      "image": "/images/people/talks/brittany_istenes_innersource2020.jpg"
+    },
+    {
+      "title": "Growing Sustainable Contributions Through Ambassador Networks",
+      "date": "September 11, 2020",
+      "author": "Alison Yu & Shilla Saebi",
+      "url": "https://www.youtube.com/watch?v=i2S7lSxAbrA",
+      "image": ""
+    },
+    {
+      "title": "Why your OSPO needs to invest in more than just compliance",
+      "date": "August 19, 2020",
+      "author": "Nithya Ruff",
+      "url": "https://www.finos.org/blog/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast",
+      "image": ""
+    },
+    {
+      "title": "Why Diversity in Open Source Will Lead to Better Products for Everyone",
+      "date": "July 22, 2020",
+      "author": "Quincy Iheme",
+      "url": "https://www.comcastlabsconnect.com/2020-inclusion-schedule/innovation4all-why-diversity-in-open-source-will-lead-to-better-products-for-everyone-by-quincy-iheme-of-comcast",
+      "image": ""
+    },
+    {
+      "title": "Panel: “Allies for Diversity”",
+      "date": "July 22, 2020",
+      "author": "Jon Moore, Nithya Ruff, & Shane Portfolio. Moderated by Kendra Lee",
+      "url": "https://www.comcastlabsconnect.com/2020-inclusion-schedule/panel-allies-for-diversity-moderated-by-kendra-lee-of-comcast",
+      "image": ""
+    },
+    {
+      "title": "Open Source with a Security Mindset: Releasing with Protection",
+      "date": "June 30, 2020",
+      "author": "Brittany Istenes & Mike Lacroce",
+      "url": "https://onlinexperiences.com/Launch/Event.htm?ShowKey=95540&DisplayItem=E388765",
+      "image": ""
+    },
+    {
+      "title": "Open Source Summit - Growing Sustainable Contributions Through Ambassador Networks",
+      "date": "June 29, 2020",
+      "author": "Shilla Saebi & Alison Yu",
+      "url": "https://onlinexperiences.com/Launch/Event.htm?ShowKey=95540&DisplayItem=E388811",
+      "image": ""
+    },
+    {
+      "title": "How the Yocto Project Addressed Comcast RDK Scalability Issues",
+      "date": "May 5, 2020",
+      "author": "Nicolas Dechesne, Linaro & Khem Raj",
+      "url": "https://www.youtube.com/watch?v=vZNr3mZ8SOU",
+      "image": ""
+    },
+    {
+      "title": "InnerSource at Comcast",
+      "date": "April 24, 2020",
+      "author": "Nithya Ruff",
+      "url": "https://www.youtube.com/watch?v=msD-8-yrGfs",
+      "image": ""
+    },
+    {
+      "title": "FOSDEM - Growing Sustainable Contributions through Ambassador Networks",
+      "date": "February 2, 2020",
+      "author": "Shilla Saebi & Alison Yu",
+      "url": "https://ftp.osuosl.org/pub/fosdem/2020/UB5.230/ambassadornetworks.mp4",
+      "image": ""
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  height: 4rem;
+  width: 4rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.link {
+  color: #000;
+  outline: .2rem solid rgba(255,255,255,0)
+}
+
+.link:after {
+  content: "\E900";
+  display: inline-block;
+  font-family: comcorp-icons !important;
+  font-size: 1.75em;
+  margin-left: .5rem;
+  transform: translate(0, .25em);
+  transition: transform 0.2s ease-out;
+}
+
+.link:hover:after,
+.link:focus:after {
+  outline: 0px solid #fff0;
+  transform: translate(1.125rem, .25em);
+}

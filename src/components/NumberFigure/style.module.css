@@ -1,0 +1,18 @@
+.figure {
+  margin: 0;
+  padding: 1rem .5rem 2rem;
+  text-align: center;
+  width: 31%;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
