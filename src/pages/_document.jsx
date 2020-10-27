@@ -17,7 +17,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <link rel="shortcut icon" href="/favicon.ico" />
+          <link rel="shortcut icon" href={`${process.env.ASSET_PREFIX}/favicon.ico`} />
         </Head>
         <body>
           <article className="page">
@@ -33,7 +33,7 @@ class MyDocument extends Document {
                     <use href="#comcast_logo" />
                   </svg>
                   <img
-                    src="/comcast_open_source.svg"
+                    src={`${process.env.ASSET_PREFIX}/comcast_open_source.svg`}
                     alt="Open Source"
                     className="subsetLogo"
                   />
@@ -42,12 +42,12 @@ class MyDocument extends Document {
               <nav className="nav">
                 <button className="navigation__button" type="button" aria-expanded="false" aria-label="Expand navigation menu" />
                 <ul>
-                  <li><a href="/">About</a></li>
-                  <li><a href="/projects">Projects</a></li>
-                  <li><a href="/people">People</a></li>
-                  <li><a href="/community">Community</a></li>
-                  <li><a href="/events">Events</a></li>
-                  <li><a href="/blog">Blog</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/`}>About</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/projects`}>Projects</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/people`}>People</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/community`}>Community</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/events`}>Events</a></li>
+                  <li><a href={`${process.env.ASSET_PREFIX}/blog`}>Blog</a></li>
                 </ul>
               </nav>
             </header>
@@ -97,7 +97,7 @@ class MyDocument extends Document {
                 &copy;
                 {data.copyright}
                 Comcast
-                <a href="/sitemap/">Site Map</a>
+                <a href={`${process.env.ASSET_PREFIX}/sitemap`}>Site Map</a>
               </p>
             </footer>
           </article>
