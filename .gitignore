@@ -1,0 +1,15 @@
+# Node
+node_modules/*
+npm-debug.log
+yarn-error.log
+
+# Testing
+coverage/
+src/js/coverage/
+.nyc_output/
+
+# App
+.next/*
+
+# IDE
+.vscode/*
