@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next -p 3001",
     "build": "next build && next export -o docs && touch docs/.nojekyll",
-    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin main",
+    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin master",
     "start": "next start",
     "lint": "npm run lint:js",
     "lint:js": "eslint . --ext js,jsx",
