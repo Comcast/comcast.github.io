@@ -23,7 +23,7 @@ class MyDocument extends Document {
           <article className="page">
             <header className="header">
               <div className="siteId">
-                <a href="/">
+                <a href={`${process.env.ASSET_PREFIX}/`}>
                   <svg
                     role="img"
                     alt="Comcast"
