@@ -20,7 +20,7 @@
   "author": "Comcast_Open_Source_Services@comcast.com",
   "license": "Apache-2.0",
   "dependencies": {
-    "next": "^9.5.5",
+    "next": "^10.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

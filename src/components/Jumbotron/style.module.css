@@ -1,12 +1,11 @@
 .header {
 	background: #0089cf;
 	color: #fff;
-	height: 45vw;
+	height: 33rem;
 	margin: -2rem -3rem 3rem;
 	margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
 	max-width: 100vw;
-	min-height: 60vh;
 	overflow: hidden;
 	padding: 3rem;
 	position: relative;

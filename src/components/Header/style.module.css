@@ -11,7 +11,7 @@
 
 .header.featuredImage {
 	background: #0089cf;
-	height: 45vw;
+	height: 33rem;
 	overflow: hidden;
 	padding: 3rem;
 	position: relative;
@@ -26,10 +26,13 @@
 }
 
 .image {
+	animation: zoom-out 2s ease-in-out forwards;
+	animation-delay: 300ms;
 	height: 100%;
 	left: 0;
 	position: absolute;
 	top: 0;
+	transform: scale(1.1) rotate(1deg);
 	width: 100%;
 	z-index: 0;
 }
@@ -80,4 +83,14 @@
 .details .author a:hover,
 .details .author a:focus {
 	text-decoration: underline;
+}
+
+@keyframes zoom-out {
+  from {
+		transform: scale(1.1) rotate(1deg);
+  }
+
+  to {
+		transform: scale(1);
+  }
 }

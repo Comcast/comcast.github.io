@@ -13,8 +13,8 @@
 	text-rendering: optimizeLegibility;
 }
 html {
-	font-size: 1.5vw;
-	font-size: 20px;
+	font-size: 1.66666vw;
+	/* font-size: 20px; */
 	font-weight: 300;
   height: 100%;
 	line-height: 1.15;
@@ -166,15 +166,13 @@ main {
 }
 
 /* Global Header */
-.siteId {
-  padding: .5rem 1.5rem .5rem;
-}
-
 .siteId > a {
   display: inline-block;
   outline: .2rem solid rgba(255,255,255,0);
-  outline-offset: 3px;
+  outline-offset: .2rem;
   transition: .3s outline-color ease-out;
+	padding: .5rem 1.5rem .75rem;
+	margin-left: .4rem;
 }
 
 .siteId > a:focus {
@@ -183,17 +181,16 @@ main {
 
 .primaryLogo {
   color: #000;
-  height: 47px;
+  height: 2.35rem;
   padding-top: .2rem;
-  width: 116px;
+  width: 5.8rem;
 }
 
 .subsetLogo {
-  border-left: 2px solid #000;
-  height: 47px;
+  border-left: .1rem solid #000;
+  height: 2.6rem;
   padding: 0;
-  width: 196px;
-  padding-bottom: .25rem;
+  width: 9.8rem;
   padding-left: 1rem;
   margin-left: 1rem;
 }
@@ -316,6 +313,7 @@ main {
 .navigation__button {
   background: rgba(0,0,0,0);
   border: none;
+	cursor: pointer;
   display: none;
   position: relative;
 }
@@ -326,6 +324,24 @@ main {
   display: block;
   font-family: comcorp-icons !important;
   font-size: 2.9375rem;
+}
+
+.navigation__close {
+	background: rgba(0,0,0,0);
+	border: none;
+	cursor: pointer;
+	display: none;
+	position: fixed;
+	top: 0;
+	z-index: 100000;
+}
+
+.navigation__close::after {
+	color: #54585a;
+	content: "\E90D";
+	display: block;
+	font-family: comcorp-icons !important;
+	font-size: 2.9375rem;
 }
 
 /* Content Blocks */
@@ -371,6 +387,8 @@ p:last-of-type {
 }
 .footer-logo-img {
 	color: #000;
+}
+.footer-logo-img > svg {
 	height: 38px;
 	width: 74px;
 }
@@ -454,3 +472,48 @@ p:last-of-type {
 	border: 1px solid #833ab4;
 	color: #833ab4;
 }
+
+@media (max-width: 960px) {
+	html {
+		font-size: 16px;
+	}
+	.nav > ul {
+		background-color: #1e1f20;
+    color: #fff;
+		display: none;
+		font-size: 1.25rem;
+		height: 100vh;
+		margin: 0;
+		position: fixed;
+		top: 0;
+		width: 100vw;
+    left: 0;
+    padding: 3rem 0 0 0;
+    z-index: 1000;
+	}
+	.nav > .navigation__button {
+		display: block;
+	}
+	.nav > .navigation__close {
+		display: none;
+	}
+	.nav.open > .navigation__close {
+		display: block;
+	}
+	.nav.open > ul {
+		display: block;
+	}
+	.nav li a {
+    color: #fff;		
+	}
+
+	.footer__corporate {
+		flex-flow: column;
+	}
+	.footer__corporate > a {
+		padding: 1rem 0;
+	}
+	.footer__corporate .social {
+		padding: 1rem 0;
+	}
+};

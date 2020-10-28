@@ -17,7 +17,7 @@ const Jumbotron = ({ title }) => (
         </h1>
       </section>
       <section className={image}>
-        <img src="brand_photos/comcast003.jpg" alt="" />
+        <img src="img/brand_photos/comcast003.jpg" alt="" />
       </section>
     </header>
   </>

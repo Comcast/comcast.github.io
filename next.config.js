@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const isProd = (process.env.NODE_ENV || 'production') === 'production';
 const assetPrefix = isProd ? '/pages/OSP/comcast.github.io' : '';
 
-// const debug = process.env.NODE_ENV !== "production";
 module.exports = {
   // node: {
   //   __dirname: true,
@@ -21,15 +20,15 @@ module.exports = {
     localIdentName: '[local]___[hash:base64:5]',
     url: false,
   },
-  // exportPathMap: function () {
+  // exportPathMap() {
   //   return {
-  //     "/src/pages/": { page: "/" },
-  //     "/src/pages/blog": { page: "/blog" },
-  //     "/src/pages/community": { page: "/community" },
-  //     "/src/pages/events": { page: "/events" },
-  //     "/src/pages/people": { page: "/people" },
-  //     "/src/pages/projects": { page: "/projects" },
-  //   }
+  //     '/src/pages/': { page: '/' },
+  //     '/src/pages/blog': { page: '/blog' },
+  //     '/src/pages/community': { page: '/community' },
+  //     '/src/pages/events': { page: '/events' },
+  //     '/src/pages/people': { page: '/people' },
+  //     '/src/pages/projects': { page: '/projects' },
+  //   };
   // },
   assetPrefix,
   webpack: (config) => {
