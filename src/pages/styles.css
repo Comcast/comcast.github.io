@@ -389,8 +389,8 @@ p:last-of-type {
 	color: #000;
 }
 .footer-logo-img > svg {
-	height: 38px;
-	width: 74px;
+	height: 2rem;
+	width: 4rem;
 }
 .footer-logo-img:hover,
 .footer-logo-img:focus {
@@ -446,15 +446,16 @@ p:last-of-type {
 	text-align: center;
 }
 .social .menu-item a {
-  background-color: #fff;
-	background-repeat: no-repeat;
 	background-position: center center;
-	border: 1px solid red;
+	background-repeat: no-repeat;
+	background-size: 1.25rem;
 	border-radius: 100%;
+	border: 1px solid red;
 	display: inline-block;
 	height: 2.5rem;
 	transition: all 0.1s ease-out;
 	width: 2.5rem;
+  background-color: #fff;
 }
 .social .menu-item a:hover,
 .social .menu-item a:focus {
