@@ -7,7 +7,7 @@
 	From: 
 
 	Hacktoberfest Volunteer: Nathan Lilly
-  GitHub: github.com/nelilly
+	GitHub: github.com/nelilly
 	From: Philadelphia, Pennsylvania, USA
 
 	Hacktoberfest Volunteer: Shiju Daniel
