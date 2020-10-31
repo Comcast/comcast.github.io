@@ -107,12 +107,29 @@ const Layout = ({ children }) => (
     <main className={layout}>{children}</main>
     <footer className="footer" role="contentinfo">
       <section className="footer__site">
-        <p>[Comcast Open Source Site Footer Content]</p>
-        <p>[Comcast Careers]</p>
-        <p>[Comcast Open Source Links]</p>
-        <ul className="social">
-          <li className="github menu-item"><a href="https://github.com/Comcast/Comcast.github.io"><span className="vh">GitHub</span></a></li>
-        </ul>
+        <section>
+          <h3>Learn More About Comcast Open Source</h3>
+          <address>
+            <a href="mailto:Comcast_Open_Source_Services@comcast.com">Contact Comcast Open Source Services</a>
+          </address>
+          <Link href="/blog">Comcast Open Source Blog</Link>
+          <ul className="social">
+            <li className="technology menu-item"><a href="https://corporate.comcast.com/technology" title="Technology @ Comcast"><span className="vh">Technology @ Comcast</span></a></li>
+            <li className="github menu-item"><a href="https://github.com/Comcast/Comcast.github.io" title="Comcast Open Source on GitHub"><span className="vh">Comcast Open Source on GitHub</span></a></li>
+            <li className="humans menu-item"><a href="humans.txt" title="Comcast Open Source humans.txt"><span className="vh">Comcast Open Source Site humans.txt</span></a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Like what you see? Come work with us!</h3>
+          <a href="https://comcast.jibeapply.com/main/jobs?keywords=open%20source&amp;page=1" className="cta">View Job Openings</a>
+          <ul className="social">
+            <li className="facebook menu-item"><a href="https://www.facebook.com/ComcastCareers/?fref=ts" title="Comcast Careers on Facebook"><span className="vh">Comcast Careers on Facebook</span></a></li>
+            <li className="twitter menu-item"><a href="https://twitter.com/comcastcareers" title="Comcast Careers on Twitter"><span className="vh">Comcast Careers on Twitter</span></a></li>
+            <li className="instagram menu-item"><a href="https://www.instagram.com/comcastcareers/" title="Comcast Careers on Instagram"><span className="vh">Comcast Careers on Instagram</span></a></li>
+            <li className="youtube menu-item" title="Comcast Careers on YouTube"><a href="https://www.youtube.com/user/ComcastCareers"><span className="vh">Comcast Careers on YouTube</span></a></li>
+            <li className="dribble menu-item"><a href="https://dribbble.com/comcast" title="Comcast Careers on Dribbble"><span className="vh">Comcast Careers on Dribbble</span></a></li>
+          </ul>
+        </section>
       </section>
       <section className="footer__corporate">
         <a href="https://corporate.comcast.com/" aria-label="Comcast" className="footer-logo-img">
@@ -137,10 +154,10 @@ const Layout = ({ children }) => (
         <a href="https://www.xfinity.com/privacy/manage-preference">Do Not Sell My Info</a>
         <a href="https://corporate.comcast.com/motion-settings">Motion Settings</a>
         <ul className="social">
-          <li className="facebook menu-item"><a href="https://www.facebook.com/comcast"><span className="vh">Facebook</span></a></li>
-          <li className="twitter menu-item"><a href="https://twitter.com/comcast"><span className="vh">Twitter</span></a></li>
-          <li className="linkedin menu-item"><a href="https://www.linkedin.com/company/comcast/"><span className="vh">LinkedIn</span></a></li>
-          <li className="instagram menu-item"><a href="https://www.instagram.com/comcast"><span className="vh">Instagram</span></a></li>
+          <li className="facebook menu-item"><a href="https://www.facebook.com/comcast" title="Comcast on Facebook"><span className="vh">Comcast on Facebook</span></a></li>
+          <li className="twitter menu-item"><a href="https://twitter.com/comcast" title="Comcast on Twitter"><span className="vh">Comcast on Twitter</span></a></li>
+          <li className="linkedin menu-item"><a href="https://www.linkedin.com/company/comcast/" title="Comcast on LinkedIn"><span className="vh">Comcast on LinkedIn</span></a></li>
+          <li className="instagram menu-item"><a href="https://www.instagram.com/comcast" title="Comcast on Instagram"><span className="vh">Comcast on Instagram</span></a></li>
         </ul>
       </section>
       <p className="copyright">&copy;{data.copyright} Comcast <Link href={`${process.env.ASSET_PREFIX}/sitemap`}>Site Map</Link></p>
