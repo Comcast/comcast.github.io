@@ -56,9 +56,9 @@ const Home = () => (
         </p>
         <Cta type="people" color="red" label="[Action] our contributions to the Open Source community" url="/community" />
         <FeatureSection title="Affiliates" description="Comcast is proud to support a variety of organizations in the Open Source community." link="View the complete list of Open Source affiliates" url="/community#affiliates">
-          <div className="{item}"><img src="/images/_default-hero.jpg" alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
-          <div className="{item}"><img src="/images/_default-hero.jpg" alt="" /><p><a href="https://www.cloudfoundry.org/">Cloud Foundry</a></p></div>
-          <div className="{item}"><img src="/images/_default-hero.jpg" alt="" /><p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.cloudfoundry.org/">Cloud Foundry</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p></div>
         </FeatureSection>
       </section>
       <section>

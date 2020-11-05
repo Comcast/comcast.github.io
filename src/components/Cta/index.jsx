@@ -16,7 +16,7 @@ const Cta = ({
 }) => (
   <p className={cta}>
     <div className={icon}><Icon type={type} color={color} /></div>
-    <Link href={url}><a className={link} href={url}>{label}</a></Link>
+    <Link href={`${process.env.ASSET_PREFIX}${url}`}><a className={link} href={`${process.env.ASSET_PREFIX}${url}`}>{label}</a></Link>
   </p>
 );
 

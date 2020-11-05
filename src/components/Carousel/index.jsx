@@ -19,6 +19,8 @@ import {
 const Carousel = ({ items }) => {
   const [current, setCurrent] = useState(0);
 
+  const updateUrl = (url) => (url.includes('http') ? `${process.env.ASSET_PREFIX}${url}` : url);
+
   const showSlide = (n) => {
     if (items.length < 1) { return; }
     if (n > items.length) { setCurrent(0); }
@@ -43,7 +45,7 @@ const Carousel = ({ items }) => {
         <h3>{item.title}</h3>
         <p>[TOO BOXY!?] {item.description}</p>
       </div>
-      <figcaption className={carouselCaption}> {item.cta.lead} <a href={item.cta.url} target="_blank" rel="noopener noreferrer">{item.cta.label}</a></figcaption>
+      <figcaption className={carouselCaption}> {item.cta.lead} <a href={updateUrl(item.cta.url)} target="_blank" rel="noopener noreferrer">{item.cta.label}</a></figcaption>
     </figure>
   ));
 

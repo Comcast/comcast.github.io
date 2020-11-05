@@ -18,24 +18,30 @@ const Header = ({
   link,
   url,
   children,
-}) => (
-  <section className={featureSection}>
-    <div className={featureIntro}>
-      {title && <h3 className={featureTitle}>{title}</h3>}
-      {image && <img className={featureImage} src={image} alt={alt} />}
-      {description && <p>{description}</p>}
-    </div>
-    <div className={featureItems}>
-      {children}
-    </div>
-    <div>{link && (
-      <p>
-        <Link href={url}><a className={more} href={url} aria-label={link} title={link}>⋮</a></Link>
-      </p>
-    )}
-    </div>
-  </section>
-);
+}) => {
+  const updateUrl = (path) => (path.includes('http') ? `${process.env.ASSET_PREFIX}${path}` : path);
+
+  return (
+    <section className={featureSection}>
+      <div className={featureIntro}>
+        {title && <h3 className={featureTitle}>{title}</h3>}
+        {image && <img className={featureImage} src={`${process.env.ASSET_PREFIX}${image}`} alt={alt} />}
+        {description && <p>{description}</p>}
+      </div>
+      <div className={featureItems}>
+        {children}
+      </div>
+      <div>{link && (
+        <p>
+          <Link href={updateUrl(url)}>
+            <a className={more} href={updateUrl(url)} aria-label={link} title={link}>⋮</a>
+          </Link>
+        </p>
+      )}
+      </div>
+    </section>
+  );
+};
 
 export default Header;
 

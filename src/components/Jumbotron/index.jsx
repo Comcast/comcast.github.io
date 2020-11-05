@@ -35,6 +35,8 @@ const changeTab = (event) => {
 const Jumbotron = ({ items }) => {
   const [currentItem, setCurrentItem] = useState(1);
 
+  const updateUrl = (url) => (url.includes('http') ? `${process.env.ASSET_PREFIX}${url}` : url);
+
   const tabs = items.map((item) => (
     <button
       aria-controls={`panel${item.id}`}
@@ -57,12 +59,12 @@ const Jumbotron = ({ items }) => {
       <div className={card}>
         <h2 className={cardTitle}>{item.title}</h2>
         <p className="cardDescription">{item.description}</p>
-        {item.cta && <p className="cardCta">{item.cta.lead}<Link href={item.cta.url}><a href={item.cta.url} className={cta}>{item.cta.label}</a></Link></p>}
+        {item.cta && <p className="cardCta">{item.cta.lead}<Link href={updateUrl(item.cta.url)}><a href={updateUrl(item.cta.url)} className={cta}>{item.cta.label}</a></Link></p>}
       </div>
       {item.image
         && (
           <div className={featuredImage}>
-            <img src={item.image} alt="" />
+            <img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" />
           </div>
         )}
     </article>
