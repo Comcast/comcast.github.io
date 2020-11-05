@@ -1,0 +1,35 @@
+.article {
+	border-bottom: .05rem solid #ccc;
+	overflow: auto;
+}
+
+.article:first-child {
+	border-top: .05rem solid #ccc;
+}
+
+.articleLink {
+	display: block;
+	color: #000;
+	overflow: auto;
+}
+
+.articleLink:hover,
+.articleLink:focus {
+	color: #666;
+	text-decoration: none;
+}
+
+a.articleLink:hover .articleTitle,
+a.articleLink:focus .articleTitle {
+	text-decoration: underline;
+}
+
+.articleTitle {
+	font-weight: 300;
+}
+
+.articleImage {
+	float: left;
+	height: 10rem;
+	width: 10rem;
+}

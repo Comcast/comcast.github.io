@@ -14,6 +14,7 @@ const Community = () => (
       <Header title={title} />
       <h2>Social Media</h2>
       <Icon type="people" color="red" />
+      <h2>Affiliations</h2>
     </Layout>
   </>
 );

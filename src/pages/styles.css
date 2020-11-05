@@ -56,7 +56,7 @@ main {
 
 .footer {
   flex-shrink: 0;
-  padding: 1rem;
+  padding: 1rem 1rem 4rem;
 }
 
 
@@ -107,7 +107,7 @@ h1 > a {
 	color: #fff;
 }
 
-h2,
+section > h2,
 .section__title {
   position: relative;
   left: 5rem;
@@ -146,6 +146,26 @@ h2 a:visited {
 h2 a:hover,
 h2 a:visited {
 	text-decoration: underline;
+}
+
+hr {
+	border: none;
+  border-bottom: .25rem solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, 
+	rgba(253,185,19,1) 16.666%, 
+	rgba(243,112,33,1) 16.666%, 
+	rgba(243,112,33,1) 33.333%, 
+	rgba(180,40,70,1) 33.333%, 
+	rgba(180,40,70,1) 49.999%, 
+	rgba(100,95,170,1) 49.999%, 
+	rgba(100,95,170,1) 66.666%, 
+	rgba(0,137,207,1) 66.666%, 
+	rgba(0,137,207,1) 83.333%, 
+	rgba(13,177,75,1) 83.333%);
+	transform: scaleX(0);
+	transform: scaleX(1);
+	transition: 1s transform ease-out;
 }
 
 /*------------------------------------*\
@@ -345,26 +365,30 @@ main {
 }
 
 /* Content Blocks */
-p {
-  letter-spacing: .025rem;
-  line-height:1.5;
+main > section {
   padding: 1rem 10% 2rem;
 }
+
 .overview {
   font-size: 1.2rem;
   font-weight: 400;
   letter-spacing: .025rem;
   line-height:1.5;
-  padding: 1rem 10% 2rem;
 }
-p:last-of-type {
+
+p {
+  letter-spacing: .025rem;
+  line-height:1.5;
+}
+
+main > section > p:last-of-type {
   padding-bottom: 4rem;
 }
 
 /* Footer */
 .footer {
 	background-color: #f7f7f7;
-  border-bottom: 10px solid;
+  border-bottom: .5rem solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, 
 	rgba(253,185,19,1) 16.666%, 
@@ -510,7 +534,13 @@ p:last-of-type {
 	color: rgba(0,137,207,1);
 }
 
+
+.footer a.cta {
+	color: #fff;
+}
+
 a.cta {
+	color: #000;
 	outline: .2rem solid rgba(255,255,255,0)
 }
 a.cta:after {
@@ -519,13 +549,13 @@ a.cta:after {
 	font-family: comcorp-icons !important;
 	font-size: 1.75em;
 	margin-left: .5rem;
-	transform: translate(0, 25%);
+	transform: translate(0, .25em);
 	transition: transform 0.2s ease-out;
 }
 a.cta:hover:after,
 a.cta:focus:after {
 	outline: 0px solid #fff0;
-	transform: translate(1.125rem, 25%);
+	transform: translate(1.125rem, .25em);
 }
 
 @media (max-width: 960px) {
@@ -577,4 +607,4 @@ a.cta:focus:after {
 	.footer__corporate .social {
 		padding: 1rem 0;
 	}
-};
+}
