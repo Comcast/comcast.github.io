@@ -19,7 +19,7 @@ import {
 const Carousel = ({ items }) => {
   const [current, setCurrent] = useState(0);
 
-  const updateUrl = (url) => (url.includes('http') ? `${process.env.ASSET_PREFIX}${url}` : url);
+  const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
 
   const showSlide = (n) => {
     if (items.length < 1) { return; }

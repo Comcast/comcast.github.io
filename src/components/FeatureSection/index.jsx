@@ -19,7 +19,7 @@ const Header = ({
   url,
   children,
 }) => {
-  const updateUrl = (path) => (path.includes('http') ? `${process.env.ASSET_PREFIX}${path}` : path);
+  const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
 
   return (
     <section className={featureSection}>

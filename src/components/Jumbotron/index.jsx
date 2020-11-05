@@ -35,7 +35,7 @@ const changeTab = (event) => {
 const Jumbotron = ({ items }) => {
   const [currentItem, setCurrentItem] = useState(1);
 
-  const updateUrl = (url) => (url.includes('http') ? `${process.env.ASSET_PREFIX}${url}` : url);
+  const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
 
   const tabs = items.map((item) => (
     <button
