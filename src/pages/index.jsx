@@ -75,10 +75,10 @@ const Home = () => (
         <hr className="rainbowSegment" />
       </section>
 
-      <SuperButton title="Kuberhealthy" image="/images/carousel/_kuberhealthy.jpg" />
-      <SuperButton title="Trickster" image="/images/carousel/_trickster.jpg" />
-      <SuperButton title="Vinyl DNS" image="/images/carousel/_vinyl-dns.jpg" />
-      <SuperButton title="Traffic Control" image="/images/carousel/_traffic_control.jpg" />
+      <SuperButton title="Kuberhealthy" image={`${process.env.ASSET_PREFIX}/images/carousel/_kuberhealthy.jpg`} />
+      <SuperButton title="Trickster" image={`${process.env.ASSET_PREFIX}/images/carousel/_trickster.jpg`} />
+      <SuperButton title="Vinyl DNS" image={`${process.env.ASSET_PREFIX}/images/carousel/_vinyl-dns.jpg`} />
+      <SuperButton title="Traffic Control" image={`${process.env.ASSET_PREFIX}/images/carousel/_traffic_control.jpg`} />
 
       <section>
         <h2 id="people">{people.title}</h2>
