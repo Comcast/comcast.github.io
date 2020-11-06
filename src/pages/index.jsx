@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import Jumbotron from '../components/Jumbotron';
 import Cta from '../components/Cta';
 import Carousel from '../components/Carousel';
+import SuperButton from '../components/SuperButton';
 import ArticleList from '../components/ArticleList';
 import FeatureSection from '../components/FeatureSection';
 import {
@@ -10,7 +11,11 @@ import {
   overview,
   description,
   jumbotron,
-  featuredProjects,
+  projects,
+  people,
+  community,
+  events,
+  blog,
 } from '../data/home.json';
 import { blogList } from '../data/blog.json';
 
@@ -23,57 +28,85 @@ const Home = () => (
     <Layout>
       <Jumbotron items={jumbotron} />
       <section>
-        <p className="overview">{overview}</p>
-        <p>{description}</p>
+        <section>
+          <p className="overview">{overview}</p>
+          <p>{description}</p>
+        </section>
         <FeatureSection image="/comcast_open_source_profile.svg" alt="Comcast Open Source Site Details">
-          <ul>
-            <li>Github Repo: <a href="https://github.com/Comcast/Comcast.github.io">Comcast.github.io</a></li>
-            <li>Last Updated: 6 days ago (2020-11-11)</li>
-            <li>Number of contributors: 70</li>
-            <li>Number of commits: 712 commits</li>
+          <div className="bug">
+            <h3>GitHub Repo</h3>
+            <p><a href="https://github.com/Comcast/Comcast.github.io">Comcast.github.io</a></p>
+          </div>
+          <div className="bug">
+            <h3><strong>6</strong> days ago</h3>
+            <p>last updated</p>
+          </div>
+          <div className="bug">
+            <h3><strong>70</strong></h3>
+            <p>contributors</p>
+          </div>
+          <div className="bug">
+            <h3><strong>712</strong></h3>
+            <p>commits</p>
+          </div>
+          <div className="bug">
+            <h3>Aug 23 <strong>2017</strong></h3>
+            <p>initial launch</p>
+          </div>
+          <div className="bug">
+            <h3>Apache <strong>2.0</strong></h3>
+            <p>license</p>
+          </div>
+          <div className="bug">
+            <h3>Tags</h3>
+            <p>comcast, css, floss, hacktoberfest, html, js, open-source, portal</p>
+          </div>
+          {/* <ul>
+            <li>: </li>
             <li>License: Apache-2.0 License</li>
             <li>Tags: portal, floss, open-source, comcast, html, css, js, hacktoberfest</li>
-          </ul>
+          </ul> */}
         </FeatureSection>
       </section>
       <section>
-        <h2>Featured Projects</h2>
-        <Carousel items={featuredProjects} />
-        <Cta type="atom" color="yellow" label="Browse through the Comcast Open Source Projects" url="/projects" />
+        <h2 id="projects">{projects.title}</h2>
+        <Carousel items={projects.featured} />
+        <Cta type="atom" color="yellow" label={projects.cta.label} url={projects.cta.url} />
         <hr className="rainbowSegment" />
       </section>
+
+      <SuperButton title="Kuberhealthy" image="/images/carousel/_kuberhealthy.jpg" />
+      <SuperButton title="Trickster" image="/images/carousel/_trickster.jpg" />
+      <SuperButton title="Vinyl DNS" image="/images/carousel/_vinyl-dns.jpg" />
+      <SuperButton title="Traffic Control" image="/images/carousel/_traffic_control.jpg" />
+
       <section>
-        <h2>Featured People</h2>
-        <p>Our people who speak on the subject of Open Source and Open Source technologies.</p>
+        <h2 id="people">{people.title}</h2>
+        {people.blurb && <p>{people.blurb}</p>}
         [PeopleCarousel?]
-        <Cta type="avatar" color="orange" label="Meet our people" url="/people" />
+        <Cta type="avatar" color="orange" label={people.cta.label} url={people.cta.url} />
       </section>
       <section>
-        <h2>Community Involvement</h2>
-        <p>
-          Catch up with us &mdash; at events, online, and on social media &mdash;
-          to ask us about what we&rsquo;re doing to support the Open Source community.
-        </p>
-        <Cta type="people" color="red" label="[Action] our contributions to the Open Source community" url="/community" />
+        <h2 id="community">{community.title}</h2>
+        {community.blurb && <p>{community.blurb}</p>}
+        <Cta type="people" color="red" label={community.cta.label} url={community.cta.url} />
         <FeatureSection title="Affiliates" description="Comcast is proud to support a variety of organizations in the Open Source community." link="View the complete list of Open Source affiliates" url="/community#affiliates">
-          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
-          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.cloudfoundry.org/">Cloud Foundry</a></p></div>
-          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/_default-hero.jpg`} alt="" /><p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/apache.svg`} alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/cloud_foundry.svg`} alt="" /><p><a href="https://www.cloudfoundry.org/">Cloud Foundry</a></p></div>
+          <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/cncf.svg`} alt="" /><p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p></div>
         </FeatureSection>
       </section>
       <section>
-        <h2>Upcoming Events</h2>
-        <p>
-          Upcoming Open Source events and events where we&rsquo;ll
-          be discussing Open Source technologies, standards, and the philosophy of Open Source.
-        </p>
+        <h2 id="events">{events.title}</h2>
+        {events.blurb && <p>{events.blurb}</p>}
         [Calendar?]
-        <Cta type="calendar" color="purple" label="See the entire list of Events" url="/events" />
+        <Cta type="calendar" color="purple" label={events.cta.label} url={events.cta.url} />
       </section>
       <section>
-        <h2 id="featured_posts">Latest Blog Posts</h2>
+        <h2 id="posts">{blog.title}</h2>
+        {blog.blurb && <p>{blog.blurb}</p>}
         <ArticleList content={blogList.slice(0, 3)} />
-        <Cta type="messages" color="blue" label="Read the Comcast Open Source Blog posts" url="/blog" />
+        <Cta type="messages" color="blue" label={blog.cta.label} url={blog.cta.url} />
       </section>
     </Layout>
   </>

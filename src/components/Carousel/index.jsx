@@ -38,16 +38,21 @@ const Carousel = ({ items }) => {
     showSlide(current);
   };
 
-  const listItems = items.map((item, i) => (
-    <figure className={carouselItem} key={`carousel${item.id}`} style={i === current ? { display: 'block' } : { display: 'none' }}>
-      <p className={carouselCount}>{i + 1} / {items.length}</p>
-      <div className={carouselText}>
-        <h3>{item.title}</h3>
-        <p>[TOO BOXY!?] {item.description}</p>
-      </div>
-      <figcaption className={carouselCaption}> {item.cta.lead} <a href={updateUrl(item.cta.url)} target="_blank" rel="noopener noreferrer">{item.cta.label}</a></figcaption>
-    </figure>
-  ));
+  const listItems = items.map((item, i) => {
+    const backgroundImage = `url(${item.image})`;
+    const display = (i === current ? 'block' : 'none');
+
+    return (
+      <figure className={carouselItem} key={`carousel${item.id}`} style={{ display, backgroundImage }}>
+        <p className={carouselCount}>{i + 1} / {items.length}</p>
+        <div className={carouselText}>
+          <h3>{item.title}</h3>
+          <p>[TOO BOXY!?] {item.description}</p>
+        </div>
+        <figcaption className={carouselCaption}> {item.cta.lead} <a href={updateUrl(item.cta.url)} target="_blank" rel="noopener noreferrer">{item.cta.label}</a></figcaption>
+      </figure>
+    );
+  });
 
   return (
     <div className={carousel}>

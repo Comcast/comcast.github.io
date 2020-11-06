@@ -17,7 +17,7 @@ const ArticleList = ({ content }) => {
     image,
     url,
   }) => (
-    <article className={article}>
+    <article className={article} key={`articles${date}`}>
       <a className={articleLink} href={url}>
         <div className={articleImage}>{image ? 'image' : <Icon type="messages" color="blue" />}</div>
         <h3 className={articleTitle}>{title}</h3>

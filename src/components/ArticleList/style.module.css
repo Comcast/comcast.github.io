@@ -1,6 +1,5 @@
 .article {
 	border-bottom: .05rem solid #ccc;
-	overflow: auto;
 }
 
 .article:first-child {
@@ -10,7 +9,7 @@
 .articleLink {
 	display: block;
 	color: #000;
-	overflow: auto;
+	overflow: hidden;
 }
 
 .articleLink:hover,

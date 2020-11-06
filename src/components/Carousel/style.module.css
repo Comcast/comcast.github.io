@@ -8,6 +8,8 @@
 .carouselItem {
   animation-duration: 1.5s;
   animation-name: fade;
+  background-position: center;
+  background-size: cover;
   display: inline-block;
   display: none;
   margin: 0 auto;
@@ -15,11 +17,11 @@
 }
 
 .carouselText {
-  background-color: #000;
   color: #fff;
   height: 450px;
   overflow: hidden;
-  padding: 2rem;
+  padding: 15rem 2rem 2rem;
+  text-shadow: 0 0 1rem #0064, 0 0 .1rem #000 ;
 }
 
 .prev, .next {

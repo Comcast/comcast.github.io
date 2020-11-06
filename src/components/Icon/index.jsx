@@ -89,9 +89,9 @@ const Icon = ({ type = 'question', color = 'blue' }) => {
 
   return (
     <>
-      <div className={`${icon} ${newColor}`}>
+      <span className={`${icon} ${newColor}`}>
         {iconComponent}
-      </div>
+      </span>
     </>
   );
 };

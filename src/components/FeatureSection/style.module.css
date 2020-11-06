@@ -3,10 +3,10 @@
   background-color: #0089cf;
   color: #fff;
   display: flex;
-  margin-bottom: 4rem;
-  margin-right: calc(50% - 50vw);
-  margin-left: calc(50% - 50vw);
+  /* margin-bottom: 4rem; */
+  margin: 2rem calc(50% - 50vw) 0;
   max-width: 100vw;
+  overflow: scroll hidden;
   padding: 4rem 3rem;
 }
 
@@ -45,12 +45,16 @@
 }
 
 .featureItems > div > img {
+  background-color: #fff;
   border-bottom: .25rem solid #fdb913;
   height: 10rem;
+  padding: 1rem;
   width: 10rem;
 }
 
 .featureItems > div > p {
+  line-height: 1.15;
+  margin: 0;
   padding: 0;
   width: 10rem;
 }

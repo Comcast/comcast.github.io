@@ -87,8 +87,14 @@
 
 .jumbotronPanel {
 	display: none;
+	outline: none;
 	position: relative;
+	transition: 1s transform ease-in-out;
 	z-index: 1;
+}
+
+.jumbotronPanel:focus-within {
+	transform: scale(1.05);
 }
 
 .jumbotronPanel.selected {
