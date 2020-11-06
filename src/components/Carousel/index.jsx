@@ -39,7 +39,7 @@ const Carousel = ({ items }) => {
   };
 
   const listItems = items.map((item, i) => {
-    const backgroundImage = `url(${item.image})`;
+    const backgroundImage = `url(${process.env.ASSET_PREFIX}${item.image})`;
     const display = (i === current ? 'block' : 'none');
 
     return (
