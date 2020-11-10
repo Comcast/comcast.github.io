@@ -1,9 +1,8 @@
-.container {
+.superbutton {
   background-position: center;
   background-size: cover;
   color: #fff;
   display: inline-block;
-  margin: .5rem;
   overflow: hidden;
   padding: 1rem;
   text-shadow: 0 0 1rem #0064, 0 0 .1rem #006 ;
@@ -14,8 +13,8 @@
   width: 12rem;
 }
 
-.container:hover,
-.container:focus {
+.superbutton:hover,
+.superbutton:focus {
   color: #fff;
   text-decoration: none;
 }
@@ -26,8 +25,8 @@
   transition: .3s transform ease-in-out;
 }
 
-.container:hover .text,
-.container:focus .text {
+.superbutton:hover .text,
+.superbutton:focus .text {
   transform: translateY(-2rem);
 }
 
@@ -36,8 +35,8 @@
   margin: 0;
 }
 
-.container:hover .cta,
-.container:focus .cta {
+.superbutton:hover .cta,
+.superbutton:focus .cta {
   transform: translateY(0);
   opacity: 1;
 }

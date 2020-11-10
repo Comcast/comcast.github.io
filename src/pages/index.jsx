@@ -5,6 +5,7 @@ import Cta from '../components/Cta';
 import Carousel from '../components/Carousel';
 import SuperButton from '../components/SuperButton';
 import ArticleList from '../components/ArticleList';
+import EventList from '../components/EventList';
 import FeatureSection from '../components/FeatureSection';
 import {
   title,
@@ -17,6 +18,7 @@ import {
   events,
   blog,
 } from '../data/home.json';
+import { eventList } from '../data/events.json';
 import { blogList } from '../data/blog.json';
 
 const Home = () => (
@@ -29,8 +31,8 @@ const Home = () => (
       <Jumbotron items={jumbotron} />
       <section>
         <section>
-          <p className="overview">{overview}</p>
-          <p>{description}</p>
+          {overview && <p className="overview">{overview}</p>}
+          {description && <p>{description}</p>}
         </section>
         <FeatureSection image="/comcast_open_source_profile.svg" alt="Comcast Open Source Site Details">
           <div className="bug">
@@ -70,7 +72,7 @@ const Home = () => (
       </section>
       <section>
         <h2 id="projects">{projects.title}</h2>
-        <Carousel items={projects.featured} />
+        {projects.feature && <Carousel items={projects.feature} />}
         <Cta type="atom" color="yellow" label={projects.cta.label} url={projects.cta.url} />
         <hr className="rainbowSegment" />
       </section>
@@ -83,12 +85,13 @@ const Home = () => (
       <section>
         <h2 id="people">{people.title}</h2>
         {people.blurb && <p>{people.blurb}</p>}
-        [PeopleCarousel?]
+        {people.feature && '[PeopleCarousel?]'}
         <Cta type="avatar" color="orange" label={people.cta.label} url={people.cta.url} />
       </section>
       <section>
         <h2 id="community">{community.title}</h2>
         {community.blurb && <p>{community.blurb}</p>}
+        {community.feature && '[CommunityFeature? Video?]'}
         <Cta type="people" color="red" label={community.cta.label} url={community.cta.url} />
         <FeatureSection title="Affiliates" description="Comcast is proud to support a variety of organizations in the Open Source community." link="View the complete list of Open Source affiliates" url="/community#affiliates">
           <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/apache.svg`} alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
@@ -99,13 +102,21 @@ const Home = () => (
       <section>
         <h2 id="events">{events.title}</h2>
         {events.blurb && <p>{events.blurb}</p>}
-        [Calendar?]
+        <EventList content={eventList
+          .filter((a) => new Date(a.end) >= Date.parse(new Date()))
+          .sort((a, b) => new Date(a.end) - new Date(b.end))
+          .slice(0, 1)}
+        />
+        {events.feature && '[Calendar]'}
         <Cta type="calendar" color="purple" label={events.cta.label} url={events.cta.url} />
       </section>
       <section>
         <h2 id="posts">{blog.title}</h2>
         {blog.blurb && <p>{blog.blurb}</p>}
-        <ArticleList content={blogList.slice(0, 3)} />
+        <ArticleList content={blogList
+          .sort((a, b) => new Date(b.date) - new Date(a.date))
+          .slice(0, 3)}
+        />
         <Cta type="messages" color="blue" label={blog.cta.label} url={blog.cta.url} />
       </section>
     </Layout>

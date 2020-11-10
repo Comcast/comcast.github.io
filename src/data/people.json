@@ -1,5 +1,44 @@
 {
   "title": "People",
-  "descriptionHtml": "Talks, etc. (filterable on speaker, subject, etc.?)",
-  "featuredImage": "/images/brand_photos/comcast001.jpg"
+  "overview": "People, Profiles, Talks, etc.",
+  "description": "",
+  "featuredImage": "/images/brand_photos/comcast001.jpg",
+  "talksTitle": "Talks",
+  "talks": [
+    {
+      "title": "Kuberhealthy: An operator for synthetic monitoring in Kubernetes",
+      "author": "Joshulyne Park",
+      "date": "September 17, 2020",
+      "url": "https://www.comcastlabsconnect.com/2020-cloud-schedule/kuberhealthy-an-operator-for-synthentic-monitoring-in-kubernetes-by-joshulyne-park-of-comcast",
+      "image": "/images/talks/comcast_labs.png"
+    },
+    {
+      "title": "Cloud Beyond Comcast",
+      "date": "September 16, 2020",
+      "author": "Roberto Moral",
+      "url": "https://www.comcastlabsconnect.com/2020-cloud-schedule/lightning-talks",
+      "image": "/images/talks/comcast_labs.png"
+    },
+    {
+      "title": "InnerSource is Established, Now What",
+      "date": "September 15, 2020",
+      "author": "Brittany Istenes",
+      "url": "https://www.youtube.com/watch?v=RenQ8B7aX84",
+      "image": "/images/talks/brittany_istenes_innersource2020.jpg"
+    },
+    {
+      "title": "Growing Sustainable Contributions Through Ambassador Networks",
+      "date": "September 11, 2020",
+      "author": "Alison Yu & Shilla Saebi",
+      "url": "https://www.youtube.com/watch?v=i2S7lSxAbrA",
+      "image": ""
+    },
+    {
+      "title": "Why your OSPO needs to invest in more than just compliance",
+      "date": "August 19, 2020",
+      "author": "Nithya Ruff",
+      "url": "https://www.finos.org/blog/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast",
+      "image": ""
+    }
+  ]
 }

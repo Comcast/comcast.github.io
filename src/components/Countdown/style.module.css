@@ -1,0 +1,16 @@
+.countdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  font-weight: 400;
+  text-align: center;
+  width: 25%;
+}
+
+.column > strong {
+  color: #645faa;
+  display: block;
+  font-size: 3rem;
+}

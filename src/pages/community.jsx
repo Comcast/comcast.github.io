@@ -1,8 +1,14 @@
 import Head from 'next/head';
 import Header from '../components/Header';
-import Icon from '../components/Icon';
+import ArticleList from '../components/ArticleList';
 import Layout from '../components/Layout';
-import { title } from '../data/community.json';
+import {
+  title,
+  overview,
+  description,
+  affiliatesTitle,
+  affiliates,
+} from '../data/community.json';
 
 const Community = () => (
   <>
@@ -12,9 +18,16 @@ const Community = () => (
     </Head>
     <Layout>
       <Header title={title} />
-      <h2>Social Media</h2>
-      <Icon type="people" color="red" />
-      <h2>Affiliations</h2>
+      <section>
+        {overview && <p className="overview">{overview}</p>}
+        {description && <p>{description}</p>}
+      </section>
+      <section>
+        <h2 id="affiliates">{affiliatesTitle}</h2>
+        <ArticleList content={affiliates
+          .sort((a, b) => new Date(b.date) - new Date(a.date))}
+        />
+      </section>
     </Layout>
   </>
 );

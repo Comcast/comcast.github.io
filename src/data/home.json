@@ -11,13 +11,13 @@
     },
     {
       "id" : 2,
-      "title" : "HacktoberFest 2020",
-      "description": "HacktoberFest is back again! Find this exciting way to contribute to Open Source projects!",
+      "title" : "Hacktoberfest 2020",
+      "description": "Hacktoberfest is back again! It’s an exciting way to contribute to Open Source projects at Comcast!",
       "image": "/images/jumbotron/hacktoberfest2020.svg",
       "cta": {
         "url": "/hacktoberfest.html",
         "lead": "Find out more about ",
-        "label": "HacktoberFest at Comcast"
+        "label": "Hacktoberfest at Comcast"
       }
     },
     {
@@ -49,7 +49,7 @@
       "label": "Browse through the Comcast Open Source Projects",
       "url": "/projects"
     },
-    "featured": [
+    "feature": [
       {
         "id" : 1,
         "title" : "Kuberhealthy",
@@ -98,12 +98,12 @@
   },
   "people": {
     "title": "Featured People",
-    "blurb": "Our people who speak on the subject of Open Source and Open Source technologies.",
+    "blurb": "Our people who speak on the subject of Open Source and Open Source technologies. Experts, mentors, and community leaders.",
     "cta": {
       "label": "Meet our people",
       "url": "/people"
     },
-    "featured": ""
+    "feature": ""
   },
   "community": {
     "title": "Community Involvement",
@@ -112,7 +112,7 @@
       "label": "[Action] our contributions to the Open Source community",
       "url": "/community"
     },
-    "featured": ""
+    "feature": ""
   },
   "events": {
     "title": "Upcoming Events",
@@ -121,7 +121,7 @@
       "label": "See the entire list of Events",
       "url": "/events"
     },
-    "featured": ""
+    "feature": ""
   },
   "blog": {
     "title": "Latest Blog Posts",
@@ -129,6 +129,6 @@
       "label": "Read the Comcast Open Source Blog posts",
       "url": "/blog"
     },
-    "featured": ""
+    "feature": ""
   }
 }

@@ -1,9 +1,16 @@
 import Head from 'next/head';
 
 import Header from '../components/Header';
-import Icon from '../components/Icon';
 import Layout from '../components/Layout';
-import { title } from '../data/events.json';
+import EventList from '../components/EventList';
+import {
+  title,
+  overview,
+  description,
+  upcomingTitle,
+  pastTitle,
+  eventList,
+} from '../data/events.json';
 
 const Events = () => (
   <>
@@ -13,8 +20,24 @@ const Events = () => (
     </Head>
     <Layout>
       <Header title={title} />
-      <h2>Section Header</h2>
-      <Icon type="calendar" color="purple" />
+      <section>
+        {overview && <p className="overview">{overview}</p>}
+        {description && <p>{description}</p>}
+      </section>
+      <section>
+        <h2>{upcomingTitle}</h2>
+        <EventList content={eventList
+          .filter((a) => new Date(a.end) >= Date.parse(new Date()))
+          .sort((a, b) => new Date(a.end) - new Date(b.end))}
+        />
+      </section>
+      <section>
+        <h2>{pastTitle}</h2>
+        <EventList content={eventList
+          .filter((a) => new Date(a.end) <= Date.parse(new Date()))
+          .sort((a, b) => new Date(a.end) - new Date(b.end))}
+        />
+      </section>
     </Layout>
   </>
 );

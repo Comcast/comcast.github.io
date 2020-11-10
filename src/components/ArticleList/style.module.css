@@ -7,7 +7,7 @@
 }
 
 .articleLink {
-	display: block;
+	display: flex;
 	color: #000;
 	overflow: hidden;
 }
@@ -27,8 +27,15 @@ a.articleLink:focus .articleTitle {
 	font-weight: 300;
 }
 
+.articleMessage {
+	width: 66%;
+}
+
 .articleImage {
-	float: left;
+	display: block;
+	background-position: center;
+	background-size: cover;
 	height: 10rem;
+	margin: 1rem 2rem 1rem 0;
 	width: 10rem;
 }

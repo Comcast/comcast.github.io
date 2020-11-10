@@ -89,12 +89,12 @@
 	display: none;
 	outline: none;
 	position: relative;
-	transition: 1s transform ease-in-out;
+	transition: .5s transform ease-in-out;
 	z-index: 1;
 }
 
 .jumbotronPanel:focus-within {
-	transform: scale(1.05);
+	transform: scale(1.025);
 }
 
 .jumbotronPanel.selected {

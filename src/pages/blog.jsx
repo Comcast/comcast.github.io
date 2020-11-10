@@ -1,7 +1,14 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import { title } from '../data/blog.json';
+import ArticleList from '../components/ArticleList';
+import {
+  title,
+  overview,
+  description,
+  blogTitle,
+  blogList,
+} from '../data/blog.json';
 
 const Blog = () => (
   <>
@@ -11,7 +18,16 @@ const Blog = () => (
     </Head>
     <Layout>
       <Header title={title} />
-      <h2>Section Header</h2>
+      <section>
+        {overview && <p className="overview">{overview}</p>}
+        {description && <p>{description}</p>}
+      </section>
+      <section>
+        <h2>{blogTitle}</h2>
+        <ArticleList content={blogList
+          .sort((a, b) => new Date(b.date) - new Date(a.date))}
+        />
+      </section>
     </Layout>
   </>
 );

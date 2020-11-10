@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 import {
-  container,
+  superbutton,
   square,
   text,
   title as titleStyle,
@@ -11,7 +11,7 @@ import {
 const SuperButton = ({ title, image }) => {
   const backgroundImage = `url(${image})`;
   return (
-    <a href="?" className={`${container} ${square}`} style={{ backgroundImage }}>
+    <a href="?" className={`${superbutton} ${square}`} style={{ backgroundImage }}>
       <div className={text}>
         <p className={titleStyle}>{title}</p>
         <p className={cta}>See more</p>

@@ -1,12 +1,14 @@
 {
   "title": "Comcast Open Source Blog",
-  "descriptionHtml": "The <a href=\"https://labs.comcast.com\">Comcast Labs blog </a>is a place where Comcast technologists talk about the work they are doing, the products, infrastructure, and services they are building, and the trends and developments that are changing how we experience entertainment.",
+  "overview": "The Comcast Labs blog is a place where Comcast technologists talk about the work they are doing, the products, infrastructure, and services they are building, and the trends and developments that are changing how we experience entertainment.",
+  "description": "",
+  "blogTitle": "Blogs posts",
   "blogList": [
     {
       "title": "Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
       "date": "October 16, 2020",
       "url": "https://www.techrepublic.com/article/googles-kelsey-hightower-offers-tips-on-how-to-centralize-and-evolve-it-practices/",
-      "image": ""
+      "image": "/images/blog/femaleengineer-istock-1146417905-metamorworks.jpg"
     },
     {
       "title": "Podcast: The Business of Cloud Native with Emily Omier and Nithya Ruff",
