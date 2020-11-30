@@ -28,16 +28,14 @@ const ArticleList = ({ content }) => {
     const backgroundImage = image ? `url(${process.env.ASSET_PREFIX}${image})` : `linear-gradient(0deg, #${intToRGB(hashCode(title))}ee 0%, #${intToRGB(hashCode(title))}aa 100%), url("${process.env.ASSET_PREFIX}/images/blog/_default-blog001.jpg")`;
 
     return (
-      <article className={article} key={`articles${date}`}>
-        <a className={articleLink} href={url}>
-          <div className={articleImage} style={{ backgroundImage }} />
-          <div className={articleMessage}>
-            <h3 className={articleTitle}>{title}</h3>
-            <p className={articleDate}>{date}</p>
-            {author && <p className={articleAuthor}>by {author}</p>}
-            {description && <p className={articleAuthor}>{description}</p>}
-          </div>
-        </a>
+      <article className={article} key={`articles${title}`}>
+        <div className={articleImage} style={{ backgroundImage }} />
+        <div className={articleMessage}>
+          <h3 className={articleTitle}><a className={articleLink} href={url}>{title}</a></h3>
+          <p className={articleDate}>{date}</p>
+          {author && <p className={articleAuthor}>by {author}</p>}
+          {description && <p className={articleAuthor}>{description}</p>}
+        </div>
       </article>
     );
   });

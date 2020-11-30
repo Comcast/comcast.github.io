@@ -51,17 +51,17 @@
 }
 
 .cta:after {
-	content: "\E900";
-	display: inline-block;
-	font-family: comcorp-icons !important;
-	font-size: 1.75em;
-	margin-left: .5rem;
-	transform: translate(0, .25em);
-	transition: transform 0.2s ease-out;
+  content: "\E900";
+  display: inline-block;
+  font-family: comcorp-icons !important;
+  font-size: 1.75em;
+  margin-left: .5rem;
+  transform: translate(0, .25em);
+  transition: transform 0.2s ease-out;
 }
 
 .cta:hover:after,
 .cta:focus:after {
-	outline: 0px solid #fff0;
-	transform: translate(1.125rem, .25em);
+  outline: 0px solid #fff0;
+  transform: translate(1.125rem, .25em);
 }

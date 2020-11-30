@@ -1,30 +1,77 @@
 {
   "title": "Projects",
+  "overview": "Projects, projects, projects! Projects.",
   "description": "Our open source projects, to go into a filter: Backend, Big Data, Frontend, Hardware, Infrastructure, Android, System Tools, Testing, Video, XMiDT, etc.",
-  "projects": [
-    {
-      "title": "Trickster",
-      "date": "Mar 29, 2018",
-      "url": "https://github.com/tricksterproxy/trickster",
-      "image": "/images/projects/_trickster.jpg"
-    },
-    {
-      "title": "Kuberhealthy",
-      "date": "Jun 19, 2018",
-      "url": "https://github.com/Comcast/kuberhealthy",
-      "image": "/images/projects/_kuberhealthy.jpg"
-    },
-    {
-      "title": "Vinyl DNS",
-      "date": "Aug 13, 2018",
-      "url": "https://www.vinyldns.io/",
-      "image": "/images/projects/_vinyl-dns.jpg"
-    },
-    {
-      "title": "Traffic Control",
-      "date": "Jun 30, 2016",
-      "url": "https://trafficcontrol.incubator.apache.org/",
-      "image": "/images/projects/_traffic_control.jpg"
-    }
-  ]
+  "projects": {
+    "title": "Projects List",
+    "description": "",
+    "featuredTitle": "Featured Projects",
+    "featuredDescription": "",
+    "list": [
+      {
+        "title": "Bynar",
+        "date": "Mar 29, 2018",
+        "description": "Bynar is an open source system for automating server maintenance across the datacenter. Bynar builds upon many years of experience automating the drudgery of server repair. The goal is to have the datacenter maintain itself.",
+        "url":"https://github.com/Comcast/Bynar",
+        "image": "/images/projects/_trickster.jpg",
+        "category": "Infrastructure"
+      },
+      {
+        "title": "Capsule",
+        "date": "Mar 29, 2018",
+        "description": "Capsule is a framework for network function development. Written in Rust, inspired by NetBricks and built on Intel's Data Plane Development Kit.",
+        "url":"https://github.com/capsule-rs/capsule",
+        "image": "/images/projects/_capsule.svg",
+        "category": "Back-end"
+      },
+      {
+        "title": "SpeedtestJS",
+        "date": "Mar 29, 2018",
+        "description": "SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.",
+        "url":"https://github.com/Comcast/Speed-testJS",
+        "image": "/images/projects/_trickster.jpg",
+        "category": "Front-end"
+      },
+      {
+        "title": "RDK on Raspberry Pi",
+        "date": "Mar 29, 2018",
+        "description": "Documentation for running RDK profiles ( Video, broadband, Camera ) on Raspberrypi boards.",
+        "url":"https://github.com/Comcast/rdk-on-raspberrypi",
+        "image": "/images/projects/_trickster.jpg",
+        "category": "Hardware"
+      },
+      {
+        "title": "Trickster",
+        "date": "Mar 29, 2018",
+        "description": "A dashboard accelerator for Prometheus. Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.",
+        "url":"https://github.com/tricksterproxy/trickster",
+        "image": "/images/projects/_trickster.svg",
+        "category": "Infrastructure"
+      },
+      {
+        "title": "Kuberhealthy",
+        "date": "Jun 19, 2018",
+        "description": "Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely. Kuberhealthy performs synthetic tests from within Kubernetes clusters in order to catch issues that would otherwise go unnoticed.",
+        "url":"https://github.com/Comcast/kuberhealthy",
+        "image": "/images/projects/_kuberhealthy.jpg",
+        "category": "Testing"
+      },
+      {
+        "title": "Vinyl DNS",
+        "date": "Aug 13, 2018",
+        "description": "Making DNS self-service safe, secure, and convenient. VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration across all of your DNS servers.",
+        "url":"https://www.vinyldns.io/",
+        "image": "/images/projects/_vinyldns.svg",
+        "category": "Infrastructure"
+      },
+      {
+        "title": "Traffic Control",
+        "date": "Jun 30, 2016",
+        "description": "Traffic Control is a caching server control plane application used to aggregate caching servers into a Content Delivery Network (CDN). The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.",
+        "url":"https://trafficcontrol.incubator.apache.org/",
+        "image": "/images/projects/_traffic_control.svg",
+        "category": "Infrastructure"
+      }
+    ]
+}
 }

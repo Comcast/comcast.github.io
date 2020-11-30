@@ -1,0 +1,52 @@
+.figure {
+  margin: 0;
+  padding: 1rem .5rem 2rem;
+  text-align: center;
+  width: 31%;
+}
+
+.number {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.caption {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.yellowColor {
+  color: rgba(253,185,19,1);
+}
+.orangeColor {
+  color: rgba(243,112,33,1);
+}
+.redColor {
+  color: rgba(180,40,70,1) ;
+}
+.purpleColor {
+  color: rgba(100,95,170,1);
+}
+.blueColor {
+  color: rgba(0,137,207,1);
+}
+.greenColor {
+  color: rgba(13,177,75,1);
+}
+.blackColor {
+  color: rgba(0,0,0,1);
+}
+.mineshaftColor {
+  color: rgba(37,37,37,1);
+}
+.carbonColor {
+  color: rgba(132,132,132,1);
+}
+.mercuryColor {
+  color: rgba(233,233,233,1);
+}
+.whiteColor {
+  color: rgba(255,255,255,1);
+}
+

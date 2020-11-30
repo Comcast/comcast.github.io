@@ -37,6 +37,7 @@ module.exports = {
         'process.env.ASSET_PREFIX': JSON.stringify(assetPrefix),
       }),
     );
+    config.resolve.modules.push(__dirname);
     config.module.rules.push({
       test: /\.svg$/,
       use: [

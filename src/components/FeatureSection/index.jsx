@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import { backgroundColor } from 'src/shared/backgroundColors';
 
 import {
   featureSection,
@@ -13,6 +14,7 @@ import {
 const Header = ({
   title,
   description,
+  color,
   image,
   alt,
   link,
@@ -22,7 +24,7 @@ const Header = ({
   const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
 
   return (
-    <section className={featureSection}>
+    <section className={`${featureSection} ${backgroundColor(color)}`}>
       <div className={featureIntro}>
         {title && <h3 className={featureTitle}>{title}</h3>}
         {image && <img className={featureImage} src={`${process.env.ASSET_PREFIX}${image}`} alt={alt} />}
@@ -48,6 +50,7 @@ export default Header;
 Header.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
+  color: PropTypes.string,
   image: PropTypes.string,
   alt: PropTypes.string,
   link: PropTypes.string,

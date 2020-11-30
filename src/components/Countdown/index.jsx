@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Icon from '../Icon';
+import Icon from 'src/components/Icon';
 
 import {
   countdown as countdownStyle,

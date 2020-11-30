@@ -1,41 +1,42 @@
 .article {
-	border-bottom: .05rem solid #ccc;
+  border-bottom: .05rem solid #ccc;
+  display: flex;
+  overflow: hidden;
 }
 
 .article:first-child {
-	border-top: .05rem solid #ccc;
+  border-top: .05rem solid #ccc;
 }
 
 .articleLink {
-	display: flex;
-	color: #000;
-	overflow: hidden;
+  color: #0089cf;
 }
 
 .articleLink:hover,
 .articleLink:focus {
-	color: #666;
-	text-decoration: none;
+  color: #666;
+  text-decoration: none;
 }
 
 a.articleLink:hover .articleTitle,
 a.articleLink:focus .articleTitle {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .articleTitle {
-	font-weight: 300;
+  font-weight: 400;
 }
 
 .articleMessage {
-	width: 66%;
+  width: 66%;
 }
 
 .articleImage {
-	display: block;
-	background-position: center;
-	background-size: cover;
-	height: 10rem;
-	margin: 1rem 2rem 1rem 0;
-	width: 10rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 9rem;
+  margin: 1rem 2rem 1rem 0;
+  width: 15rem;
 }

@@ -1,0 +1,76 @@
+.project {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 4vh;
+  padding: 1rem;
+  text-align: center;
+  width: 31%;
+}
+
+.title {
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.description {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.numbers {
+  display: flex;
+  margin-top: auto;
+}
+
+.number {
+  font-size: 2rem;
+  font-weight: 700;
+  width: 49%;
+}
+
+.number > img {
+  vertical-align: baseline;
+}
+
+.date {
+  font-size: .8rem;
+  margin: 0;
+}
+
+.yellowColor {
+  color: rgba(253,185,19,1);
+}
+.orangeColor {
+  color: rgba(243,112,33,1);
+}
+.redColor {
+  color: rgba(180,40,70,1) ;
+}
+.purpleColor {
+  color: rgba(100,95,170,1);
+}
+.blueColor {
+  color: rgba(0,137,207,1);
+}
+.greenColor {
+  color: rgba(13,177,75,1);
+}
+.blackColor {
+  color: rgba(0,0,0,1);
+}
+.mineshaftColor {
+  color: rgba(37,37,37,1);
+}
+.carbonColor {
+  color: rgba(132,132,132,1);
+}
+.mercuryColor {
+  color: rgba(233,233,233,1);
+}
+.whiteColor {
+  color: rgba(255,255,255,1);
+}

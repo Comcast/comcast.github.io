@@ -1,42 +1,42 @@
 .event {
-	border-bottom: .05rem solid #ccc;
-	padding: 2rem 0 3rem;
+  border-bottom: .05rem solid #ccc;
+  padding: 2rem 0 3rem;
 }
 
 .event:first-child {
-	border-top: .05rem solid #ccc;
+  border-top: .05rem solid #ccc;
 }
 
 .link {
-	color: #000;
-	overflow: hidden;
+  color: #000;
+  overflow: hidden;
 }
 
 .link:hover,
 .link:focus {
-	color: #666;
-	text-decoration: none;
+  color: #666;
+  text-decoration: none;
 }
 
 a.link:hover .eventTitle,
 a.link:focus .eventTitle {
-	text-decoration: underline;
+  text-decoration: underline;
 }
 
 .eventTitle {
-	font-size: 2rem;
-	font-weight: 400;
-	margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
 }
 .eventDate {
-	margin: 0 0 1rem;
+  margin: 0 0 1rem;
 }
 .location {
-	padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 .eventImage {
-	float: left;
-	height: 10rem;
-	width: 10rem;
+  float: left;
+  height: 10rem;
+  width: 10rem;
 }

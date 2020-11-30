@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import Icon from '../Icon';
+import Icon from 'src/components/Icon';
 
 import {
   cta,
