@@ -15,8 +15,8 @@ const ProjectMost = ({
 }) => (
   <article className={project}>
     <figure className={content}>
-      {stars && <div className={number}>{stars}<img height="32" width="32" src="/images/star.svg" alt="stargazers" /></div>}
-      {forks && <div className={number}>{forks}<img height="32" width="32" src="/images/fork.svg" alt="forks" /></div>}
+      {stars && <div className={number}>{stars}<img height="32" width="32" src={`${process.env.ASSET_PREFIX}/images/star.svg`} alt="stargazers" /></div>}
+      {forks && <div className={number}>{forks}<img height="32" width="32" src={`${process.env.ASSET_PREFIX}/images/fork.svg`} alt="forks" /></div>}
       <figcaption className={titleStyle}><a href={url}>{title}</a></figcaption>
     </figure>
   </article>
