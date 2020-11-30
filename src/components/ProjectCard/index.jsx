@@ -25,8 +25,8 @@ const ProjectCard = ({
     <p className={descriptionStyle}>{description || 'An Open Source project from Comcast.'}</p>
     <div>
       <div className={`${numbers} ${textColor(color)}`}>
-        {stars >= 0 && <div className={number}>{stars}<img height="24" width="24" src="/images/star.svg" alt="stargazers" /></div>}
-        {forks >= 0 && <div className={number}>{forks}<img height="24" width="24" src="/images/fork.svg" alt="forks" /></div>}
+        {stars >= 0 && <div className={number}>{stars}<img height="24" width="24" src={`${process.env.ASSET_PREFIX}/images/star.svg`} alt="stargazers" /></div>}
+        {forks >= 0 && <div className={number}>{forks}<img height="24" width="24" src={`${process.env.ASSET_PREFIX}/images/fork.svg`} alt="forks" /></div>}
       </div>
       {created && <p className={date}>created on: {created}</p>}
       {updated && <p className={date}>updated on: {updated}</p>}
