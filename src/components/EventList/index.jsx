@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import Countdown from '../Countdown';
+import Countdown from 'src/components/Countdown';
 
 import {
   eventList,

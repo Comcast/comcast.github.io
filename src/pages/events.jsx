@@ -1,8 +1,7 @@
 import Head from 'next/head';
-
-import Header from '../components/Header';
-import Layout from '../components/Layout';
-import EventList from '../components/EventList';
+import Header from 'src/components/Header';
+import Layout from 'src/components/Layout';
+import EventList from 'src/components/EventList';
 import {
   title,
   overview,
@@ -10,12 +9,12 @@ import {
   upcomingTitle,
   pastTitle,
   eventList,
-} from '../data/events.json';
+} from 'src/data/events.json';
 
 const Events = () => (
   <>
     <Head>
-      <title>{title}</title>
+      <title>{title} of Open Source Software at Comcast</title>
       <meta property="og:title" content={title} key="title" />
     </Head>
     <Layout>
@@ -35,7 +34,7 @@ const Events = () => (
         <h2>{pastTitle}</h2>
         <EventList content={eventList
           .filter((a) => new Date(a.end) <= Date.parse(new Date()))
-          .sort((a, b) => new Date(a.end) - new Date(b.end))}
+          .sort((a, b) => new Date(b.end) - new Date(a.end))}
         />
       </section>
     </Layout>

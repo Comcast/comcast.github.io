@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-import { layout } from './style.module.css';
 // import { Head } from 'next/document';
-import Nav from '../Nav';
-import data from '../../data/_global.json';
+import Nav from 'src/components/Nav';
+import data from 'src/data/_global.json';
+import { layout } from './style.module.css';
 
 const Layout = ({ children }) => (
   <>

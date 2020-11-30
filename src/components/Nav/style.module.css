@@ -5,28 +5,28 @@
 }
 
 @media (max-width: 960px) {
-	.nav > ul {
-		background-color: #1e1f20;
+  .nav > ul {
+    background-color: #1e1f20;
     color: #fff;
-		display: block;
-		display: none;
-		font-size: 1.25rem;
-		height: 100vh;
-		margin: 0;
-		position: fixed;
-		top: 0;
-		width: 100vw;
+    display: block;
+    display: none;
+    font-size: 1.25rem;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
     left: 0;
     padding: 3rem 0 0 0;
     z-index: 1000;
-	}
-	.nav > .navigation__button {
-		display: block;
-	}
-	.nav > .navigation__close {
-		display: block;
-	}
-	.nav li a {
-    color: #fff;		
-	}
+  }
+  .nav > .navigation__button {
+    display: block;
+  }
+  .nav > .navigation__close {
+    display: block;
+  }
+  .nav li a {
+    color: #fff;    
+  }
 };

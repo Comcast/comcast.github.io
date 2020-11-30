@@ -1,6 +1,4 @@
 .featureSection {
-  background-color: #252525;
-  background-color: #0089cf;
   color: #fff;
   display: flex;
   /* margin-bottom: 4rem; */
@@ -76,6 +74,40 @@
 .more:hover,
 .more:focus {
   color: #ccc;
-	outline: 0px solid #fff0;
+  outline: 0px solid #fff0;
   text-decoration: none;
+}
+
+.yellowBg {
+  background-color: rgba(253,185,19,1);
+}
+.orangeBg {
+  background-color: rgba(243,112,33,1);
+}
+.redBg {
+  background-color: rgba(180,40,70,1) ;
+}
+.purpleBg {
+  background-color: rgba(100,95,170,1);
+}
+.blueBg {
+  background-color: rgba(0,137,207,1);
+}
+.greenBg {
+  background-color: rgba(13,177,75,1);
+}
+.blackBg {
+  background-color: rgba(0,0,0,1);
+}
+.mineshaftBg {
+  background-color: rgba(37,37,37,1);
+}
+.carbonBg {
+  background-color: rgba(132,132,132,1);
+}
+.mercuryBg {
+  background-color: rgba(233,233,233,1);
+}
+.whiteBg {
+  background-color: rgba(255,255,255,1);
 }

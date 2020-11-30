@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import Layout from '../components/Layout';
-import Header from '../components/Header';
-import ArticleList from '../components/ArticleList';
+import Layout from 'src/components/Layout';
+import Header from 'src/components/Header';
+import ArticleList from 'src/components/ArticleList';
 import {
   title,
   overview,
   description,
   blogTitle,
   blogList,
-} from '../data/blog.json';
+} from 'src/data/blog.json';
 
 const Blog = () => (
   <>

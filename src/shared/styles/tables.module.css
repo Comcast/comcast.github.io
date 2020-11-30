@@ -1,0 +1,19 @@
+.dataTable {
+  border-collapse: collapse;
+  font-size: .8rem;
+}
+
+.dataTable tr {
+  border-top: 1px solid #848484;
+}
+
+.dataTable tr:last-of-type {
+  border-bottom: 1px solid #848484;
+}
+
+.dataTable th,
+.dataTable td {
+  padding: 1rem .5rem;
+  text-align: left;
+  vertical-align: top;
+}
