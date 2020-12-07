@@ -1,0 +1,7 @@
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem 0;
+  width: 100%;
+}

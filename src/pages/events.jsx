@@ -6,6 +6,7 @@ import {
   title,
   overview,
   description,
+  featuredImage,
   upcomingTitle,
   pastTitle,
   eventList,
@@ -18,7 +19,7 @@ const Events = () => (
       <meta property="og:title" content={title} key="title" />
     </Head>
     <Layout>
-      <Header title={title} />
+      <Header title={title} image={featuredImage} />
       <section>
         {overview && <p className="overview">{overview}</p>}
         {description && <p>{description}</p>}
