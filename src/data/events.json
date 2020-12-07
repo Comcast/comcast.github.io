@@ -1,7 +1,8 @@
 {
   "title": "Events",
   "overview": "Upcoming events, conferences.",
-  "description": "Upcoming events, conferences.",
+  "description": "Comcast CEO Brian Roberts speaking with Steven Spielberg in the CTC?! When did this happen and why wasn't I invited?",
+  "featuredImage": "/images/jumbotron/comcast_talks_spielberg.jpg",
   "upcomingTitle": "Upcoming Events",
   "pastTitle": "Past Events",
   "eventList": [

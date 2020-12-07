@@ -6,6 +6,7 @@ import Atom from './Atom';
 import Avatar from './Avatar';
 import BarGraph from './BarGraph';
 import Calendar from './Calendar';
+import Chip from './Chip';
 import Messages from './Messages';
 import People from './People';
 import Question from './Question';
@@ -24,6 +25,9 @@ const Icon = ({ type = 'question', color = 'blue' }) => {
       break;
     case 'calendar':
       iconComponent = <Calendar />;
+      break;
+    case 'chip':
+      iconComponent = <Chip />;
       break;
     case 'messages':
       iconComponent = <Messages />;

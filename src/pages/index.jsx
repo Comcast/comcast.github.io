@@ -103,7 +103,7 @@ const Home = ({ comcastGithubIo, error }) => {
         </>
       );
     }
-    if (hoursAgo >= 1) {
+    if (hoursAgo >= 24) {
       time = Math.floor(hoursAgo / 24);
       return <><strong>{time}</strong> day{plural(time)} ago</>;
     }
@@ -158,14 +158,14 @@ const Home = ({ comcastGithubIo, error }) => {
             </div>
             <div className="bug">
               <h3>Tags</h3>
-              <p>comcast, css, floss, hacktoberfest, html, js, open-source, portal</p>
+              <p>{comcastGithubIo.repositoryTopics.edges.map((topic, index) => (`${topic.node.topic.name}${index < comcastGithubIo.repositoryTopics.edges.length - 1 ? ', ' : ''}`))}</p>
             </div>
           </FeatureSection>
         </section>
         <section>
           <h2 id="projects">{projects.title}</h2>
           {projects.feature && <Carousel items={projects.feature} />}
-          <Cta type="atom" color="yellow" label={projects.cta.label} url={projects.cta.url} />
+          <Cta type="chip" color="yellow" label={projects.cta.label} url={projects.cta.url} />
           <hr className="rainbowSegment" />
         </section>
 
