@@ -7,9 +7,13 @@
   border-top: .05rem solid #ccc;
 }
 
+.event header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .link {
-  color: #000;
-  overflow: hidden;
+  color: #645faa;
 }
 
 .link:hover,
@@ -28,11 +32,26 @@ a.link:focus .eventTitle {
   font-weight: 400;
   margin: 0;
 }
+
 .eventDate {
   margin: 0 0 1rem;
 }
+
 .location {
   padding-left: 1rem;
+}
+
+.daysAway {
+  font-weight: 300;
+  text-align: center;
+  width: 25%;
+}
+
+.daysAway > strong {
+  color: #645faa;
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .eventImage {

@@ -1,8 +1,9 @@
 .header {
-  background: #0089cf;
+  border-bottom-style: solid;
+  border-bottom-width: .5rem;
+  color: #fff;
   margin: -2rem -3rem 3rem;
   padding: 3rem;
-  color: #fff;
   margin-right: calc(50% - 50vw);
   margin-left: calc(50% - 50vw);
   max-width: 100vw;
@@ -10,12 +11,11 @@
 }
 
 .header.featuredImage {
-  background: #0089cf;
+  color: #fff;
   height: 29rem;
   overflow: hidden;
   padding: 3rem;
   position: relative;
-  color: #fff;
 }
 
 .header.featuredImage .content {

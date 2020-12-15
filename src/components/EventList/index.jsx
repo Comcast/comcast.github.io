@@ -9,6 +9,7 @@ import {
   link,
   eventDescription,
   eventDate,
+  daysAway,
   location as locationStyle,
 } from './style.module.css';
 
@@ -36,6 +37,8 @@ const EventList = ({ content }) => {
     end,
     url,
   }) => {
+    const now = Date.parse(new Date());
+    const until = Date.parse(start);
     const first = new Date(start);
     const last = new Date(end);
     const beginString = dateString(
@@ -57,12 +60,20 @@ const EventList = ({ content }) => {
     return (
       <article className={event} key={`events${title}`}>
         <div className={eventInfo}>
-          <a className={link} href={url}>
-            <h3 className={eventTitle}>{title}</h3>
-          </a>
-          <p className={eventDate}>{beginString} {place(location)}</p>
+          <header>
+            <div>
+              <h3 className={eventTitle}><a className={link} href={url}>{title}</a></h3>
+              <p className={eventDate}>{beginString} {place(location)}</p>
+            </div>
+            {((until - now) / 1000 / 60 / 60 / 24) > 90
+              && (
+                <div className={daysAway}>
+                  <strong>{Math.round(((until - now) / 1000 / 60 / 60 / 24))}</strong> days away
+                </div>
+              )}
+          </header>
           <p className={eventDescription}>{description}</p>
-          <Countdown start={start} end={end} />
+          {((until - now) / 1000 / 60 / 60 / 24) < 90 && <Countdown start={start} end={end} />}
         </div>
       </article>
     );

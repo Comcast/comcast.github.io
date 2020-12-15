@@ -35,7 +35,7 @@
       "id" : 4,
       "title" : "Careers at Comcast",
       "description": "At Comcast, we are always looking for new talent to join our diverse and growing teams. [What tech could I work on at Comcast?: Machine Learning for proactive customer support! VR in X1 consoles! Assistive Technologies on Xfinity! Internal education opportunies: Labweek, Knowledgefest, and Comcast University]",
-      "image": "/images/brand_photos/comcast001.jpg",
+      "image": "/images/jumbotron/careers_comcast001.jpg",
       "cta": {
         "url": "https://jobs.comcast.com/",
         "lead": "Create the future with us at ",
@@ -43,92 +43,54 @@
       }
     }
   ],
-  "projects": {
+  "projectsSection": {
     "title": "Featured Projects",
+    "blurb": "We should say something about our featured projects.",
     "cta": {
       "label": "Browse through the Comcast Open Source Projects",
       "url": "/projects"
-    },
-    "feature": [
-      {
-        "id" : 1,
-        "title" : "Kuberhealthy",
-        "description": "Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely.",
-        "image": "/images/carousel/_kuberhealthy.jpg",
-        "cta": {
-          "url": "https://github.com/Comcast/kuberhealthy",
-          "lead": "Find out more at the ",
-          "label": "Kuberhealthy code repository"
-        }
-      },
-      {
-        "id" : 2,
-        "title" : "Trickster",
-        "description": "Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.",
-        "image": "/images/carousel/_trickster.jpg",
-        "cta": {
-          "url": "https://github.com/Comcast/trickster/",
-          "lead": "Find out more at the ",
-          "label": "Trickster code repository"
-        }
-      },
-      {
-        "id" : 3,
-        "title" : "VinylDNS",
-        "description": "VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration across all of your DNS servers.",
-        "image": "/images/carousel/_vinyl-dns.jpg",
-        "cta": {
-          "url": "https://vinyldns.io/",
-          "lead": "Find out more at the ",
-          "label": "VinylDNS code repository"
-        }
-      },
-      {
-        "id" : 4,
-        "title" : "Traffic Control",
-        "description": "Traffic Control is an Open Source implementation of a Content Delivery Network (CDN). Originally developed by Comcast, it was released as a Comcast Open Source software in April 2015. In late 2016, Comcast was honored to have Traffic Control accepted by the Apache Software Foundation and renamed to Apache Traffic Control. It is now a Top-Level Project with the Apache Software Foundation.",
-        "image": "/images/carousel/_traffic_control.jpg",
-        "cta": {
-          "url": "https://trafficcontrol.incubator.apache.org/",
-          "lead": "",
-          "label": "Traffic Control is available at Apache"
-        }
-      }
-    ]
+    }
   },
-  "people": {
+  "peopleSection": {
     "title": "Featured People",
-    "blurb": "Our people who speak on the subject of Open Source and Open Source technologies. Experts, mentors, and community leaders.",
+    "blurb": "Our people who speak on the subject of Open Source and Open Source technologies. Experts, mentors, and community leaders. Come see their latest talks in our quarterly virtual conference digest.",
     "cta": {
       "label": "Meet our people",
       "url": "/people"
     },
     "feature": ""
   },
-  "community": {
+  "communitySection": {
     "title": "Community Involvement",
-    "blurb": "Catch up with us — at events, online, and on social media — to ask us about what we’re doing to support the Open Source community.",
+    "blurb": "Catch up with us — at events, online, and on social media — to ask us about what we’re doing to support the Open Source community. Or, get involved on one of our Open Source projects.",
     "cta": {
       "label": "Check out our contributions to the Open Source community",
       "url": "/community"
     },
-    "feature": ""
+    "feature": {
+      "title": "Affiliates",
+      "description": "Comcast is proud to support a variety of organizations in the Open Source community.",
+      "color": "blue",
+      "link": {
+        "label": "View the complete list of Open Source affiliates",
+        "url": "/community#affiliates"
+      }
+    }
   },
-  "events": {
+  "eventsSection": {
     "title": "Upcoming Events",
     "blurb": "Upcoming Open Source events and events where we’ll be discussing Open Source technologies, standards, and the philosophy of Open Source.",
     "cta": {
       "label": "See the entire list of Events",
       "url": "/events"
-    },
-    "feature": ""
+    }
   },
-  "blog": {
+  "blogSection": {
     "title": "Latest Blog Posts",
     "cta": {
       "label": "Read the Comcast Open Source Blog posts",
       "url": "/blog"
     },
-    "feature": ""
+    "featureCount": 3
   }
 }
