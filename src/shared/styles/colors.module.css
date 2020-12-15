@@ -32,7 +32,6 @@
   color: rgba(255,255,255,1);
 }
 
-
 .yellowBg {
   background-color: rgba(253,185,19,1);
 }
@@ -65,4 +64,38 @@
 }
 .whiteBg {
   background-color: rgba(255,255,255,1);
+}
+
+.yellowBorder {
+  border-color: rgba(253,185,19,1);
+}
+.orangeBorder {
+  border-color: rgba(243,112,33,1);
+}
+.redBorder {
+  border-color: rgba(180,40,70,1);
+}
+.purpleBorder {
+  border-color: rgba(100,95,170,1);
+}
+.blueBorder {
+  border-color: rgba(0,137,207,1);
+}
+.greenBorder {
+  border-color: rgba(13,177,75,1);
+}
+.blackBorder {
+  border-color: rgba(0,0,0,1);
+}
+.mineshaftBorder {
+  border-color: rgba(37,37,37,1);
+}
+.carbonBorder {
+  border-color: rgba(132,132,132,1);
+}
+.mercuryBorder {
+  border-color: rgba(233,233,233,1);
+}
+.whiteBorder {
+  border-color: rgba(255,255,255,1);
 }

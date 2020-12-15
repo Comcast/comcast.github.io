@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Brittany Istenes",
+    "title": "Delivery and Community Program Manager for Open Source Software",
+    "image": "/images/people/profiles/50678820.png",
+    "bio": "???",
+    "connect": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/BrittanyIstenes"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/brittany-istenes-91b902152/"
+      }
+    ]
+  },
+  {
+    "name": "Nithya Ruff",
+    "title": "Executive Director, Open Source Program Office, Comcast",
+    "image": "",
+    "bio": "???",
+    "connect": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/nruff"},
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/nithyaruff/"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://twitter.com/nithyaruff"
+      },
+      {
+        "name": "Website",
+        "link": "http://www.behindthetech.org/nithya-ruff"
+      }
+    ]
+  },
+  {
+    "name": "Shilla Saebi",
+    "title": "Open Source Program Manager",
+    "image": "",
+    "bio": "???",
+    "connect": [
+      {
+        "name": "GitHub",
+        "link": "https://github.com/shillasaebi"
+      },
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/shilla-saebi-9a589633/"
+      }
+    ]
+  },
+  {
+    "name": "Sumayyah Ahmed",
+    "title": "Android Engineer",
+    "bio": "???",
+    "connect": [
+      {
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/sumayyah-ahmed"
+      }
+    ]
+  }
+]

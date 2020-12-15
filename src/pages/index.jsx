@@ -5,9 +5,8 @@ import { GraphQLClient, gql } from 'graphql-request';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import Jumbotron from 'src/components/Jumbotron';
+import TabList from 'src/components/TabList';
 import Cta from 'src/components/Cta';
-import Carousel from 'src/components/Carousel';
-import SuperButton from 'src/components/SuperButton';
 import ArticleList from 'src/components/ArticleList';
 import EventList from 'src/components/EventList';
 import FeatureSection from 'src/components/FeatureSection';
@@ -16,14 +15,16 @@ import {
   overview,
   description,
   jumbotron,
-  projects,
-  people,
-  community,
-  events,
-  blog,
+  projectsSection,
+  peopleSection,
+  communitySection,
+  eventsSection,
+  blogSection,
 } from '../data/home.json';
 import { eventList } from '../data/events.json';
+import { affiliates } from '../data/community.json';
 import { blogList } from '../data/blog.json';
+import { projects } from '../data/projects.json';
 
 const API_ENDPOINT = 'https://api.github.com/graphql';
 
@@ -45,10 +46,9 @@ export async function getStaticProps() {
       licenseInfo {
         name
       }
-      # REQUIRES ADDITIONAL PERMISSIONS
-      # collaborators {
-      #   totalCount
-      # }
+      mentionableUsers{
+        totalCount
+      }
       commit: object(expression:"main") {
         ... on Commit {
           history {
@@ -141,8 +141,12 @@ const Home = ({ comcastGithubIo, error }) => {
               <p>last updated</p>
             </div>
             <div className="bug">
-              <h3><strong>42</strong></h3>
-              <p>contributors</p>
+              <h3>
+                <strong>
+                  {comcastGithubIo.mentionableUsers.totalCount}
+                </strong>
+              </h3>
+              <p>users involved</p>
             </div>
             <div className="bug">
               <h3><strong>{comcastGithubIo.commit.history.totalCount}</strong></h3>
@@ -154,7 +158,7 @@ const Home = ({ comcastGithubIo, error }) => {
             </div>
             <div className="bug">
               <h3>{comcastGithubIo.licenseInfo.name}</h3>
-              <p>license</p>
+              <p />
             </div>
             <div className="bug">
               <h3>Tags</h3>
@@ -162,54 +166,54 @@ const Home = ({ comcastGithubIo, error }) => {
             </div>
           </FeatureSection>
         </section>
-        <section>
-          <h2 id="projects">{projects.title}</h2>
-          {projects.feature && <Carousel items={projects.feature} />}
-          <Cta type="chip" color="yellow" label={projects.cta.label} url={projects.cta.url} />
+        <section className="repo">
+          <h2 id="projects">{projectsSection.title}</h2>
+          <TabList items={projects.featuredProjects.list
+            .sort((a, b) => new Date(a.date) - new Date(b.date))}
+          />
+          <Cta type="chip" color="yellow" label={projectsSection.cta.label} url={projectsSection.cta.url} />
           <hr className="rainbowSegment" />
         </section>
-
-        <SuperButton title="Kuberhealthy" image={`${process.env.ASSET_PREFIX}/images/carousel/_kuberhealthy.jpg`} />
-        <SuperButton title="Trickster" image={`${process.env.ASSET_PREFIX}/images/carousel/_trickster.jpg`} />
-        <SuperButton title="Vinyl DNS" image={`${process.env.ASSET_PREFIX}/images/carousel/_vinyl-dns.jpg`} />
-        <SuperButton title="Traffic Control" image={`${process.env.ASSET_PREFIX}/images/carousel/_traffic_control.jpg`} />
-
         <section>
-          <h2 id="people">{people.title}</h2>
-          {people.blurb && <p>{people.blurb}</p>}
-          {people.feature && '[PeopleCarousel?]'}
-          <Cta type="avatar" color="orange" label={people.cta.label} url={people.cta.url} />
+          <h2 id="people">{peopleSection.title}</h2>
+          {peopleSection.blurb && <p>{peopleSection.blurb}</p>}
+          <Cta type="avatar" color="orange" label={peopleSection.cta.label} url={peopleSection.cta.url} />
         </section>
         <section>
-          <h2 id="community">{community.title}</h2>
-          {community.blurb && <p>{community.blurb}</p>}
-          {community.feature && '[CommunityFeature? Video?]'}
-          <Cta type="people" color="red" label={community.cta.label} url={community.cta.url} />
-          <FeatureSection title="Affiliates" description="Comcast is proud to support a variety of organizations in the Open Source community." color="blue" link="View the complete list of Open Source affiliates" url="/community#affiliates">
-            <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/apache.svg`} alt="" /><p><a href="https://www.apache.org/">Apache</a></p></div>
-            <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/cloud_foundry.svg`} alt="" /><p><a href="https://www.cloudfoundry.org/">Cloud Foundry</a></p></div>
-            <div className="{item}"><img src={`${process.env.ASSET_PREFIX}/images/affiliates/cncf.svg`} alt="" /><p><a href="https://www.cncf.io/">Cloud Native Computing Foundation</a></p></div>
+          <h2 id="community">{communitySection.title}</h2>
+          {communitySection.blurb && <p>{communitySection.blurb}</p>}
+          <div style={{ padding: '4rem', backgroundColor: '#ccc' }}>[Get Involved? CommunityFeature? Video?]</div>
+          <Cta type="people" color="red" label={communitySection.cta.label} url={communitySection.cta.url} />
+          <FeatureSection
+            title={communitySection.feature.title}
+            description={communitySection.feature.description}
+            color={communitySection.feature.color}
+            link={communitySection.feature.link.label}
+            url={communitySection.feature.link.url}
+          >
+            {affiliates.list
+              .slice(0, 3)
+              .map((item) => <div className="{item}"><img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" /><p><a href={item.url}>{item.title}</a></p></div>)}
           </FeatureSection>
         </section>
         <section>
-          <h2 id="events">{events.title}</h2>
-          {events.blurb && <p>{events.blurb}</p>}
+          <h2 id="events">{eventsSection.title}</h2>
+          {eventsSection.blurb && <p>{eventsSection.blurb}</p>}
           <EventList content={eventList
             .filter((a) => new Date(a.end) >= Date.parse(new Date()))
             .sort((a, b) => new Date(a.end) - new Date(b.end))
             .slice(0, 1)}
           />
-          {events.feature && '[Calendar]'}
-          <Cta type="calendar" color="purple" label={events.cta.label} url={events.cta.url} />
+          <Cta type="calendar" color="purple" label={eventsSection.cta.label} url={eventsSection.cta.url} />
         </section>
         <section>
-          <h2 id="posts">{blog.title}</h2>
-          {blog.blurb && <p>{blog.blurb}</p>}
+          <h2 id="posts">{blogSection.title}</h2>
+          {blogSection.blurb && <p>{blogSection.blurb}</p>}
           <ArticleList content={blogList
             .sort((a, b) => new Date(b.date) - new Date(a.date))
-            .slice(0, 3)}
+            .slice(0, blogSection.featureCount)}
           />
-          <Cta type="messages" color="blue" label={blog.cta.label} url={blog.cta.url} />
+          <Cta type="messages" color="blue" label={blogSection.cta.label} url={blogSection.cta.url} />
         </section>
       </Layout>
     </>

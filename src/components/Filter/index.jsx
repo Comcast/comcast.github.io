@@ -10,7 +10,7 @@ const Filter = ({
   data,
   itemType,
   categoryTitle,
-  categoryList,
+  categoryList = [],
   currentPage,
   onPageSelect,
   onSelect,
@@ -21,13 +21,15 @@ const Filter = ({
       <label htmlFor="projectSearch">Search {itemType[1].charAt(0).toUpperCase() + itemType[1].slice(1)}</label>
       <input id="projectSearch" type="text" placeholder="search term" onChange={(e) => onSearch(e)} />
     </div>
-    <div>
-      <label htmlFor="categorySelect">Select Category</label>
-      <select id="categorySelect" onChange={(e) => onSelect(e)}>
-        <option value="">All {categoryTitle}</option>
-        {categoryList.map((lang) => <option value={lang.toLowerCase()}>{lang}</option>)}
-      </select>
-    </div>
+    {!!categoryList.length && (
+      <div>
+        <label htmlFor="categorySelect">Select Category</label>
+        <select id="categorySelect" onChange={(e) => onSelect(e)}>
+          <option value="">All {categoryTitle}</option>
+          {categoryList.map((lang) => <option value={lang.toLowerCase()}>{lang}</option>)}
+        </select>
+      </div>
+    )}
     <Pagination
       itemType={itemType}
       count={data.length}
@@ -42,7 +44,7 @@ export default Filter;
 Filter.propTypes = {
   data: PropTypes.arrayOf.isRequired,
   categoryTitle: PropTypes.string.isRequired,
-  categoryList: PropTypes.arrayOf.isRequired,
+  categoryList: PropTypes.arrayOf,
   itemType: PropTypes.arrayOf.isRequired,
   currentPage: PropTypes.number.isRequired,
   onPageSelect: PropTypes.func.isRequired,

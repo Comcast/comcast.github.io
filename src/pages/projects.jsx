@@ -10,14 +10,15 @@ import ProjectCard from 'src/components/ProjectCard';
 import ProjectMost from 'src/components/ProjectMost';
 import Cta from 'src/components/Cta';
 // import Loader from 'src/components/Loader';
+import TabList from 'src/components/TabList';
 import Filter from 'src/components/Filter';
 import DataTable from 'src/components/DataTable';
-import ArticleList from 'src/components/ArticleList';
 import {
   title,
   overview,
   description,
   featuredImage,
+  color,
   projects,
 } from 'src/data/projects.json';
 
@@ -99,6 +100,10 @@ export async function getStaticProps() {
       #   }
       # }
     }
+    # repo call first: 1-100
+    # repo call last: 106-206
+    # repo call middle: 90-190
+    #   Then merge/remove duplicates into allRepos
     allRepos: search(query: "user:Comcast archived:false", type: REPOSITORY, first: 94) {
       edges {
         node {
@@ -252,15 +257,29 @@ const Projects = ({
         <meta property="og:title" content={title} key="title" />
       </Head>
       <Layout>
-        <Header title={title} image={featuredImage} />
+        <Header title={title} image={featuredImage} color={color} />
         <section>
           {overview && <p className="overview">{overview}</p>}
           {description && <p>{description}</p>}
         </section>
+        <section className="repo">
+          <h2>Overall Statistics</h2>
+          <div>
+            <p>as of {staticToday}</p>
+            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+              <NumberFigure color="yellow" number={totalRepos} caption="Total Public Repos" />
+              <NumberFigure color="green" number={totalSourceRepos} caption="Total Source Repos" />
+              <NumberFigure color="blue" number={totalForkedRepos} caption="Total Forked Repos" />
+              <NumberFigure color="purple" number={totalMembers} caption="Total Members" />
+            </div>
+          </div>
+          <Cta type="atom" color="yellow" label="View All Comcast Repos on GitHub" url="https://github.com/Comcast/" />
+        </section>
+        <hr className="rainbowSegment" />
         <section>
-          <h2>{projects.featuredTitle}</h2>
-          {projects.featuredDescription && <p>{projects.featuredDescription}</p>}
-          <ArticleList content={projects.list
+          <h2>{projects.featuredProjects.title}</h2>
+          {projects.featuredDescription && <p>{projects.featuredProjects.description}</p>}
+          <TabList items={projects.featuredProjects.list
             .sort((a, b) => new Date(a.date) - new Date(b.date))}
           />
         </section>
@@ -282,20 +301,6 @@ const Projects = ({
         </section>
         <section className="repo">
           <h2>Project Statistics</h2>
-          <div>
-            <h4>Overall Stats</h4>
-            <p>as of {staticToday}</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <NumberFigure color="yellow" number={totalRepos} caption="Total Public Repos" />
-              <NumberFigure color="green" number={totalSourceRepos} caption="Total Source Repos" />
-              <NumberFigure color="blue" number={totalForkedRepos} caption="Total Forked Repos" />
-              <NumberFigure color="purple" number={totalMembers} caption="Total Members" />
-            </div>
-          </div>
-          <Cta type="atom" color="yellow" label="View All Comcast Repos on GitHub" url="https://github.com/Comcast/" />
-        </section>
-        <hr className="rainbowSegment" />
-        <section className="repo">
           <div>
             <h4>Most Starred</h4>
             <p>as of {staticToday}</p>

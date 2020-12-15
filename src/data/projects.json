@@ -1,78 +1,141 @@
 {
   "title": "Projects",
-  "overview": "Projects, projects, projects! Projects.",
-  "description": "Our open source projects, to go into a filter: Backend, Big Data, Frontend, Hardware, Infrastructure, Android, System Tools, Testing, Video, XMiDT, etc.",
-  "featuredImage": "/images/jumbotron/comcast_opensource_project_screen.jpg",
+  "overview": "Our open source projects ...",
+  "description": "If you see a project that you would like to contribute to then go to our community page to learn how to get involved.",
+  "featuredImage": "/images/projects/featured.jpg",
+  "color": "orange",
   "projects": {
     "title": "Projects List",
     "description": "",
-    "featuredTitle": "Featured Projects",
-    "featuredDescription": "",
-    "list": [
-      {
-        "title": "Bynar",
-        "date": "Mar 29, 2018",
-        "description": "Bynar is an open source system for automating server maintenance across the datacenter. Bynar builds upon many years of experience automating the drudgery of server repair. The goal is to have the datacenter maintain itself.",
-        "url":"https://github.com/Comcast/Bynar",
-        "image": "/images/projects/_trickster.jpg",
-        "category": "Infrastructure"
-      },
-      {
-        "title": "Capsule",
-        "date": "Mar 29, 2018",
-        "description": "Capsule is a framework for network function development. Written in Rust, inspired by NetBricks and built on Intel's Data Plane Development Kit.",
-        "url":"https://github.com/capsule-rs/capsule",
-        "image": "/images/projects/_capsule.svg",
-        "category": "Back-end"
-      },
-      {
-        "title": "SpeedtestJS",
-        "date": "Mar 29, 2018",
-        "description": "SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.",
-        "url":"https://github.com/Comcast/Speed-testJS",
-        "image": "/images/projects/_trickster.jpg",
-        "category": "Front-end"
-      },
-      {
-        "title": "RDK on Raspberry Pi",
-        "date": "Mar 29, 2018",
-        "description": "Documentation for running RDK profiles ( Video, broadband, Camera ) on Raspberrypi boards.",
-        "url":"https://github.com/Comcast/rdk-on-raspberrypi",
-        "image": "/images/projects/_trickster.jpg",
-        "category": "Hardware"
-      },
-      {
-        "title": "Trickster",
-        "date": "Mar 29, 2018",
-        "description": "A dashboard accelerator for Prometheus. Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.",
-        "url":"https://github.com/tricksterproxy/trickster",
-        "image": "/images/projects/_trickster.svg",
-        "category": "Infrastructure"
-      },
-      {
-        "title": "Kuberhealthy",
-        "date": "Jun 19, 2018",
-        "description": "Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely. Kuberhealthy performs synthetic tests from within Kubernetes clusters in order to catch issues that would otherwise go unnoticed.",
-        "url":"https://github.com/Comcast/kuberhealthy",
-        "image": "/images/projects/_kuberhealthy.jpg",
-        "category": "Testing"
-      },
-      {
-        "title": "Vinyl DNS",
-        "date": "Aug 13, 2018",
-        "description": "Making DNS self-service safe, secure, and convenient. VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration across all of your DNS servers.",
-        "url":"https://www.vinyldns.io/",
-        "image": "/images/projects/_vinyldns.svg",
-        "category": "Infrastructure"
-      },
-      {
-        "title": "Traffic Control",
-        "date": "Jun 30, 2016",
-        "description": "Traffic Control is a caching server control plane application used to aggregate caching servers into a Content Delivery Network (CDN). The CDN caching software chosen for Traffic Control is Apache Traffic Server (ATS). Although the current release only supports ATS as a cache, this may change with future releases.",
-        "url":"https://trafficcontrol.incubator.apache.org/",
-        "image": "/images/projects/_traffic_control.svg",
-        "category": "Infrastructure"
-      }
-    ]
-}
+    "featuredProjects": {
+      "title": "Featured Projects",
+      "description": "",
+      "categories": [
+        "Backend",
+        "Big Data",
+        "Frontend",
+        "Hardware",
+        "Infrastructure",
+        "Android",
+        "System Tools",
+        "Testing",
+        "Video",
+        "XMiDT"
+      ],
+      "list": [
+        {
+          "title": "Bynar",
+          "date": "Mar 29, 2018",
+          "description": "Bynar is an open source system for automating server maintenance across the datacenter. Bynar builds upon many years of experience automating the drudgery of server repair. The goal is to have the datacenter maintain itself.",
+          "url":"https://github.com/Comcast/Bynar",
+          "image": "/images/projects/carousel/logos/bynar_mark.svg",
+          "poster": "/images/projects/carousel/poster/vinyl-dns.jpg",
+          "category": "Infrastructure",
+          "cta": {
+            "url": "https://github.com/Comcast/Bynar",
+            "lead": "Find out more at the ",
+            "label": "Kuberhealthy code repository"
+          }
+        },
+        {
+          "title": "Capsule",
+          "date": "Mar 29, 2018",
+          "description": "Capsule is a framework for network function development. Written in Rust, inspired by NetBricks and built on Intel's Data Plane Development Kit.",
+          "url":"https://github.com/capsule-rs/capsule",
+          "image": "/images/projects/carousel/logos/capsule_mark.svg",
+          "poster": "/images/projects/carousel/poster/vinyl-dns.jpg",
+          "category": "Back-end",
+          "cta": {
+            "url": "https://github.com/capsule-rs/capsule",
+            "lead": "Find out more at the ",
+            "label": "Capsule code repository"
+          }
+        },
+        {
+          "title": "SpeedtestJS",
+          "date": "Mar 29, 2018",
+          "description": "SpeedtestJS is a JavaScript based speed test providing users with an enriched view of their Internet speed. We developed and open sourced SpeedTestJS to create a benchmark solution that would be transparent, independent and used and contributed by many.",
+          "url":"https://github.com/Comcast/Speed-testJS",
+          "image": "/images/projects/carousel/logos/speedtest_mark.svg",
+          "poster": "/images/projects/carousel/poster/vinyl-dns.jpg",
+          "category": "Front-end",
+          "cta": {
+            "url": "https://github.com/Comcast/Speed-testJS",
+            "lead": "Find out more at the ",
+            "label": "SpeedtestJS code repository"
+          }
+        },
+        {
+          "title": "RDK on Raspberry Pi",
+          "date": "Mar 29, 2018",
+          "description": "Documentation for running RDK profiles ( Video, broadband, Camera ) on Raspberrypi boards.",
+          "url":"https://github.com/Comcast/rdk-on-raspberrypi",
+          "image": "/images/projects/carousel/logos/rdk_mark.svg",
+          "poster": "/images/projects/carousel/poster/vinyl-dns.jpg",
+          "category": "Hardware",
+          "cta": {
+            "url": "https://github.com/Comcast/rdk-on-raspberrypi",
+            "lead": "Find out more at the ",
+            "label": "RDK on Raspberry Pi code repository"
+          }
+        },
+        {
+          "title": "Trickster",
+          "date": "Mar 29, 2018",
+          "description": "A dashboard accelerator for Prometheus. Trickster is a reverse proxy cache for the Prometheus HTTP APIv1 that dramatically accelerates dashboard rendering times for any series queried from Prometheus.",
+          "url":"https://github.com/tricksterproxy/trickster",
+          "image": "/images/projects/carousel/logos/trickster_mark.svg",
+          "poster": "/images/projects/carousel/poster/trickster.jpg",
+          "category": "Infrastructure",
+          "cta": {
+            "url": "https://github.com/tricksterproxy/trickster",
+            "lead": "Find out more at the ",
+            "label": "Trickster code repository"
+          }
+        },
+        {
+          "title": "Kuberhealthy",
+          "date": "Jun 19, 2018",
+          "description": "Easy synthetic testing for Kubernetes clusters. Supplements other solutions like Prometheus nicely. Kuberhealthy performs synthetic tests from within Kubernetes clusters in order to catch issues that would otherwise go unnoticed.",
+          "url":"https://github.com/Comcast/kuberhealthy",
+          "image": "/images/projects/carousel/logos/kuberhealthy_mark.svg",
+          "poster": "/images/projects/carousel/poster/kuberhealthy.jpg",
+          "category": "Testing",
+          "cta": {
+            "url": "https://github.com/Comcast/kuberhealthy",
+            "lead": "Find out more at the ",
+            "label": "Kuberhealthy code repository"
+          }
+        },
+        {
+          "title": "Vinyl DNS",
+          "date": "Aug 13, 2018",
+          "description": "Making DNS self-service safe, secure, and convenient. VinylDNS is a vendor-agnostic frontend for enabling self-service and enhancing administration across all of your DNS servers.",
+          "url":"https://www.vinyldns.io/",
+          "image": "/images/projects/carousel/logos/vinyldns_mark.svg",
+          "poster": "/images/projects/carousel/poster/vinyl-dns.jpg",
+          "category": "Infrastructure",
+          "cta": {
+            "url": "https://www.vinyldns.io/",
+            "lead": "Find out more at the ",
+            "label": "Vinyl DNS code repository"
+          }
+        },
+        {
+          "title": "Traffic Control",
+          "date": "Jun 30, 2016",
+          "description": "Traffic Control is an Open Source implementation of a Content Delivery Network (CDN). Originally developed by Comcast, it was released as a Comcast Open Source software in April 2015. In late 2016, Comcast was honored to have Traffic Control accepted by the Apache Software Foundation and renamed to Apache Traffic Control. It is now a Top-Level Project with the Apache Software Foundation.",
+          "url":"https://trafficcontrol.incubator.apache.org/",
+          "image": "/images/projects/carousel/logos/traffic_control_mark.svg",
+          "poster": "/images/projects/carousel/poster/traffic_control.jpg",
+          "category": "Infrastructure",
+          "cta": {
+            "url": "https://trafficcontrol.incubator.apache.org/",
+            "lead": "Find out more at the ",
+            "label": "Traffic Control code repository"
+          }
+        }
+      ]
+    }
+  }
 }

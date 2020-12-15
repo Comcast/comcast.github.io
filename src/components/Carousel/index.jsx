@@ -43,7 +43,7 @@ const Carousel = ({ items }) => {
     const display = (i === current ? 'block' : 'none');
 
     return (
-      <figure className={carouselItem} key={`carousel${item.id}`} style={{ display, backgroundImage }}>
+      <figure className={carouselItem} key={`carousel_${item.name}`} style={{ display, backgroundImage }}>
         <p className={carouselCount}>{i + 1} / {items.length}</p>
         <div className={carouselText}>
           <h3>{item.title}</h3>
@@ -55,11 +55,11 @@ const Carousel = ({ items }) => {
   });
 
   return (
-    <div className={carousel}>
+    <article className={carousel}>
       <button type="button" className={next} onClick={nextSlide}>&#10095;</button>
       {listItems}
       <button type="button" className={prev} onClick={prevSlide}>&#10094;</button>
-    </div>
+    </article>
   );
 };
 

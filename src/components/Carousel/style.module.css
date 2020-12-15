@@ -1,6 +1,6 @@
 .carousel {
   display: block;
-  margin: 0 auto;
+  margin: 2rem auto .5rem;
   padding: 0;
   position: relative;
 }

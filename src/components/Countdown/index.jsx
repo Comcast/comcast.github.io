@@ -29,7 +29,6 @@ const Countdown = ({ start, end }) => {
     if (getTimeLeft(s).total >= 0 && getTimeLeft(e).total >= 0) {
       string = (
         <>
-          <Icon type="calendar" color="purple" />
           <span className={column}><strong>{getTimeLeft(s).days}</strong> days</span>
           <span className={column}><strong>{getTimeLeft(s).hours}</strong> hours</span>
           <span className={column}><strong>{getTimeLeft(s).minutes}</strong> minutes</span>

@@ -38,12 +38,12 @@
   padding: .1rem .5rem .25rem;
 }
 
-.page:hover {
+button.page:hover {
   cursor: pointer;
   border-bottom: .15rem solid #ccc;
 }
 
-.page:focus {
+button.page:focus {
   border-bottom: .15rem solid #f37021;
   outline: none;
 }

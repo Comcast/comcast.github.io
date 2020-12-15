@@ -1,42 +1,8 @@
-.article {
+.articleList > article {
   border-bottom: .05rem solid #ccc;
-  display: flex;
-  overflow: hidden;
+  padding: 2rem 0;
 }
 
-.article:first-child {
+.articleList > article:first-child {
   border-top: .05rem solid #ccc;
-}
-
-.articleLink {
-  color: #0089cf;
-}
-
-.articleLink:hover,
-.articleLink:focus {
-  color: #666;
-  text-decoration: none;
-}
-
-a.articleLink:hover .articleTitle,
-a.articleLink:focus .articleTitle {
-  text-decoration: underline;
-}
-
-.articleTitle {
-  font-weight: 400;
-}
-
-.articleMessage {
-  width: 66%;
-}
-
-.articleImage {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: block;
-  height: 9rem;
-  margin: 1rem 2rem 1rem 0;
-  width: 15rem;
 }
