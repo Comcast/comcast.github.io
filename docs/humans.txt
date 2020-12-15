@@ -18,8 +18,9 @@
 
 /* THANKS */
 		
-	Open Source Developers: You know who you are!
-	From: Everywhere!
+	Thanks to all the developers who continued to code under the most difficult of circumstances. 
+	
+	Dedicated to everyone who helped us get through 2020.
 
 /* SITE v2 */
 	Last update: 2020/10/31
