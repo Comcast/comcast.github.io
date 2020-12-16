@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-prop-types */
 import PropTypes from 'prop-types';
 import { GraphQLClient, gql } from 'graphql-request';
 // import useSWR from 'swr';
@@ -74,12 +73,12 @@ export async function getStaticProps() {
   return {
     props: {
       comcastGithubIo: data.repository,
-      error: data.error || '',
+      // error: data.error || '',
     },
   };
 }
 
-const Home = ({ comcastGithubIo, error }) => {
+const Home = ({ comcastGithubIo }) => {
   // const { data, data: repository, error } = useSWR(comcastGithubQuery, fetcher);
   const plural = (number) => (number > 1 ? 's' : '');
   const ago = (timestamp) => {
@@ -109,9 +108,9 @@ const Home = ({ comcastGithubIo, error }) => {
     }
     return <><strong>{hoursAgo}</strong> hour{plural(hoursAgo)} ago</>;
   };
-  if (error) {
-    return <p>ERROR</p>;
-  }
+  // if (error) {
+  //   return <p>ERROR</p>;
+  // }
   if (!comcastGithubIo) {
     return <p>Loading...</p>;
   }
@@ -120,9 +119,21 @@ const Home = ({ comcastGithubIo, error }) => {
     <>
       <Head>
         <title>{title}</title>
-        <meta property="og:title" content={title} key="title" />
-        <meta name="description" content={description} />
-        <meta property="og:image" content={`${process.env.ASSET_PREFIX}/comcast_open_source_profile.svg`} />
+        <meta name="description" content={overview || description} />
+        <meta rel="canonical" content="https://comcast.github.io/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://comcast.github.io/" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={overview || description} />
+        <meta property="og:image" content={`${process.env.ASSET_PREFIX}/images/favicon/android-chrome-512x512.png`} />
+
+        {/* <meta name="twitter:card" content="summary" /> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@comcast" />
+        <meta name="twitter:creator" content="@comcast" />
+        <meta name="twitter:image" content={`${process.env.ASSET_PREFIX}/images/favicon/android-chrome-512x512.png`} />
+        <meta name="twitter:image:alt" content={title} />
       </Head>
       <Layout>
         <Jumbotron items={jumbotron} />
@@ -193,7 +204,7 @@ const Home = ({ comcastGithubIo, error }) => {
           >
             {affiliates.list
               .slice(0, 3)
-              .map((item) => <div className="{item}"><img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" /><p><a href={item.url}>{item.title}</a></p></div>)}
+              .map((item) => <div className="{item}" key={item.url}><img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" /><p><a href={item.url}>{item.title}</a></p></div>)}
           </FeatureSection>
         </section>
         <section>
@@ -221,8 +232,28 @@ const Home = ({ comcastGithubIo, error }) => {
 };
 
 Home.propTypes = {
-  comcastGithubIo: PropTypes.object,
-  error: PropTypes.object,
+  comcastGithubIo: PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    updatedAt: PropTypes.string,
+    url: PropTypes.string,
+    licenseInfo: PropTypes.shape({ name: PropTypes.string }),
+    mentionableUsers: PropTypes.shape({ totalCount: PropTypes.number }),
+    commit: PropTypes.shape({
+      history: PropTypes.shape({
+        totalCount: PropTypes.number,
+      }),
+    }),
+    repositoryTopics: PropTypes.shape({
+      totalCount: PropTypes.number,
+      edges: PropTypes.arrayOf(PropTypes.shape({
+        node: PropTypes.shape({
+          topic: PropTypes.shape({ name: PropTypes.string }),
+        }),
+      })),
+    }),
+  }),
+  // error: PropTypes.object,
 };
 
 export default Home;

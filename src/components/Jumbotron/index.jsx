@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import { useState } from 'react';
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 
@@ -64,7 +65,7 @@ const Jumbotron = ({ items }) => {
       {item.image
         && (
           <div className={featuredImage}>
-            <img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" />
+            <Image src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
           </div>
         )}
     </article>
@@ -87,5 +88,10 @@ const Jumbotron = ({ items }) => {
 export default Jumbotron;
 
 Jumbotron.propTypes = {
-  items: PropTypes.arrayOf.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  })).isRequired,
 };

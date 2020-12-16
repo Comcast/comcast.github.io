@@ -1,6 +1,6 @@
 .tab {
   display: flex;
-  height: 25rem;
+  height: 30rem;
   margin: 2rem -3rem 3rem;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
@@ -114,6 +114,8 @@
   right: 3rem;
   position: absolute;
   top: 3rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 .cta {

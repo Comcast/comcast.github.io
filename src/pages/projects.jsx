@@ -1,4 +1,3 @@
-/* eslint-disable react/forbid-prop-types */
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { GraphQLClient, gql } from 'graphql-request';
@@ -49,20 +48,6 @@ export async function getStaticProps() {
       members: membersWithRole(first: 1) {
         totalCount
       }
-      # repositories(first: 100, orderBy: {field: NAME, direction: ASC}) {
-      #   nodes {
-      #     ...repoInfo
-      #   }
-      #   pageInfo {
-      #     endCursor
-      #     hasNextPage
-      #   }
-      # }
-      # repositories(first: 100, after:100, orderBy: {field: NAME, direction: ASC}) {
-      #   nodes {
-      #     ...repoInfo
-      #   }
-      # }
       totalRepos: repositories(first: 6) {
         totalCount
       }
@@ -92,29 +77,12 @@ export async function getStaticProps() {
     }
     totalForkedRepos: search(query: "user:Comcast forks:>=1 archived:false", type: REPOSITORY, first: 1) {
       repositoryCount
-      # edges {
-      #   node {
-      #     ... on Repository {
-      #       name
-      #     }
-      #   }
-      # }
     }
-    # repo call first: 1-100
-    # repo call last: 106-206
-    # repo call middle: 90-190
-    #   Then merge/remove duplicates into allRepos
-    allRepos: search(query: "user:Comcast archived:false", type: REPOSITORY, first: 94) {
+    firstRepos: search(query: "user:Comcast archived:false ", type: REPOSITORY, first: 100) {
       edges {
         node {
           ... on Repository {
-            name
-            url
-            description
-            forkCount
-            stargazerCount
-            updatedAt
-            createdAt
+            ...repoInfo
             languages(first: 10) {
               edges {
                 node {
@@ -134,6 +102,39 @@ export async function getStaticProps() {
           }
         }
       }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
+    }
+    lastRepos: search(query: "user:Comcast archived:false", type: REPOSITORY, first: 100, after: "Y3Vyc29yOjEwMA==") {
+      edges {
+        node {
+          ... on Repository {
+            ...repoInfo
+            languages(first: 10) {
+              edges {
+                node {
+                  name
+                }
+              }
+            }
+            repositoryTopics(first: 20) {
+              edges {
+                node {
+                  topic {
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+        endCursor
+      }
     }
   }
   
@@ -150,11 +151,15 @@ export async function getStaticProps() {
 `;
 
   const data = await graphQLClient.request(query);
+  const allRepos = [
+    ...data.firstRepos.edges,
+    ...data.lastRepos.edges,
+  ];
 
   return {
     props: {
       staticToday: asOf(),
-      allRepos: data.allRepos.edges,
+      allRepos,
       totalRepos: data.organization.totalRepos.totalCount,
       totalSourceRepos: data.totalSourceRepos.repositoryCount,
       totalForkedRepos: data.totalForkedRepos.repositoryCount,
@@ -217,6 +222,7 @@ const Projects = ({
     .sort();
 
   const filteredList = allRepos
+    .filter((item) => (item.node.name !== '.github'))
     .filter((data) => {
       if (keyword && projectLanguage) {
         return data.node.languages.edges
@@ -254,7 +260,21 @@ const Projects = ({
     <>
       <Head>
         <title>Open Source Software {title} at Comcast</title>
-        <meta property="og:title" content={title} key="title" />
+        <meta name="description" content={overview || description} />
+        <meta rel="canonical" content="https://comcast.github.io/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://comcast.github.io/" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={overview || description} />
+        <meta property="og:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+
+        {/* <meta name="twitter:card" content="summary" /> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@comcast" />
+        <meta name="twitter:creator" content="@comcast" />
+        <meta name="twitter:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+        <meta name="twitter:image:alt" content={title} />
       </Head>
       <Layout>
         <Header title={title} image={featuredImage} color={color} />
@@ -274,8 +294,8 @@ const Projects = ({
             </div>
           </div>
           <Cta type="atom" color="yellow" label="View All Comcast Repos on GitHub" url="https://github.com/Comcast/" />
+          <hr className="rainbowSegment" />
         </section>
-        <hr className="rainbowSegment" />
         <section>
           <h2>{projects.featuredProjects.title}</h2>
           {projects.featuredDescription && <p>{projects.featuredProjects.description}</p>}
@@ -288,7 +308,7 @@ const Projects = ({
           {projects.description && <p>{projects.description}</p>}
           {/* <Loader title="Loading Projects..." loaded={false} /> */}
           <Filter
-            data={filteredList}
+            data={filteredList.filter(onlyUnique)}
             itemType={['project', 'projects']}
             categoryTitle="languages"
             categoryList={languageList}
@@ -306,7 +326,12 @@ const Projects = ({
             <p>as of {staticToday}</p>
           </div>
           {mostStarred.map((data) => (
-            <ProjectMost title={data.name} url={data.url} stars={data.stargazerCount} />
+            <ProjectMost
+              title={data.name}
+              url={data.url}
+              stars={data.stargazerCount}
+              key={`star_${data.name}`}
+            />
           ))}
         </section>
         <section className="repo">
@@ -315,7 +340,12 @@ const Projects = ({
             <p>as of {staticToday}</p>
           </div>
           {mostForked.map((data) => (
-            <ProjectMost title={data.name} url={data.url} forks={data.forkCount} />
+            <ProjectMost
+              title={data.name}
+              url={data.url}
+              forks={data.forkCount}
+              key={`fork_${data.name}`}
+            />
           ))}
         </section>
         <hr className="rainbowSegment" />
@@ -333,6 +363,7 @@ const Projects = ({
               forks={data.forkCount}
               stars={data.stargazerCount}
               created={formatDate(data.createdAt)}
+              key={`new_${data.name}`}
             />
           ))}
         </section>
@@ -350,6 +381,7 @@ const Projects = ({
               forks={data.forkCount}
               stars={data.stargazerCount}
               updated={formatDate(data.updatedAt)}
+              key={`updated_${data.name}`}
             />
           ))}
         </section>
@@ -360,15 +392,60 @@ const Projects = ({
 
 Projects.propTypes = {
   staticToday: PropTypes.string.isRequired,
-  allRepos: PropTypes.object,
-  newRepos: PropTypes.object,
-  updateRepos: PropTypes.object,
-  totalRepos: PropTypes.object,
-  totalForkedRepos: PropTypes.object,
-  totalSourceRepos: PropTypes.object,
-  totalMembers: PropTypes.object,
-  mostStarred: PropTypes.object,
-  mostForked: PropTypes.object,
+  allRepos: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    forkCount: PropTypes.number,
+    stargazerCount: PropTypes.number,
+    updatedAt: PropTypes.string,
+    createdAt: PropTypes.string,
+    isArchived: PropTypes.bool,
+  })),
+  newRepos: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    forkCount: PropTypes.number,
+    stargazerCount: PropTypes.number,
+    updatedAt: PropTypes.string,
+    createdAt: PropTypes.string,
+    isArchived: PropTypes.bool,
+  })),
+  updateRepos: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    forkCount: PropTypes.number,
+    stargazerCount: PropTypes.number,
+    updatedAt: PropTypes.string,
+    createdAt: PropTypes.string,
+    isArchived: PropTypes.bool,
+  })),
+  totalRepos: PropTypes.number,
+  totalForkedRepos: PropTypes.number,
+  totalSourceRepos: PropTypes.number,
+  totalMembers: PropTypes.number,
+  mostStarred: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    forkCount: PropTypes.number,
+    stargazerCount: PropTypes.number,
+    updatedAt: PropTypes.string,
+    createdAt: PropTypes.string,
+    isArchived: PropTypes.bool,
+  })),
+  mostForked: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    description: PropTypes.string,
+    url: PropTypes.string,
+    forkCount: PropTypes.number,
+    stargazerCount: PropTypes.number,
+    updatedAt: PropTypes.string,
+    createdAt: PropTypes.string,
+    isArchived: PropTypes.bool,
+  })),
 };
 
 export default Projects;

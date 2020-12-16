@@ -46,4 +46,5 @@ a.articleLink:focus .articleTitle {
   height: 9rem;
   margin: 0 2rem 1rem 0;
   width: 15rem;
+  position: relative;
 }

@@ -68,12 +68,6 @@ const TabList = ({ items }) => {
         <p className={cardDescription}>{item.description}</p>
         {item.cta && <p className="cardCta">{item.cta.lead}<Link href={updateUrl(item.cta.url)}><a href={updateUrl(item.cta.url)} className={cta}>{item.cta.label}</a></Link></p>}
       </div>
-      {/* {item.image
-        && (
-          <div className={featuredImage}>
-            <img src={`${process.env.ASSET_PREFIX}${item.poster}`} alt="" />
-          </div>
-        )} */}
     </article>
   ));
 
@@ -92,5 +86,9 @@ const TabList = ({ items }) => {
 export default TabList;
 
 TabList.propTypes = {
-  items: PropTypes.arrayOf.isRequired,
+  items: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    image: PropTypes.string.isRequired,
+  })).isRequired,
 };

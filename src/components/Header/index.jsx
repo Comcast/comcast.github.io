@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { backgroundColor } from 'src/shared/backgroundColors';
 import { borderColor } from 'src/shared/borderColors';
@@ -16,7 +17,7 @@ const Header = ({ title, image, color }) => (
     </section>
     {image && (
     <section className={imageStyle}>
-      <img src={`${process.env.ASSET_PREFIX}${image}`} alt="" />
+      <Image src={`${process.env.ASSET_PREFIX}${image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
     </section>
     )}
   </header>

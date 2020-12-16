@@ -89,5 +89,17 @@ const EventList = ({ content }) => {
 export default EventList;
 
 EventList.propTypes = {
-  content: PropTypes.arrayOf.isRequired,
+  content: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    location: PropTypes.shape({
+      online: PropTypes.bool,
+      city: PropTypes.string,
+      state: PropTypes.string,
+      country: PropTypes.string,
+    }).isRequired,
+    start: PropTypes.string.isRequired,
+    end: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired,
+  })).isRequired,
 };

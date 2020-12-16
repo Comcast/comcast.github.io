@@ -29,7 +29,7 @@ const Profile = ({ person, defaultImage }) => {
       <h4 className={title}>{person.name}</h4>
       <p className={description}>{person.title}</p>
       <div className={socialLinks}>
-        {person.connect?.map((social) => <a href={social.link} title={`${social.name}: ${person.name}`}><span className="vh">{person.name} at {social.name}</span></a>)}
+        {person.connect?.map((social) => <a href={social.link} title={`${social.name}: ${person.name}`} key={`${person.name}_${social.name}`}><span className="vh">{person.name} at {social.name}</span></a>)}
       </div>
     </article>
   )
@@ -38,6 +38,15 @@ const Profile = ({ person, defaultImage }) => {
 export default Profile;
 
 Profile.propTypes = {
-  person: PropTypes.arrayOf.isRequired,
+  person: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    image: PropTypes.string,
+    bio: PropTypes.string,
+    connect: PropTypes.arrayOf(PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+    })),
+  }).isRequired,
   defaultImage: PropTypes.string,
 };
