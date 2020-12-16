@@ -1,0 +1,28 @@
+.document {
+  padding: 3rem;
+  background-color: #f4f4f4;
+  border-left-style: solid;
+  border-left-width: .2rem;
+}
+
+.document > h3:first-child {
+  margin-top: 0;
+}
+
+.document h4 {
+  margin-top: 3rem;
+}
+
+.document ol,
+.document ul {
+  margin-bottom: 2rem;
+}
+
+.document li {
+  margin-bottom: 1rem;
+}
+
+.document a {
+  color: #0089cf;
+  font-weight: 400;
+}

@@ -1,8 +1,11 @@
+import PropTypes from 'prop-types';
 import Head from 'next/head';
 import Layout from 'src/components/Layout';
 import Header from 'src/components/Header';
 import Cta from 'src/components/Cta';
 import ArticleList from 'src/components/ArticleList';
+import Document from 'src/components/Document';
+import { getDoc } from 'src/shared/getDoc';
 import {
   title,
   featuredImage,
@@ -15,7 +18,19 @@ import {
   affiliates,
 } from 'src/data/community.json';
 
-const Community = () => (
+export async function getStaticProps() {
+  const contributeMarkdown = `##${getDoc('CONTRIBUTING.md').replace(/## /gi, '#### ')} \n&mdash; Source: [CONTRIBUTING.md](https://github.com/Comcast/Comcast.github.io/blob/main/CONTRIBUTING.md)`;
+  const conductMarkdown = `##${getDoc('CODE_OF_CONDUCT.md').replace(/## /gi, '#### ')} \n&mdash; Source: [CODE_OF_CONDUCT.md](https://github.com/Comcast/Comcast.github.io/blob/main/CODE_OF_CONDUCT.md)`;
+
+  return {
+    props: {
+      contributeMarkdown,
+      conductMarkdown,
+    },
+  };
+}
+
+const Community = ({ contributeMarkdown, conductMarkdown }) => (
   <>
     <Head>
       <title>{title} of Open Source Software at Comcast</title>
@@ -44,9 +59,7 @@ const Community = () => (
       <section>
         <h2 id="involvement">{involvement.title}</h2>
         {involvement.description && <p>{involvement.description}</p>}
-        <div style={{ padding: '3rem', backgroundColor: '#ccc' }}>
-          CONTRIBUTING.md
-        </div>
+        <Document file={contributeMarkdown} color="orange" />
       </section>
       <section>
         <h2 id="grants">{grants.title}</h2>
@@ -80,12 +93,15 @@ const Community = () => (
       </section>
       <section>
         <h2 id="code-of-conduct">Code of Conduct</h2>
-        <div style={{ padding: '3rem', backgroundColor: '#ccc' }}>
-          CODE_OF_CONDUCT.md
-        </div>
+        <Document file={conductMarkdown} color="blue" />
       </section>
     </Layout>
   </>
 );
+
+Community.propTypes = {
+  contributeMarkdown: PropTypes.string.isRequired,
+  conductMarkdown: PropTypes.string.isRequired,
+};
 
 export default Community;

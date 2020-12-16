@@ -26,6 +26,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-markdown": "^5.0.3",
     "swr": "^0.3.9",
     "webpack": "^4.20.2"
   },
