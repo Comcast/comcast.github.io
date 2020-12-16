@@ -26,7 +26,7 @@ const DataTable = ({ data }) => (
     <tbody>
       {
         data.map((row) => (
-          <tr>
+          <tr key={`updated_${row.node.name}`}>
             <th>
               <p><a href={row.node.url}>{row.node.name}</a></p>
               <p style={{ fontSize: '.9rem', fontWeight: 300, marginBottom: 0 }}>updated: {formatDate(row.node.updatedAt)}</p>
@@ -49,5 +49,32 @@ const DataTable = ({ data }) => (
 export default DataTable;
 
 DataTable.propTypes = {
-  data: PropTypes.arrayOf.isRequired,
+  data: PropTypes.arrayOf(PropTypes.shape({
+    node: PropTypes.shape({
+      createdAt: PropTypes.string,
+      description: PropTypes.string,
+      forkCount: PropTypes.number,
+      isArchived: PropTypes.bool,
+      languages: PropTypes.shape({
+        edges: PropTypes.arrayOf(PropTypes.shape({
+          node: PropTypes.shape({
+            name: PropTypes.string,
+          }),
+        })),
+      }),
+      name: PropTypes.string,
+      repositoryTopics: PropTypes.shape({
+        edges: PropTypes.arrayOf(PropTypes.shape({
+          node: PropTypes.shape({
+            topic: PropTypes.shape({
+              name: PropTypes.string,
+            }),
+          }),
+        })),
+      }),
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      url: PropTypes.string,
+    }),
+  })).isRequired,
 };

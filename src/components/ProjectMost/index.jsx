@@ -27,6 +27,6 @@ export default ProjectMost;
 ProjectMost.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
-  stars: PropTypes.string,
-  forks: PropTypes.string,
+  stars: PropTypes.number,
+  forks: PropTypes.number,
 };

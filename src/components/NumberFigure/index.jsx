@@ -22,6 +22,7 @@ const NumberFigure = ({
   number,
   color = 'red',
 }) => {
+  //ADD color function
   let newColor = blackColor;
   switch (color) {
     case 'yellow':
@@ -73,6 +74,6 @@ export default NumberFigure;
 
 NumberFigure.propTypes = {
   caption: PropTypes.string.isRequired,
-  number: PropTypes.string.isRequired,
+  number: PropTypes.number.isRequired,
   color: PropTypes.string,
 };

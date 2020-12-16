@@ -21,7 +21,7 @@ http://gun.io/blog/how-to-github-fork-branch-and-pull-request/
 
 ## Adding a New Project
 
-If your project already exists under the [Comcast](https://github.com/Comcast) GitHub organization, then there isn't anything that you need to do. Check our Projects page [projects list](https://github.com/Comcast/Comcast.github.io/projects#projects) to make sure you're listed. If your project is a Comcast project residing outside of the main organization, then you'll need to add the project to the additional projects list under `src/data/additional_projects.json`.
+If your project already exists under the [Comcast](https://github.com/Comcast) GitHub organization, then there isn't anything that you need to do. Check our Projects page [projects list](https://comcast.github.io/projects#projects) to make sure you're listed. If your project is a Comcast project residing outside of the main organization, then you'll need to add the project to the additional projects list under `src/data/additional_projects.json`.
 
 ## Contributor License Agreement
 

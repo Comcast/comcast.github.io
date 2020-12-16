@@ -41,8 +41,8 @@ ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
   url: PropTypes.string,
-  forks: PropTypes.string,
-  stars: PropTypes.string,
+  forks: PropTypes.number,
+  stars: PropTypes.number,
   created: PropTypes.string,
   updated: PropTypes.string,
 };

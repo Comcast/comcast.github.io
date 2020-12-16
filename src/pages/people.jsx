@@ -70,7 +70,21 @@ const People = () => {
     <>
       <Head>
         <title>{title} of Open Source Software at Comcast</title>
-        <meta property="og:title" content={title} key="title" />
+        <meta name="description" content={overview || description} />
+        <meta rel="canonical" content="https://comcast.github.io/" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://comcast.github.io/" />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={overview || description} />
+        <meta property="og:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+
+        {/* <meta name="twitter:card" content="summary" /> */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@comcast" />
+        <meta name="twitter:creator" content="@comcast" />
+        <meta name="twitter:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+        <meta name="twitter:image:alt" content={title} />
       </Head>
       <Layout>
         <Header title={title} image={featuredImage} color={color} />
@@ -86,8 +100,6 @@ const People = () => {
           <Filter
             data={filteredList}
             itemType={['talk', 'talks']}
-            // categoryTitle="languages"
-            // categoryList={languageList}
             currentPage={pageNumber}
             onPageSelect={onPageSelect}
             onSearch={articleSearch}

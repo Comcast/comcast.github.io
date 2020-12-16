@@ -19,14 +19,14 @@ const paginate = (currentPage, endPage, onPageSelect) => {
     || ((n > 4 && currentPage <= endPage - 5)
     && ((n + 1) % 5 === 0))
     || ((n >= currentPage + 2) && (n <= currentPage - 2))) {
-      pages.push(<span className={page}>&hellip;</span>);
+      pages.push(<span className={page} key={`span_${n}`}>&hellip;</span>);
     }
     if ((n === 0)
     || (n < 5 && currentPage < 3)
     || ((n <= currentPage + 2) && (n >= currentPage - 2))
     || ((n + 1) % 5 === 0)
     || (n > 4 && currentPage >= endPage - 4)) {
-      pages.push(<button type="button" onClick={(e) => onPageSelect(e)} value={n} key={`button${n}`} className={`${page} ${currentPage === n ? selected : null}`}>{n + 1}</button>);
+      pages.push(<button type="button" onClick={(e) => onPageSelect(e)} value={n} key={`button_${n}`} className={`${page} ${currentPage === n ? selected : null}`}>{n + 1}</button>);
     }
     n += 1;
   }
@@ -40,7 +40,7 @@ const Pagination = ({
   onPageSelect,
 }) => (
   <div className={pagination}>
-    <p className={repoCount}>{count} {count > 1 ? itemType[1] : itemType[0]}</p>
+    <p className={repoCount}>{count} {count === 1 ? itemType[0] : itemType[1]}</p>
     {count > 10 && (
       <p className={paginationButtons}>
         &larr;
@@ -55,7 +55,7 @@ const Pagination = ({
 export default Pagination;
 
 Pagination.propTypes = {
-  itemType: PropTypes.arrayOf.isRequired,
+  itemType: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   count: PropTypes.number.isRequired,
   currentPage: PropTypes.number.isRequired,
   onPageSelect: PropTypes.func.isRequired,

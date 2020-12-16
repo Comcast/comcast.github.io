@@ -23,6 +23,7 @@ const ArticleList = ({ content, defaultImage }) => (
         image={image}
         url={url}
         defaultImage={defaultImage}
+        key={url}
       />
     ))}
   </section>
@@ -31,6 +32,13 @@ const ArticleList = ({ content, defaultImage }) => (
 export default ArticleList;
 
 ArticleList.propTypes = {
-  content: PropTypes.arrayOf.isRequired,
+  content: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    author: PropTypes.string,
+    description: PropTypes.string,
+    date: PropTypes.string,
+    image: PropTypes.string,
+    url: PropTypes.string,
+  })).isRequired,
   defaultImage: PropTypes.string,
 };
