@@ -38,7 +38,7 @@ const ArticleItem = ({
   return (
     <article className={article} key={`articles${title}`}>
       <div className={articleImage} style={{ backgroundImage }}>
-        {image && <Image src={`${process.env.ASSET_PREFIX}${image}`} alt="" layout="fill" objectfit="cover" objectposition="center" loading="lazy" />}
+        {image && <img src={`${process.env.ASSET_PREFIX}${image}`} alt="" layout="fill" objectfit="cover" objectposition="center" loading="lazy" />}
       </div>
       <div className={articleMessage}>
         <h3 className={articleTitle}><a className={articleLink} href={url}>{title}</a></h3>

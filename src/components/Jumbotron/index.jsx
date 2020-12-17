@@ -65,7 +65,7 @@ const Jumbotron = ({ items }) => {
       {item.image
         && (
           <div className={featuredImage}>
-            <Image src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
+            <img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
           </div>
         )}
     </article>

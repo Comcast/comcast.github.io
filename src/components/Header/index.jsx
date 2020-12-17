@@ -17,7 +17,7 @@ const Header = ({ title, image, color }) => (
     </section>
     {image && (
     <section className={imageStyle}>
-      <Image src={`${process.env.ASSET_PREFIX}${image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
+      <img src={`${process.env.ASSET_PREFIX}${image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
     </section>
     )}
   </header>
