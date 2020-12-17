@@ -25,7 +25,7 @@ class MyDocument extends Document {
           <link rel="preload" as="font" href={`${process.env.ASSET_PREFIX}/fonts/brown/lineto-brown-thin.woff2`} type="font/woff2" crossOrigin="anonymous" />
           <link rel="preload" as="font" href={`${process.env.ASSET_PREFIX}/fonts/brown/lineto-brown-thinitalic.woff2`} type="font/woff2" crossOrigin="anonymous" />
 
-          <link rel="shortcut icon" href={`url('${process.env.ASSET_PREFIX}/favicon.ico')`} />
+          <link rel="shortcut icon" href={`${process.env.ASSET_PREFIX}/favicon.ico`} />
           <link rel="apple-touch-icon" sizes="180x180" href={`${process.env.ASSET_PREFIX}/images/favicon/apple-touch-icon.png`} />
           <link rel="manifest" href={`${process.env.ASSET_PREFIX}/site.webmanifest`} />
           <link rel="mask-icon" href={`${process.env.ASSET_PREFIX}/images/favicon/safari-pinned-tab.svg`} color="#5bbad5" />
