@@ -1,6 +1,7 @@
 {
     "name": "Comcast Open Source",
     "short_name": "Comcast Open Source",
+    "start_url": "/",
     "icons": [
         {
             "src": "/images/favicon/android-chrome-192x192.png",

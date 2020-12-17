@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-to-interactive-role */
 import { useState } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
 import { updateUrl } from 'src/shared/updateUrl';
