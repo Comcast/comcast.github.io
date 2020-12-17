@@ -19,8 +19,8 @@ import {
 } from 'src/data/community.json';
 
 export async function getStaticProps() {
-  const contributeMarkdown = `##${getDoc('CONTRIBUTING.md').replace(/## /gi, '#### ')} \n&mdash; Source: [CONTRIBUTING.md](https://github.com/Comcast/Comcast.github.io/blob/main/CONTRIBUTING.md)`;
-  const conductMarkdown = `##${getDoc('CODE_OF_CONDUCT.md').replace(/## /gi, '#### ')} \n&mdash; Source: [CODE_OF_CONDUCT.md](https://github.com/Comcast/Comcast.github.io/blob/main/CODE_OF_CONDUCT.md)`;
+  const contributeMarkdown = `##${getDoc('CONTRIBUTING.md').replace(/## /gi, '#### ')} \n---\n&mdash; Source: [CONTRIBUTING.md](https://github.com/Comcast/Comcast.github.io/blob/main/CONTRIBUTING.md)`;
+  const conductMarkdown = `##${getDoc('CODE_OF_CONDUCT.md').replace(/## /gi, '#### ')} \n---\n&mdash; Source: [CODE_OF_CONDUCT.md](https://github.com/Comcast/Comcast.github.io/blob/main/CODE_OF_CONDUCT.md)`;
 
   return {
     props: {

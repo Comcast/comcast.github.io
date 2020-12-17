@@ -43,7 +43,7 @@
 }
 
 .dataTable th a {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: rgba(100,95,170,1);
 }
 
@@ -53,13 +53,13 @@
 
 .dataTable tbody tr:nth-of-type(6n) {
   border-top: .15rem solid rgba(253,185,19,1);
-  border-top: .15rem solid#c28900; /* #c28900 */
+  border-top: .15rem solid rgba(194,139,19,1); /* a11y 3.0 */
 }
 .dataTable tbody tr:nth-of-type(6n-1) {
   border-top: .15rem solid rgba(243,112,33,1);
 }
 .dataTable tbody tr:nth-of-type(6n-2) {
-  border-top: .15rem solid rgba(180,40,70,1) ;
+  border-top: .15rem solid rgba(180,40,70,1);
 }
 .dataTable tbody tr:nth-of-type(6n-3) {
   border-top: .15rem solid rgba(100,95,170,1);
@@ -73,14 +73,14 @@
 
 .dataTable tbody tr:nth-of-type(6n) a {
   color: rgba(253,185,19,1);
-  color: #c28900; /* #c28900 */
+  color: rgba(194,139,19,1); /* a11y 3.0 */
 }
 .dataTable tbody tr:nth-of-type(6n-1) a {
   color: rgba(243,112,33,1);
-  color: #ee6e20; /* #ee6e20 */
+  color: rgba(240,110,33,1); /* a11y 3.0 */
 }
 .dataTable tbody tr:nth-of-type(6n-2) a {
-  color: rgba(180,40,70,1) ;
+  color: rgba(180,40,70,1);
 }
 .dataTable tbody tr:nth-of-type(6n-3) a {
   color: rgba(100,95,170,1);
@@ -90,5 +90,5 @@
 }
 .dataTable tbody tr:nth-of-type(6n-5) a {
   color: rgba(13,177,75,1);
-  color: #0daa48; /* #0daa48 */
+  color: rgba(13,171,75,1); /* a11y 3.0 */
 }

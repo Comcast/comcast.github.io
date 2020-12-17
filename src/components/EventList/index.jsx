@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Countdown from 'src/components/Countdown';
+import { dateSpan } from 'src/shared/dateSpan';
 
 import {
   eventList,
@@ -12,21 +13,6 @@ import {
   daysAway,
   location as locationStyle,
 } from './style.module.css';
-
-const monthLongName = ['January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'];
-const dateString = (firstDate, lastDate, firstMonth, lastMonth, firstYear, lastYear) => {
-  if (firstYear !== lastYear) {
-    return `${monthLongName[firstMonth]} ${firstDate}, ${firstYear}-${monthLongName[lastMonth]} ${lastDate}, ${lastYear}`;
-  }
-  if (firstMonth !== lastMonth) {
-    return `${monthLongName[firstMonth]} ${firstDate}-${monthLongName[lastMonth]} ${lastDate}, ${firstYear}`;
-  }
-  if (firstDate !== lastDate) {
-    return `${monthLongName[firstMonth]} ${firstDate}-${lastDate}, ${firstYear}`;
-  }
-  return `${monthLongName[firstMonth]} ${firstDate}, ${firstYear}`;
-};
 
 const EventList = ({ content }) => {
   const events = content.map(({
@@ -41,14 +27,7 @@ const EventList = ({ content }) => {
     const until = Date.parse(start);
     const first = new Date(start);
     const last = new Date(end);
-    const beginString = dateString(
-      first.getDate(),
-      last.getDate(),
-      first.getMonth(),
-      last.getMonth(),
-      first.getFullYear(),
-      last.getFullYear(),
-    );
+    const beginString = dateSpan(first, last);
 
     const locality = (l) => `${l.city}, ${l.state}, ${l.country}`;
 

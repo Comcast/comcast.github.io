@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { textColor } from 'src/shared/colors';
 import {
   project,

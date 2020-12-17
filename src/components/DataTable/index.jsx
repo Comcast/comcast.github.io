@@ -1,17 +1,9 @@
 import PropTypes from 'prop-types';
+import { formatDate } from 'src/shared/formatDate';
 
 import {
   dataTable,
 } from './style.module.css';
-
-//TODO move to shared functions
-const monthLongName = ['January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'];
-
-const formatDate = (timestamp) => {
-  const date = new Date(timestamp);
-  return `${monthLongName[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-};
 
 const DataTable = ({ data }) => (
   <table className={dataTable}>

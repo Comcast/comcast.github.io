@@ -3,6 +3,7 @@ import { useState } from 'react';
 import Image from 'next/image';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
+import { updateUrl } from 'src/shared/updateUrl';
 
 import {
   jumbotron,
@@ -35,8 +36,6 @@ const changeTab = (event) => {
 
 const Jumbotron = ({ items }) => {
   const [currentItem, setCurrentItem] = useState(1);
-
-  const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
 
   const tabs = items.map((item) => (
     <button

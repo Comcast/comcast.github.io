@@ -10,6 +10,7 @@
 }
 
 .title {
+  font-size: 1.2rem;
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
@@ -43,9 +44,11 @@
 
 .yellowColor {
   color: rgba(253,185,19,1);
+  color: rgba(194,139,19,1); /* a11y 3.0 */
 }
 .orangeColor {
   color: rgba(243,112,33,1);
+  color: rgba(240,110,33,1); /* a11y 3.0 */
 }
 .redColor {
   color: rgba(180,40,70,1) ;
@@ -58,6 +61,7 @@
 }
 .greenColor {
   color: rgba(13,177,75,1);
+  color: rgba(13,171,75,1); /* a11y 3.0 */
 }
 .blackColor {
   color: rgba(0,0,0,1);

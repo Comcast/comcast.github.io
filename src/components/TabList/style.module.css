@@ -120,7 +120,9 @@
 
 .cta {
   color: #0089cf;
-  outline: .2rem solid rgba(255,255,255,0)
+  color: #007cbc; /* a11y 4.5 */
+  outline: .2rem solid rgba(255,255,255,0);
+  font-weight: 400;
 }
 
 .cta:after {

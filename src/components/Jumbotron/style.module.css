@@ -1,6 +1,6 @@
 .jumbotron {
   background: #0089cf;
-  border-bottom: 10px solid;
+  border-bottom: .5rem solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, rgba(253,185,19,1) 16.666%, rgba(243,112,33,1) 16.666%, rgba(243,112,33,1) 33.333%, rgba(180,40,70,1) 33.333%, rgba(180,40,70,1) 49.999%, rgba(100,95,170,1) 49.999%, rgba(100,95,170,1) 66.666%, rgba(0,137,207,1) 66.666%, rgba(0,137,207,1) 83.333%, rgba(13,177,75,1) 83.333%);
   color: #fff;
@@ -19,6 +19,7 @@
 .jumbotronTabs {
   bottom: 0;
   display: flex;
+  height: 6rem;
   justify-content: space-around;
   overflow: hidden;
   position: absolute;
@@ -29,33 +30,33 @@
 .jumbotronTab {
   background-color: transparent;
   border: none;
-  border-bottom: .5rem solid #0000;
+  border-bottom: 0 solid rgba(0,0,0,0);
+  border-top: .5rem solid rgba(0,0,0,0);
   color: #fff;
   cursor: pointer;
   font-family: lineto-brown, Futura, sans-serif;
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: -.85rem;
+  /* margin-bottom: -.85rem; */
   padding: 1rem .5rem 2rem;
   outline: none;
   text-shadow: 0 0 1rem rgba(0,0,102,.27), 0 0 0.1rem #006;
-  transition: .3s transform ease-out;
-  transform: translateY(.1rem) scale(.85);
+  transition: .3s transform ease-out, .3s border ease-out;
+  transform: translateY(.45rem) scale(.85);
   width: 16.666%;
 }
 
 .jumbotronTab:hover,
-.jumbotronTab:focus {
-  transform: translateY(-.4rem) scale(.9);
-}
-
+.jumbotronTab:focus,
 .jumbotronTab.selected {
-  transform: translateY(-.4rem) scale(.9);
+  border-bottom-width: .5rem;
+  border-top-width: 0;
+  transform: translateY(.35rem) scale(.9);
 }
 
 .jumbotronTab.selected:hover,
 .jumbotronTab.selected:focus {
-  transform: translateY(-.75rem) scale(1);
+  transform: translateY(0rem) scale(1);
 }
 
 .jumbotronTab:nth-of-type(1) {
@@ -118,12 +119,12 @@
 .featuredImage {
   animation: zoom-out 2s ease-in-out forwards;
   animation-delay: 300ms;
-  height: 40rem;
+  height: 29rem;
   left: 0;
   position: absolute;
   top: 0;
   transform: scale(1.1) rotate(1deg);
-  width: 60rem;
+  width: 100%;
   z-index: -1;
 }
 
@@ -161,7 +162,7 @@
 .cta:hover:after,
 .cta:focus:after {
   color: #fff;
-  outline: 0px solid #fff0;
+  outline: 0 solid #fff0;
   transform: translate(1.125rem, 20%);
 }
 
