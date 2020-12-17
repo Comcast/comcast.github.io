@@ -13,6 +13,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charset="utf-8" />
+          <link rel="manifest" crossorigin="use-credentials" href={`${process.env.ASSET_PREFIX}/site.webmanifest`}/>
           {/* <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" /> */}
           <meta name="robots" content="index, follow, archive" />
 
