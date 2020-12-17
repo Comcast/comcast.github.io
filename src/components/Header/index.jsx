@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import PropTypes from 'prop-types';
+// import Image from 'next/image';
 import { backgroundColor } from 'src/shared/backgroundColors';
 import { borderColor } from 'src/shared/borderColors';
 

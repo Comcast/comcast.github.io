@@ -8,10 +8,10 @@ import NumberFigure from 'src/components/NumberFigure';
 import ProjectCard from 'src/components/ProjectCard';
 import ProjectMost from 'src/components/ProjectMost';
 import Cta from 'src/components/Cta';
-// import Loader from 'src/components/Loader';
 import TabList from 'src/components/TabList';
 import Filter from 'src/components/Filter';
 import DataTable from 'src/components/DataTable';
+import { formatDate } from 'src/shared/formatDate';
 import {
   title,
   overview,
@@ -22,14 +22,6 @@ import {
 } from 'src/data/projects.json';
 
 const API_ENDPOINT = 'https://api.github.com/graphql';
-
-const monthLongName = ['January', 'February', 'March', 'April', 'May', 'June',
-  'July', 'August', 'September', 'October', 'November', 'December'];
-
-const formatDate = (timestamp) => {
-  const date = new Date(timestamp);
-  return `${monthLongName[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`;
-};
 
 const asOf = () => formatDate(new Date());
 
@@ -287,10 +279,10 @@ const Projects = ({
           <div>
             <p>as of {staticToday}</p>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-              <NumberFigure color="yellow" number={totalRepos} caption="Total Public Repos" />
-              <NumberFigure color="green" number={totalSourceRepos} caption="Total Source Repos" />
-              <NumberFigure color="blue" number={totalForkedRepos} caption="Total Forked Repos" />
-              <NumberFigure color="purple" number={totalMembers} caption="Total Members" />
+              <NumberFigure color="orange" number={totalRepos} caption="Total Public Repos" />
+              <NumberFigure color="blue" number={totalSourceRepos} caption="Total Source Repos" />
+              <NumberFigure color="red" number={totalForkedRepos} caption="Total Forked Repos" />
+              <NumberFigure color="green" number={totalMembers} caption="Total Members" />
             </div>
           </div>
           <Cta type="atom" color="yellow" label="View All Comcast Repos on GitHub" url="https://github.com/Comcast/" />
@@ -322,7 +314,7 @@ const Projects = ({
         <section className="repo">
           <h2>Project Statistics</h2>
           <div>
-            <h4>Most Starred</h4>
+            <h3>Most Starred</h3>
             <p>as of {staticToday}</p>
           </div>
           {mostStarred.map((data) => (
@@ -331,12 +323,13 @@ const Projects = ({
               url={data.url}
               stars={data.stargazerCount}
               key={`star_${data.name}`}
+              color="red"
             />
           ))}
         </section>
         <section className="repo">
           <div>
-            <h4>Most Forked</h4>
+            <h3>Most Forked</h3>
             <p>as of {staticToday}</p>
           </div>
           {mostForked.map((data) => (
@@ -345,6 +338,7 @@ const Projects = ({
               url={data.url}
               forks={data.forkCount}
               key={`fork_${data.name}`}
+              color="red"
             />
           ))}
         </section>

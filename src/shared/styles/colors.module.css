@@ -1,11 +1,14 @@
+
 .yellowColor {
   color: rgba(253,185,19,1);
+  color: rgba(194,139,19,1); /* a11y 3.0 */
 }
 .orangeColor {
   color: rgba(243,112,33,1);
+  color: rgba(240,110,33,1); /* a11y 3.0 */
 }
 .redColor {
-  color: rgba(180,40,70,1);
+  color: rgba(180,40,70,1) ;
 }
 .purpleColor {
   color: rgba(100,95,170,1);
@@ -15,6 +18,7 @@
 }
 .greenColor {
   color: rgba(13,177,75,1);
+  color: rgba(13,171,75,1); /* a11y 3.0 */
 }
 .blackColor {
   color: rgba(0,0,0,1);
@@ -46,6 +50,7 @@
 }
 .blueBg {
   background-color: rgba(0,137,207,1);
+  background-color: rgba(0,124,194,1); /* a11y 4.5 */
 }
 .greenBg {
   background-color: rgba(13,177,75,1);

@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-
+import { updateUrl } from 'src/shared/updateUrl';
 import {
   tab,
   tabButtons,
@@ -36,21 +36,19 @@ const changeTab = (event) => {
 };
 
 const TabList = ({ items }) => {
-  const [currentItem, setCurrentItem] = useState(items[0].title);
-
-  const updateUrl = (path) => (path.includes('http') ? path : `${process.env.ASSET_PREFIX}${path}`);
+  const [currentItem, setCurrentItem] = useState(items[0].image);
 
   const tabs = items.map((item) => (
     <button
-      aria-controls={`panel${item.title}`}
-      aria-selected={item.title === currentItem}
-      className={`${tabButton} ${item.title === currentItem ? selected : ''}`}
-      id={`tab${item.title}`}
-      key={`tab${item.title}`}
-      onClick={() => setCurrentItem(item.title)}
+      aria-controls={`panel${item.image}`}
+      aria-selected={item.image === currentItem}
+      className={`${tabButton} ${item.image === currentItem ? selected : ''}`}
+      id={`tab${item.image}`}
+      key={`tab${item.image}`}
+      onClick={() => setCurrentItem(item.image)}
       onKeyDown={changeTab}
       role="tab"
-      tabIndex={item.title === currentItem ? 0 : -1}
+      tabIndex={item.image === currentItem ? 0 : -1}
       type="button"
     >
       <img src={`${process.env.ASSET_PREFIX}${item.image}`} height="45" width="45" alt="" /> {item.title}
@@ -58,7 +56,7 @@ const TabList = ({ items }) => {
   ));
 
   const panels = items.map((item) => (
-    <article className={`${tabPanel} ${item.title === currentItem ? selected : ''}`} tabIndex="0" role="tabpanel" id={`panel${item.title}`} key={`panel${item.title}`} aria-labelledby={`tab${item.title}`}>
+    <article className={`${tabPanel} ${item.image === currentItem ? selected : ''}`} tabIndex="0" role="tabpanel" id={`panel${item.image}`} key={`panel${item.image}`} aria-labelledby={`tab${item.image}`}>
       <div className={card}>
         <header>
           <p className={cardCategory}>{item.category}</p>

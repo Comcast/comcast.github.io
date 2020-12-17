@@ -4,7 +4,7 @@
   font-size: 2rem;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 959px) {
   .nav > ul {
     background-color: #1e1f20;
     color: #fff;

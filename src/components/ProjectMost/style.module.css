@@ -14,7 +14,6 @@
 }
 
 .number {
-  color: #b42846;
   font-size: 4rem;
   font-weight: 700;
 }
@@ -28,8 +27,4 @@
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
-}
-
-.title > a {
-  color: #b42846;
 }
