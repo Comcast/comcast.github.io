@@ -11,7 +11,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <link rel="manifest" crossOrigin="use-credentials" href={updateUrl('/site.webmanifest')} />
           {/*
           <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" /> */}

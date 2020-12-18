@@ -1,6 +1,6 @@
 .jumbotron {
   background: #0089cf;
-  border-bottom: .5rem solid;
+  border-bottom: 10px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(90deg, rgba(253,185,19,1) 16.666%, rgba(243,112,33,1) 16.666%, rgba(243,112,33,1) 33.333%, rgba(180,40,70,1) 33.333%, rgba(180,40,70,1) 49.999%, rgba(100,95,170,1) 49.999%, rgba(100,95,170,1) 66.666%, rgba(0,137,207,1) 66.666%, rgba(0,137,207,1) 83.333%, rgba(13,177,75,1) 83.333%);
   color: #fff;
