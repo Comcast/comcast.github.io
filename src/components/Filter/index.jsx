@@ -28,10 +28,10 @@ const Filter = ({
           <option value="">All {categoryTitle}</option>
           {categoryList.map((lang) => (
             <option
-              key={lang}
-              value={lang.toLowerCase()}
+              key={lang.optionLabel}
+              value={lang.optionLabel.toLowerCase()}
             >
-              {lang}
+              {`${lang.optionLabel} (${lang.optionCount})`}
             </option>
           ))}
         </select>
@@ -53,7 +53,10 @@ Filter.propTypes = {
     name: PropTypes.string,
   })).isRequired,
   categoryTitle: PropTypes.string,
-  categoryList: PropTypes.arrayOf(PropTypes.string),
+  categoryList: PropTypes.arrayOf(PropTypes.shape({
+    optionLabel: PropTypes.string,
+    optionCount: PropTypes.number,
+  })),
   itemType: PropTypes.arrayOf(PropTypes.string).isRequired,
   currentPage: PropTypes.number.isRequired,
   onPageSelect: PropTypes.func.isRequired,

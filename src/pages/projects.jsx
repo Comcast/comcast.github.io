@@ -207,11 +207,18 @@ const Projects = ({
     return self.indexOf(value) === index;
   }
 
-  const languageList = [].concat(...allRepos
+  const languageArray = [].concat(...allRepos
     .map((data) => (data.node.languages.edges
       .map((language) => language.node.name))))
-    .filter(onlyUnique)
-    .sort();
+    .reduce((categoryArray, currentCategory) => {
+      const newArray = categoryArray;
+      newArray[currentCategory] = (newArray[currentCategory] || 0) + 1;
+      return newArray;
+    }, {});
+
+  const languageList = Object.keys(languageArray)
+    .map((key) => ({ optionLabel: key, optionCount: languageArray[key] }))
+    .sort((a, b) => ((b.optionLabel < a.optionLabel) ? 1 : -1));
 
   const filteredList = allRepos
     .filter((item) => (item.node.name !== '.github'))
