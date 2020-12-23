@@ -26,7 +26,7 @@ const sitemapXml = `<?xml version='1.0' encoding='UTF-8'?>
     <changefreq>daily</changefreq>
   </url>${Object.keys(pagesObj).map((path) => (path.includes('index') || path.includes('_') || path.includes('404') || path.includes('sitemap.xml') || path.includes('styles') ? '' : urlNode(path))).join('')}
   <url>
-    <loc>${publicObj['/humans'].page}</loc>
+    <loc>https://comcast.github.io/humans.txt</loc>
     <lastmod>${publicObj['/humans'].lastModified
     ? formatDate(new Date(publicObj['/humans'].lastModified))
     : today}</lastmod>
