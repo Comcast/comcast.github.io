@@ -5,8 +5,9 @@
   "main": "index.jsx",
   "scripts": {
     "dev": "next -p 3001",
-    "build": "next build && next export -o docs && touch docs/.nojekyll",
+    "build": "next build && next export -o docs && npm run publishsitemap && touch docs/.nojekyll",
     "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin master",
+    "publishsitemap": "node scripts/publishSitemap.js",
     "start": "next start",
     "lint": "npm run lint:js",
     "lint:js": "eslint . --ext js,jsx",
@@ -48,6 +49,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.js": "eslint"
   }
 }
