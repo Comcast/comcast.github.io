@@ -3,6 +3,8 @@ import { formatDate } from 'src/shared/formatDate';
 
 import {
   dataTable,
+  date,
+  dateValue,
 } from './style.module.css';
 
 const DataTable = ({ data }) => (
@@ -21,8 +23,12 @@ const DataTable = ({ data }) => (
           <tr key={`updated_${row.node.name}`}>
             <th>
               <p><a href={row.node.url}>{row.node.name}</a></p>
-              <p style={{ fontSize: '.9rem', fontWeight: 300, marginBottom: 0 }}>updated: {formatDate(row.node.updatedAt)}</p>
-              <p style={{ fontSize: '.9rem', fontWeight: 300 }}>created: {formatDate(row.node.createdAt)}</p>
+              <p className={date}>
+                updated: <span className={dateValue}>{formatDate(row.node.updatedAt)}</span>
+              </p>
+              <p className={date}>
+                created: <span className={dateValue}>{formatDate(row.node.createdAt)}</span>
+              </p>
             </th>
             <td>
               <p style={{ marginBottom: '2rem' }}>{row.node.description || 'An Open Source project from Comcast.'}</p>

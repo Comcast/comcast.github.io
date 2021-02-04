@@ -23,7 +23,7 @@ const People = () => {
   const [projectLanguage, setLanguage] = useState(null);
 
   const onPageSelect = (event) => {
-    setPageNumber(event.target.value);
+    setPageNumber(parseInt(event.target.value, 10));
   };
 
   const articleSearch = (event) => {

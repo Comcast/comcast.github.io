@@ -28,3 +28,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+@media (max-width: 639px) {
+  .conference {
+    padding: 3rem 2.5rem 6rem;
+  }
+  .card {
+    margin: 1rem 5% 4rem;
+  }
+}

@@ -15,7 +15,9 @@
   margin: 0 0 .1rem;
 }
 
-.repoCount {
+.repoCount,
+.pagesCount {
+  white-space: nowrap;
   width: 15%;
 }
 .paginationButtons {
@@ -24,7 +26,6 @@
 }
 .pagesCount {
   text-align: right;
-  width: 15%;
 }
 
 .page {
