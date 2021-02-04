@@ -123,6 +123,7 @@
   color: #007cbc; /* a11y 4.5 */
   outline: .2rem solid rgba(255,255,255,0);
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .cta:after {
@@ -140,6 +141,35 @@
 .cta:focus:after {
   outline: 0px solid #fff0;
   transform: translate(1.125rem, 20%);
+}
+
+@media (max-width: 639px) {
+  .tab {
+    height: auto;
+    margin-bottom: 0;
+  }
+  .platform {
+    width: 100%;
+  }
+  .tabButtons {
+    display: none;
+  }
+  .tabPanel,
+  .tabPanel.selected {
+    display: block;
+    min-height: auto;
+  }
+  .card {
+    padding: 1.5rem 1.5rem 3rem;
+  }
+  .cardTitle {
+    margin: 0 4rem 1rem 0;
+  }
+  .logoMark {
+    height: 4rem;
+    right: 3%;
+    width: 4rem;
+  }
 }
 
 @keyframes zoom-out {

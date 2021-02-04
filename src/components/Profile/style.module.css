@@ -34,3 +34,9 @@
   display: flex;
   justify-content: space-around;
 }
+
+@media (max-width: 639px) {
+  .profile {
+    flex-basis: 51%;
+  }
+}

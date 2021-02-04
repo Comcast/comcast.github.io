@@ -532,12 +532,13 @@ p {
   border-top: .15rem solid #999;
   letter-spacing: .025rem;
   line-height:1.5;
-  margin: .5rem;
-  width: 33%;
+  flex-basis: 31%;
 }
 
 .socialList {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
 }
@@ -716,57 +717,6 @@ a.cta:focus:after {
   transform: translate(1.125rem, .25em);
 }
 
-@media (max-width: 959px) {
-  html {
-    font-size: 16px;
-  }
-  .nav > ul {
-    background-color: #1e1f20;
-    color: #fff;
-    display: none;
-    font-size: 1.25rem;
-    height: 100vh;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    left: 0;
-    padding: 3rem 0 0 0;
-    z-index: 1000;
-  }
-  .nav > .navigation__button {
-    display: block;
-  }
-  .nav > .navigation__close {
-    display: none;
-  }
-  .nav.open > .navigation__close {
-    display: block;
-  }
-  .nav.open > ul {
-    display: block;
-  }
-  .nav li a {
-    color: #ffffff;    
-  }
-
-  .footer__site {
-    flex-flow: column;
-  }
-  .footer__site section {
-    min-height: auto;
-  }
-  .footer__corporate {
-    flex-flow: column;
-  }
-  .footer__corporate > a {
-    padding: 1rem 0;
-  }
-  .footer__corporate .social {
-    padding: 1rem 0;
-  }
-}
-
 .bug {
   background-color: #fff;
   border-radius: 100%;
@@ -876,4 +826,77 @@ a.cta:focus:after {
 }
 .repo > div > p:nth-child(3n) {
 	margin-top: auto;
+}
+
+
+
+@media (max-width: 959px) {
+  html {
+    font-size: 16px;
+  }
+  .nav > ul {
+    background-color: #1e1f20;
+    color: #fff;
+    display: none;
+    font-size: 1.25rem;
+    height: 100vh;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    left: 0;
+    padding: 3rem 0 0 0;
+    z-index: 1000;
+  }
+  .nav > .navigation__button {
+    display: block;
+  }
+  .nav > .navigation__close {
+    display: none;
+  }
+  .nav.open > .navigation__close {
+    display: block;
+  }
+  .nav.open > ul {
+    display: block;
+  }
+  .nav li a {
+    color: #ffffff;    
+  }
+
+  .footer__site {
+    flex-flow: column;
+  }
+  .footer__site section {
+    min-height: auto;
+  }
+  .footer__corporate {
+    flex-flow: column;
+  }
+  .footer__corporate > a {
+    padding: 1rem 0;
+  }
+  .footer__corporate .social {
+    padding: 1rem 0;
+  }
+}
+
+
+@media (max-width: 639px) {
+  main {
+    padding: 2rem 5% 3rem;
+  }
+  main > section {
+    padding: 2rem 5% 3rem;
+  }
+  section > h2,
+  .section__title,
+  .repo > h2 {
+    width: calc(100vw - 5rem);
+    margin-right: -5rem;
+  }
+  .statBox {
+    flex-basis: 80%;
+    margin: 1rem auto;
+  }
 }

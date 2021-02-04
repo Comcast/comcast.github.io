@@ -190,7 +190,7 @@ const Projects = ({
   const [projectLanguage, setLanguage] = useState(null);
 
   const onPageSelect = (event) => {
-    setPageNumber(event.target.value);
+    setPageNumber(parseInt(event.target.value, 10));
   };
 
   const projectSearch = (event) => {

@@ -92,3 +92,13 @@
   color: rgba(13,177,75,1);
   color: rgba(13,171,75,1); /* a11y 3.0 */
 }
+
+.date {
+  font-size: .9rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.dateValue {
+  display: block;
+}

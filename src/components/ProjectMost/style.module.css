@@ -28,3 +28,9 @@
   margin: 0;
   text-transform: uppercase;
 }
+
+@media (max-width: 639px) {
+  .project {
+    width: 48%;
+  }
+}

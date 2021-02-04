@@ -56,17 +56,17 @@ const Jumbotron = ({ items }) => {
 
   const panels = items.map((item) => (
     <article className={`${jumbotronPanel} ${item.id === currentItem ? selected : ''}`} tabIndex="0" role="tabpanel" id={`panel${item.id}`} key={`panel${item.id}`} aria-labelledby={`tab${item.id}`}>
-      <div className={card}>
-        <h2 className={cardTitle}>{item.title}</h2>
-        <p className="cardDescription">{item.description}</p>
-        {item.cta && <p className="cardCta">{item.cta.lead}<Link href={updateUrl(item.cta.url)}><a href={updateUrl(item.cta.url)} className={cta}>{item.cta.label}</a></Link></p>}
-      </div>
       {item.image
         && (
           <div className={featuredImage}>
             <img src={`${process.env.ASSET_PREFIX}${item.image}`} alt="" preload="true" layout="fill" objectfit="cover" objectposition="center" />
           </div>
         )}
+      <div className={card}>
+        <h2 className={cardTitle}>{item.title}</h2>
+        <p className="cardDescription">{item.description}</p>
+        {item.cta && <p className="cardCta">{item.cta.lead}<Link href={updateUrl(item.cta.url)}><a href={updateUrl(item.cta.url)} className={cta}>{item.cta.label}</a></Link></p>}
+      </div>
     </article>
   ));
 
