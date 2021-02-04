@@ -7,7 +7,7 @@
   </url>
   <url>
     <loc>https://comcast.github.io/blog</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -22,12 +22,12 @@
   </url>
   <url>
     <loc>https://comcast.github.io/people</loc>
-    <lastmod>2020-12-17</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
     <loc>https://comcast.github.io/projects</loc>
-    <lastmod>2020-12-19</lastmod>
+    <lastmod>2020-12-24</lastmod>
     <changefreq>daily</changefreq>
   </url>
   <url>
@@ -36,7 +36,7 @@
     <changefreq>daily</changefreq>
   </url>
   <url>
-    <loc>/humans</loc>
+    <loc>https://comcast.github.io/humans.txt</loc>
     <lastmod>2020-12-15</lastmod>
     <changefreq>monthly</changefreq>
   </url>
