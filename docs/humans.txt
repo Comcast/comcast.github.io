@@ -1,24 +1,20 @@
 /* TEAM v2 */
 
 	Hacktoberfest Volunteer: Brittany Istenes
-	GitHub: github.com/BrittanyIstenes
-	From: Cleveland, Ohio, USA
+	From: 
 
-	Hacktoberfest Volunteer: Krithika SureshBabu
-	GitHub: github.com/KrithikaSureshBabu
-	From: Chennai, India
+	Hacktoberfest Volunteer: Krithika SureshBabu 
+	From: 
 
 	Hacktoberfest Volunteer: Nathan Lilly
 	GitHub: github.com/nelilly
 	From: Philadelphia, Pennsylvania, USA
 
 	Hacktoberfest Volunteer: Shiju Daniel
-	GitHub: github.com/shijudaniel
-	From: Philadelphia, Pennsylvania, USA
+	From: 
 
 	Hacktoberfest Volunteer: Shilla Saebi
-	GitHub: github.com/shillasaebi
-	From: Washington DC, USA
+	From: 
 
 /* THANKS */
 		
