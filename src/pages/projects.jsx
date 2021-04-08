@@ -28,7 +28,7 @@ const asOf = () => formatDate(new Date());
 export async function getStaticProps() {
   const graphQLClient = new GraphQLClient(API_ENDPOINT, {
     headers: {
-      authorization: 'Bearer 46bf392d999b9d9f133b24a2d9e6677aa5ce109b',
+      authorization: 'Bearer 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',
     },
   });
 
@@ -129,7 +129,7 @@ export async function getStaticProps() {
       }
     }
   }
-  
+
   fragment repoInfo on Repository {
     name
     description
@@ -226,30 +226,30 @@ const Projects = ({
       if (keyword && projectLanguage) {
         return data.node.languages.edges
           .map((language) => language.node.name.toLowerCase()
-          === projectLanguage?.toLowerCase()).includes(true)
-        && (
-          data.node.name.toLowerCase().includes(keyword?.toLowerCase())
+            === projectLanguage?.toLowerCase()).includes(true)
+          && (
+            data.node.name.toLowerCase().includes(keyword?.toLowerCase())
+            || data.node.repositoryTopics.edges
+              .map((topic) => topic.node.topic.name.toLowerCase()
+                .includes(keyword?.toLowerCase())).includes(true)
+            || data.node.languages.edges
+              .map((language) => language.node.name.toLowerCase()
+                .includes(keyword?.toLowerCase())).includes(true)
+          );
+      }
+      if (keyword && !projectLanguage) {
+        return data.node.name.toLowerCase().includes(keyword?.toLowerCase())
           || data.node.repositoryTopics.edges
             .map((topic) => topic.node.topic.name.toLowerCase()
               .includes(keyword?.toLowerCase())).includes(true)
           || data.node.languages.edges
             .map((language) => language.node.name.toLowerCase()
-              .includes(keyword?.toLowerCase())).includes(true)
-        );
-      }
-      if (keyword && !projectLanguage) {
-        return data.node.name.toLowerCase().includes(keyword?.toLowerCase())
-        || data.node.repositoryTopics.edges
-          .map((topic) => topic.node.topic.name.toLowerCase()
-            .includes(keyword?.toLowerCase())).includes(true)
-        || data.node.languages.edges
-          .map((language) => language.node.name.toLowerCase()
-            .includes(keyword?.toLowerCase())).includes(true);
+              .includes(keyword?.toLowerCase())).includes(true);
       }
       if (!keyword && projectLanguage) {
         return data.node.languages.edges
           .map((language) => language.node.name.toLowerCase()
-          === projectLanguage?.toLowerCase()).includes(true);
+            === projectLanguage?.toLowerCase()).includes(true);
       }
 
       return data;
