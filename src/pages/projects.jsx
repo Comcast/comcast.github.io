@@ -129,7 +129,7 @@ export async function getStaticProps() {
       }
     }
   }
-  
+
   fragment repoInfo on Repository {
     name
     description
@@ -226,30 +226,30 @@ const Projects = ({
       if (keyword && projectLanguage) {
         return data.node.languages.edges
           .map((language) => language.node.name.toLowerCase()
-          === projectLanguage?.toLowerCase()).includes(true)
-        && (
-          data.node.name.toLowerCase().includes(keyword?.toLowerCase())
+            === projectLanguage?.toLowerCase()).includes(true)
+          && (
+            data.node.name.toLowerCase().includes(keyword?.toLowerCase())
+            || data.node.repositoryTopics.edges
+              .map((topic) => topic.node.topic.name.toLowerCase()
+                .includes(keyword?.toLowerCase())).includes(true)
+            || data.node.languages.edges
+              .map((language) => language.node.name.toLowerCase()
+                .includes(keyword?.toLowerCase())).includes(true)
+          );
+      }
+      if (keyword && !projectLanguage) {
+        return data.node.name.toLowerCase().includes(keyword?.toLowerCase())
           || data.node.repositoryTopics.edges
             .map((topic) => topic.node.topic.name.toLowerCase()
               .includes(keyword?.toLowerCase())).includes(true)
           || data.node.languages.edges
             .map((language) => language.node.name.toLowerCase()
-              .includes(keyword?.toLowerCase())).includes(true)
-        );
-      }
-      if (keyword && !projectLanguage) {
-        return data.node.name.toLowerCase().includes(keyword?.toLowerCase())
-        || data.node.repositoryTopics.edges
-          .map((topic) => topic.node.topic.name.toLowerCase()
-            .includes(keyword?.toLowerCase())).includes(true)
-        || data.node.languages.edges
-          .map((language) => language.node.name.toLowerCase()
-            .includes(keyword?.toLowerCase())).includes(true);
+              .includes(keyword?.toLowerCase())).includes(true);
       }
       if (!keyword && projectLanguage) {
         return data.node.languages.edges
           .map((language) => language.node.name.toLowerCase()
-          === projectLanguage?.toLowerCase()).includes(true);
+            === projectLanguage?.toLowerCase()).includes(true);
       }
 
       return data;
