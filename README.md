@@ -51,12 +51,5 @@ After the codebase has been cloned and `npm install` has been run, `npm run dev`
 ### Building
 `npm run build` generates the distribution files and exports them into the `docs` directory. It also creates a `.nojekyll` file to bypass Jekyll processing in Github Pages.
 
-### Deploying
-`npm run deploy`
-- runs the `npm run build` command (above)
-- adds the newly created files to git staging
-- creates a commit
-- pushes those changes to the main branch
-
 ## Documentation
 The content of the pages may be updated using the files in the `src/data` directory or by updating the assets that are contained in the `public` directory. Full documentation for the pages, components, assets, and data sources can be found in the [Wiki](https://github.com/Comcast/Comcast.github.io/wiki).

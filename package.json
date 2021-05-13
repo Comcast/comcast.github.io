@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "next -p 3001",
     "build": "next build && next export -o docs && npm run publishsitemap && touch docs/.nojekyll",
-    "deploy": "npm run build && git add . && git commit -m \"Deploy docs\" && git push origin master",
     "publishsitemap": "node scripts/publishSitemap.js",
     "start": "next start",
     "lint": "npm run lint:js",
@@ -16,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.comcast.com:OSP/comcast.github.io.git"
+    "url": "git@github.com:Comcast/comcast.github.io-website.git"
   },
   "author": "Comcast_Open_Source_Services@comcast.com",
   "license": "Apache-2.0",
