@@ -1,7 +1,7 @@
 const webpack = require('webpack');
 // const path = require('path');
 const isProd = (process.env.NODE_ENV || 'production') === 'production';
-const assetPrefix = isProd ? '/pages/OSP/comcast.github.io' : '';
+const assetPrefix = isProd ? '/comcast.github.io-website' : '';
 
 module.exports = {
   // node: {
