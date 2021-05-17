@@ -7,10 +7,40 @@
   "blogTitle": "Blogs posts",
   "blogList": [
     {
+      "title": "Open source is leaving its vendor roots behind by Matt Asay",
+      "date": "May 7, 2021",
+      "url": "https://www.techrepublic.com/article/open-source-is-leaving-its-vendor-roots-behind/",
+      "image": ""
+    },
+    {
+      "title": "Two Comcast Open-Source Projects Reach Key Community Milestone by Shilla Saebi",
+      "date": "April 12, 2021",
+      "url": "https://corporate.comcast.com/stories/two-comcast-open-source-projects-reach-key-community-milestone",
+      "image": ""
+    },
+    {
+      "title": "These open source projects from Comcast engineers were accepted to the Cloud Native Computing Foundation by Paige Gross",
+      "date": "April 12, 2021",
+      "url": "https://technical.ly/philly/2021/04/12/comcast-open-source-office/",
+      "image": ""
+    },
+    {
+      "title": "Comcast Monitoring Tools Dive Into CNCF Sandbox by Sydney Sawaya",
+      "date": "April 12, 2021",
+      "url": "https://www.sdxcentral.com/articles/news/comcast-monitoring-tools-dive-into-cncf-sandbox/2021/04/",
+      "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg"
+    },
+    {
       "title": "Comcast makes waves in open source by Jeff Baumgartner",
       "date": "April 12, 2021",
       "url": "https://www.lightreading.com/service-provider-cloud/comcast-makes-waves-in-open-source/d/d-id/768693",
       "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg"
+    },
+    {
+      "title": "The Truth about Women and Open Source by Nithya Ruff",
+      "date": "March 24, 2021",
+      "url": "https://www.aswf.io/diversity/the-truth-about-women-and-open-source/",
+      "image": ""
     },
     {
       "title": "Setup Kuberhealthy with Prometheus and Grafana on Minikube by Rocky Chen",
