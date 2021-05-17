@@ -10,19 +10,19 @@
       "title": "Open source is leaving its vendor roots behind by Matt Asay",
       "date": "May 7, 2021",
       "url": "https://www.techrepublic.com/article/open-source-is-leaving-its-vendor-roots-behind/",
-      "image": ""
+      "image": "/images/blog/posts/open-source-linux-code.jpg"
     },
     {
       "title": "Two Comcast Open-Source Projects Reach Key Community Milestone by Shilla Saebi",
       "date": "April 12, 2021",
       "url": "https://corporate.comcast.com/stories/two-comcast-open-source-projects-reach-key-community-milestone",
-      "image": ""
+      "image": "/images/blog/posts/corporate_Web-Publishing_two-projects.jpg"
     },
     {
       "title": "These open source projects from Comcast engineers were accepted to the Cloud Native Computing Foundation by Paige Gross",
       "date": "April 12, 2021",
       "url": "https://technical.ly/philly/2021/04/12/comcast-open-source-office/",
-      "image": ""
+      "image": "/images/blog/posts/technically-opensource-comcast.jpg"
     },
     {
       "title": "Comcast Monitoring Tools Dive Into CNCF Sandbox by Sydney Sawaya",
@@ -40,7 +40,7 @@
       "title": "The Truth about Women and Open Source by Nithya Ruff",
       "date": "March 24, 2021",
       "url": "https://www.aswf.io/diversity/the-truth-about-women-and-open-source/",
-      "image": ""
+      "image": "/images/blog/posts/The-Truth-About-Women-and-Open-Source.png"
     },
     {
       "title": "Setup Kuberhealthy with Prometheus and Grafana on Minikube by Rocky Chen",
@@ -100,7 +100,7 @@
       "title": "Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference",
       "date": "September 10, 2020",
       "url": "https://technical.ly/philly/2020/09/10/meet-11-tech-companies-hiring-september-23-developers-conference-philly-tech-week-2020/",
-      "image": ""
+      "image": "/images/blog/posts/Developers-Conference-2019-pic.jpeg"
     },
     {
       "title": "The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.",
@@ -112,7 +112,7 @@
       "title": "Why Comcast open sourced its DNS management tool by Paul James Cleary",
       "date": "August 28, 2020",
       "url": "https://opensource.com/article/20/9/open-source-dns",
-      "image": ""
+      "image": "/images/blog/posts/LAW-Internet_construction_9401467_520x292_0512_dc.png"
     },
     {
       "title": "Why Your OSPO Needs to Invest in More Than Compliance",
@@ -124,19 +124,19 @@
       "title": "Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler",
       "date": "August 17, 2020",
       "url": "https://technical.ly/philly/2020/08/17/code-for-philly-new-technical-fellowship-paid-skills-development-mentorship/",
-      "image": ""
+      "image": "/images/blog/posts/Code-for-Philly-fellowship.jpg"
     },
     {
       "title": "Modernize network function development with this Rust-based framework by Zeeshan Lakhani",
       "date": "August 5, 2020",
       "url": "https://opensource.com/article/20/8/capsule-networking",
-      "image": ""
+      "image": "/images/blog/posts/server_data_system_admin.png"
     },
     {
       "title": "Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
       "date": "July 30, 2020",
       "url": "https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/",
-      "image": ""
+      "image": "/images/blog/posts/d05c303f-walkway-828684_1280.jpg"
     },
     {
       "title": "Open source contributions face friction over company IP",
