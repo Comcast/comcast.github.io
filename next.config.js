@@ -4,6 +4,9 @@ const isProd = (process.env.NODE_ENV || 'production') === 'production';
 const assetPrefix = isProd ? '/comcast.github.io-website' : '';
 
 module.exports = {
+  // future: {
+  //   webpack5: true,
+  // },
   // node: {
   //   __dirname: true,
   //   __filename: true,
