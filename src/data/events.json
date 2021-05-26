@@ -1,12 +1,74 @@
 {
   "title": "Events",
-  "overview": "Upcoming events, conferences.",
-  "description": "Comcast CEO Brian Roberts speaking with Steven Spielberg in the CTC?! When did this happen and why wasn't I invited?",
+  "overview": "Upcoming open source conferences and events.",
+  "description": "",
   "featuredImage": "/images/events/featured_spielberg.jpg",
   "color": "blue",
   "upcomingTitle": "Upcoming Events",
   "pastTitle": "Past Events",
   "eventList": [
+    {
+      "title":  "Open Source Summit + Embedded Linux Conference",
+      "description": "Open Source Summit connects the open source ecosystem under one roof. It’s a unique environment for cross-collaboration between developers, sysadmins, devops, architects and others who are driving technology forward.",
+      "location": {
+        "online": true
+      },
+      "url": "https://events.linuxfoundation.org/open-source-summit-north-america/",
+      "start": "Sep 27 2021 00:00:00 GMT-0400",
+      "end": "Sep 30 2021 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "All Things Open",
+      "description": "All Things Open, the largest open source / tech / web conference on the U.S. east coast, is going virtual.",
+      "location": {
+        "online": true
+      },
+      "url": "https://www.allthingsopen.org/wp-content/uploads/2020/07/2020_ATO_Virtual_EventOverview_v3.pdf",
+      "start": "Oct 17 2021 00:00:00 GMT-0400",
+      "end": "Oct 19 2021 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "Innovation for Inclusion of Diversity & Accessibility",
+      "description": "Innovation for Inclusion of Diversity & Accessibility intends to bring technology to all groups and to bring all groups into the development of technology. This conference will focus on approaches and methods that bring the margins of technology back toward the center.",
+      "location": {
+        "online": true
+      },
+      "url": "https://www.comcastlabsconnect.com/inclusion-2021",
+      "start": "Jun 16 2021 00:00:00 GMT-0400",
+      "end": "Jun 17 2021 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "PHLAI - Artificial Intelligence & Machine Learning",
+      "description": "PHLAI unites the brightest industry professionals in numerous data science and technical fields to talk about innovative methods in AI and the use of AI automation at scale.",
+      "location": {
+        "online": true
+      },
+      "url": "https://www.comcastlabsconnect.com/phlai-2021",
+      "start": "Sep 9 2021 00:00:00 GMT-0400",
+      "end": "Sep 9 2021 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "InnerSource Commons Community Call - InnerSource & DevOps",
+      "description": "Join us for an InnerSource Commons Community Call where we will discuss the topic of InnerSource & DevOps.",
+      "location": {
+        "online": true
+      },
+      "url": "https://www.eventbrite.com/e/innersource-commons-community-call-innersource-devops-tickets-152994650117?aff=erelexpmlt",
+      "start": "Jun 1 2021 00:00:00 GMT-0400",
+      "end": "Jun 1 2021 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "KubeCon + CloudNativeCon North America",
+      "description": "The Cloud Native Computing Foundation’s flagship conference gathers adopters and technologists from leading open source and cloud native communities.",
+      "location": {
+        "city": "Los Angeles",
+        "state": "CA",
+        "country": "USA"
+      },
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
+      "start": "Oct 12 2021 00:00:00 GMT-0400",
+      "end": "Oct 15 2021 23:59:59 GMT-0400"
+    },
     {
       "title":  "Hacktoberfest 2020",
       "description": "Hacktoberfest is an event that takes place every year for the entire month of October to encourage open source contributions. Here at Comcast we produce and work on many open source projects.",
