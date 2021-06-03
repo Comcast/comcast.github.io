@@ -75,9 +75,9 @@
     }
   },
   "blogSection": {
-    "title": "Latest Blog Posts",
+    "title": "Latest News",
     "cta": {
-      "label": "Read the Comcast Open Source Blog posts",
+      "label": "Read the Comcast Open Source latest news",
       "url": "/blog"
     },
     "featureCount": 3
