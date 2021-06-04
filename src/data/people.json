@@ -36,21 +36,21 @@
       "date": "March 24, 2021",
       "author": "Shilla Saebi, Nigel Simpson, John Mertic",
       "url": "https://www.youtube.com/watch?v=mPRoMwDjT1Y0",
-      "image": ""
+      "image": "/images/people/talks/aswf.png"
     },
     {
       "title": "30 Years of Linux and Open Source: Fireside Chat with Nithya Ruff",
       "date": "March 19, 2021",
       "author": "Nithya Ruff",
       "url": "https://www.youtube.com/watch?v=47Afpkg8sj8",
-      "image": ""
+      "image": "/images/people/talks/30.jpeg"
     },
     {
       "title": "GitHub InFocus event - Modernizing and unifying development at Comcast",
       "date": "February 25, 2021",
       "author": "Martin Woodward and Brittany Istenes",
       "url": "https://www.youtube.com/watch?v=jp2S1hLn6zE",
-      "image": ""
+      "image": "/images/people/talks/infocus.png"
     },
     {
       "title": "When ViewModels Go to Die: Saving ViewModel State",
