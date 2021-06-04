@@ -18,7 +18,7 @@
   {
     "name": "Nithya Ruff",
     "title": "Executive Director, Open Source Program Office, Comcast",
-    "image": "",
+    "image": "/images/people/profiles/nithyaruff.png",
     "bio": "???",
     "connect": [
       {
@@ -47,6 +47,10 @@
       {
         "name": "GitHub",
         "link": "https://github.com/shillasaebi"
+      },
+      {
+        "name": "Twitter",
+        "link": "https:/twitter.com/shillasaebi"
       },
       {
         "name": "LinkedIn",
