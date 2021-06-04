@@ -4,7 +4,7 @@
   "description": "",
   "featuredImage": "/images/blog/featured.jpg",
   "color": "green",
-  "blogTitle": "Blogs posts",
+  "blogTitle": "Recent highlights",
   "blogList": [
     {
       "title": "Open source is leaving its vendor roots behind by Matt Asay",
