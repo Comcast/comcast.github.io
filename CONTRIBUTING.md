@@ -2,7 +2,7 @@
 
 Thank you for considering helping out!
 
-Looking to update information or feature your project? Feel free to make the change yourself. [This is the right place to get started](https://github.com/Comcast/Comcast.github.io/).
+Looking to update information or feature your project? Feel free to make the change yourself. [This is the right place to get started](https://github.com/Comcast).
 
 First, please read the [code of conduct](https://github.com/Comcast/Comcast.github.io/blob/main/CODE_OF_CONDUCT.md). We take it very seriously!
 
@@ -16,8 +16,7 @@ Next, if you want to help out, do the following:
 
 Once your PR is issued, we will review your work and decide on adding it to the project!
 
-For more details about contributing to GitHub projects see
-http://gun.io/blog/how-to-github-fork-branch-and-pull-request/
+For more details about contributing to GitHub projects see [How to use Github: Fork, Branch, Track, Squash and Pull Request](http://gun.io/blog/how-to-github-fork-branch-and-pull-request/)
 
 ## Adding a New Project
 
