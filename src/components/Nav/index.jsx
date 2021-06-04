@@ -55,10 +55,10 @@ const Nav = () => {
       <ul>
         <li><Link href={`${process.env.ASSET_PREFIX}/`}>About</Link></li>
         <li><Link href={`${process.env.ASSET_PREFIX}/projects`}>Projects</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/people`}>People</Link></li>
+        <li><Link href={`${process.env.ASSET_PREFIX}/people`}>Talks</Link></li>
         <li><Link href={`${process.env.ASSET_PREFIX}/community`}>Community</Link></li>
         <li><Link href={`${process.env.ASSET_PREFIX}/events`}>Events</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/blog`}>Blog</Link></li>
+        <li><Link href={`${process.env.ASSET_PREFIX}/blog`}>News</Link></li>
       </ul>
     </nav>
   );
