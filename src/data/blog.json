@@ -7,7 +7,7 @@
   "blogTitle": "Recent highlights",
   "blogList": [
     {
-      "title": "Open source is leaving its vendor roots behind by Matt Asay",
+      "title": "[Around the Web] Open source is leaving its vendor roots behind by Matt Asay",
       "date": "May 7, 2021",
       "url": "https://www.techrepublic.com/article/open-source-is-leaving-its-vendor-roots-behind/",
       "image": "/images/blog/posts/open-source-linux-code.jpg"
@@ -19,19 +19,19 @@
       "image": "/images/blog/posts/corporate_Web-Publishing_two-projects.jpg"
     },
     {
-      "title": "These open source projects from Comcast engineers were accepted to the Cloud Native Computing Foundation by Paige Gross",
+      "title": "[Around the Web] These open source projects from Comcast engineers were accepted to the Cloud Native Computing Foundation by Paige Gross",
       "date": "April 12, 2021",
       "url": "https://technical.ly/philly/2021/04/12/comcast-open-source-office/",
       "image": "/images/blog/posts/technically-opensource-comcast.jpg"
     },
     {
-      "title": "Comcast Monitoring Tools Dive Into CNCF Sandbox by Sydney Sawaya",
+      "title": "[Around the Web] Comcast Monitoring Tools Dive Into CNCF Sandbox by Sydney Sawaya",
       "date": "April 12, 2021",
       "url": "https://www.sdxcentral.com/articles/news/comcast-monitoring-tools-dive-into-cncf-sandbox/2021/04/",
       "image": "/images/blog/posts/sandbox.png"
     },
     {
-      "title": "Comcast makes waves in open source by Jeff Baumgartner",
+      "title": "[Around the Web] Comcast makes waves in open source by Jeff Baumgartner",
       "date": "April 12, 2021",
       "url": "https://www.lightreading.com/service-provider-cloud/comcast-makes-waves-in-open-source/d/d-id/768693",
       "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg"
@@ -43,7 +43,7 @@
       "image": "/images/blog/posts/The-Truth-About-Women-and-Open-Source.png"
     },
     {
-      "title": "Setup Kuberhealthy with Prometheus and Grafana on Minikube by Rocky Chen",
+      "title": "[Around the Web] Setup Kuberhealthy with Prometheus and Grafana on Minikube by Rocky Chen",
       "date": "January 10, 2021",
       "url": "https://medium.com/codex/setup-kuberhealthy-with-prometheus-and-grafana-on-minikube-b2f6da21dc2e",
       "image": "/images/blog/posts/laptop.jpg"
@@ -55,7 +55,7 @@
       "image": "/images/blog/posts/whiteboard-brainstorming-brainmapping-design-thinking-postits-kanban.jpg"
     },
     {
-      "title": "RealLIST Engineers 2020: Meet 21 influential technologists building a better Philadelphia by Paige Gross",
+      "title": "[Around the Web] RealLIST Engineers 2020: Meet 21 influential technologists building a better Philadelphia by Paige Gross",
       "date": "November 17, 2020",
       "url": "https://technical.ly/philly/2020/11/17/reallist-engineers-2020-influential-technologists-philadelphia/",
       "image": "/images/blog/posts/RealLIST-Engineers-Philly-2020.jpg"
@@ -67,7 +67,7 @@
       "image": "/images/blog/posts/mza_15502101781722997149.jpg"
     },
     {
-      "title": "Expert advice on open source from Google, Microsoft, and Comcast by Matt Asay",
+      "title": "[Around the Web] Expert advice on open source from Google, Microsoft, and Comcast by Matt Asay",
       "date": "November 16, 2020",
       "url": "https://www.techrepublic.com/article/expert-advice-on-open-source-from-google-microsoft-and-comcast/",
       "image": "/images/blog/posts/open-source-linux-code.jpg"
@@ -79,7 +79,7 @@
       "image": "/images/blog/posts/handshake_teamwork_meeting_office_space.jpg"
     },
     {
-      "title": "Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
+      "title": "[Around the Web] Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
       "date": "October 16, 2020",
       "url": "https://www.techrepublic.com/article/googles-kelsey-hightower-offers-tips-on-how-to-centralize-and-evolve-it-practices/",
       "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg"
@@ -91,19 +91,19 @@
       "image": ""
     },
     {
-      "title": "GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater Predictability in Open Source Licensing",
+      "title": "[Around the Web] GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater Predictability in Open Source Licensing",
       "date": "September 11, 2020",
       "url": "https://www.redhat.com/en/about/press-releases/gpl-initiative-grows-over-40-more-60-companies-have-joined-campaign-greater-predictability-open-source-licensing?sc_cid=701f2000000tyBjAAI",
       "image": ""
     },
     {
-      "title": "Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference",
+      "title": "[Around the Web] Meet these 12 tech companies and see who’s hiring at the Sept. 23 Developers Conference",
       "date": "September 10, 2020",
       "url": "https://technical.ly/philly/2020/09/10/meet-11-tech-companies-hiring-september-23-developers-conference-philly-tech-week-2020/",
       "image": "/images/blog/posts/Developers-Conference-2019-pic.jpeg"
     },
     {
-      "title": "The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.",
+      "title": "[Around the Web] The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.",
       "date": "September 3, 2020",
       "url": "https://www.prnewswire.com/news-releases/the-linux-foundation-announces-the-full-line-up-of-sessions-for-the-open-source-summit--embedded-linux-conference-europe-2020-virtual-experience-october-26---29-open-for-all---anytime-anywhere-301123877.html",
       "image": ""
@@ -121,7 +121,7 @@
       "image": ""
     },
     {
-      "title": "Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler",
+      "title": "[Around the Web] Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler",
       "date": "August 17, 2020",
       "url": "https://technical.ly/philly/2020/08/17/code-for-philly-new-technical-fellowship-paid-skills-development-mentorship/",
       "image": "/images/blog/posts/Code-for-Philly-fellowship.jpg"
@@ -133,25 +133,25 @@
       "image": "/images/blog/posts/server_data_system_admin.png"
     },
     {
-      "title": "Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
+      "title": "[Around the Web] Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
       "date": "July 30, 2020",
       "url": "https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/",
       "image": "/images/blog/posts/d05c303f-walkway-828684_1280.jpg"
     },
     {
-      "title": "Open source contributions face friction over company IP",
+      "title": "[Around the Web] Open source contributions face friction over company IP",
       "date": "July 6, 2020",
       "url": "https://searchitoperations.techtarget.com/news/252485541/Open-source-contributions-face-friction-over-company-IP",
       "image": ""
     },
     {
-      "title": "Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace",
+      "title": "[Around the Web] Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace",
       "date": "July 2, 2020",
       "url": "https://www.mobileworldmagazine.com/interviews/comcasts-larry-maccherone-driving-digital-transformation",
       "image": ""
     },
     {
-      "title": "Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace",
+      "title": "[Around the Web] Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace",
       "date": "July 1, 2020",
       "url": "https://www.mobileworldmagazine.com/company/comcast-introducing-devsecops-scale",
       "image": ""
@@ -163,7 +163,7 @@
       "image": ""
     },
     {
-      "title": "A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!",
+      "title": "[Around the Web] A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!",
       "date": "May 12, 2020",
       "url": "https://events.linuxfoundation.org/2020/05/12/a-big-thank-you-to-our-open-source-summit-embedded-linux-conference-north-america-2020-program-committee-members/",
       "image": ""
@@ -193,7 +193,7 @@
       "image": ""
     },
     {
-      "title": "Meet the Community Devroom Speakers Alison & Shilla by Leslie Hawthorn & Laura Czajkowsk",
+      "title": "[Around the Web] Meet the Community Devroom Speakers Alison & Shilla by Leslie Hawthorn & Laura Czajkowsk",
       "date": "January 29, 2020",
       "url": "https://medium.com/@leslielauralive/meet-the-community-devroom-speakers-alison-shilla-28f9a8b129e9",
       "image": ""
