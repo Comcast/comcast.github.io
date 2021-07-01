@@ -153,7 +153,6 @@ const Layout = ({ children }) => (
         </a>
         <a href="https://www.xfinity.com/corporate/legal/visitorAgreement.html">Terms</a>
         <a href="https://www.xfinity.com/corporate/privacy">Privacy</a>
-        <a href="https://www.xfinity.com/privacy/manage-preference">Do Not Sell My Info</a>
         <a href="https://corporate.comcast.com/motion-settings">Motion Settings</a>
         <ul className="social">
           <li className="facebook menu-item"><a href="https://www.facebook.com/comcast" title="Comcast on Facebook"><span className="vh">Comcast on Facebook</span></a></li>
