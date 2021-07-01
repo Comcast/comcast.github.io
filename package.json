@@ -21,6 +21,7 @@
   "author": "Comcast_Open_Source_Services@comcast.com",
   "license": "Apache-2.0",
   "dependencies": {
+    "build": "^0.1.4",
     "elliptic": "^6.5.4",
     "graphql": "^15.4.0",
     "graphql-request": "^3.3.0",
