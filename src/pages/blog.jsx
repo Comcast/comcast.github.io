@@ -10,37 +10,58 @@ import {
   color,
   overview,
   description,
+  sections,
   blogTitle,
   blogList,
 } from 'src/data/blog.json';
 
 const Blog = () => {
-  const [keyword, setKeyword] = useState(null);
-  const [pageNumber, setPageNumber] = useState(0);
-  const [projectLanguage, setLanguage] = useState(null);
+  const [webKeyword, setWebKeyword] = useState(null);
+  const [webPageNumber, setWebPageNumber] = useState(0);
+  const [webProjectLanguage, setWebLanguage] = useState(null);
+  const [ccKeyword, setCCKeyword] = useState(null);
+  const [ccPageNumber, setCCPageNumber] = useState(0);
+  const [ccProjectLanguage, setCCLanguage] = useState(null);
 
-  const onPageSelect = (event) => {
-    setPageNumber(parseInt(event.target.value, 10));
+  const onWebPageSelect = (event) => {
+    setWebPageNumber(parseInt(event.target.value, 10));
   };
 
-  const articleSearch = (event) => {
-    setKeyword(event.target.value);
-    setPageNumber(0);
+  const webArticleSearch = (event) => {
+    setWebKeyword(event.target.value);
+    setWebPageNumber(0);
   };
 
-  const selectLanguage = (event) => {
-    setLanguage(event.target.value);
-    setPageNumber(0);
+  const webSelectLanguage = (event) => {
+    setWebLanguage(event.target.value);
+    setWebPageNumber(0);
   };
 
-  const filteredList = blogList
+  const onCCPageSelect = (event) => {
+    setCCPageNumber(parseInt(event.target.value, 10));
+  };
+
+  const ccArticleSearch = (event) => {
+    setCCKeyword(event.target.value);
+    setCCPageNumber(0);
+  };
+
+  const ccSelectLanguage = (event) => {
+    setCCLanguage(event.target.value);
+    setCCPageNumber(0);
+  };
+
+  const filteredList = (section) => blogList
     .filter((data) => {
-      if (keyword && !projectLanguage) {
-        return data.title.toLowerCase().includes(keyword?.toLowerCase());
-        // || data.author.toLowerCase().includes(keyword?.toLowerCase());
+      var sectionMatch = data.section == section;
+      if (sectionMatch && section == "web" && webKeyword && !webProjectLanguage) {
+        return data.title.toLowerCase().includes(webKeyword?.toLowerCase());
+      }
+      if (sectionMatch && section == "comcast" && ccKeyword && !ccProjectLanguage) {
+        return data.title.toLowerCase().includes(ccKeyword?.toLowerCase());
       }
 
-      return data;
+      return sectionMatch && data;
     })
     .sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -71,17 +92,32 @@ const Blog = () => {
           {description && <p>{description}</p>}
         </section>
         <section>
-          <h2>{blogTitle}</h2>
+          <h2>{sections.comcast.title}</h2>
           <Filter
-            data={filteredList}
+            data={filteredList("comcast")}
             itemType={['post', 'posts']}
-            currentPage={pageNumber}
-            onPageSelect={onPageSelect}
-            onSearch={articleSearch}
-            onSelect={selectLanguage}
+            currentPage={ccPageNumber}
+            onPageSelect={onCCPageSelect}
+            onSearch={ccArticleSearch}
+            onSelect={ccSelectLanguage}
           />
           <ArticleList
-            content={filteredList.slice(pageNumber * 10, (pageNumber * 10) + 10)}
+            content={filteredList("comcast").slice(ccPageNumber * 10, (ccPageNumber * 10) + 10)}
+            defaultImage={featuredImage}
+          />
+        </section>
+        <section>
+          <h2>{sections.web.title}</h2>
+          <Filter
+            data={filteredList("web")}
+            itemType={['post', 'posts']}
+            currentPage={webPageNumber}
+            onPageSelect={onWebPageSelect}
+            onSearch={webArticleSearch}
+            onSelect={webSelectLanguage}
+          />
+          <ArticleList
+            content={filteredList("web").slice(webPageNumber * 10, (webPageNumber * 10) + 10)}
             defaultImage={featuredImage}
           />
         </section>
