@@ -20,7 +20,7 @@
   },
   "socialMedia": {
     "title": "Social Media",
-    "description": "See what’s happening on social media with Open Source. Follow the activity Comcast Open Source Projects, Open Source community, or Comcast Open Source Program Office and our people active in the Open Source community."
+    "description": "Check out our active projects, and people on social media."
   },
   "affiliates": {
     "title": "Affiliates",
@@ -50,7 +50,7 @@
       {
         "title": "InnerSource Commons",
         "type": "members",
-        "description": "The InnerSource Commons is a growing community of practitioners with the goal of creating and sharing knowledge about InnerSource: the use of open source best practices for software development within the confines of an organization. Founded in 2015, the InnerSource Commons is now supporting and connecting over 900 individuals from over 350 companies, academic institutions, and government agencies.",
+        "description": "The InnerSource Commons is a growing community of practitioners with the goal of creating and sharing knowledge about InnerSource: the use of open source best practices for software development within the confines of an organization.",
         "url": "https://innersourcecommons.org",
         "image": "/images/community/affiliates/isc.png"
       },
