@@ -111,7 +111,7 @@ const Layout = ({ children }) => (
           <address>
             <a href="mailto:Comcast_Open_Source_Services@comcast.com">Contact Comcast Open Source Services</a>
           </address>
-          <Link href={`${process.env.ASSET_PREFIX}/blog`}>Comcast Open Source Blog</Link>
+          <Link href={`${process.env.ASSET_PREFIX}/blog`}>Comcast Open Source News</Link>
           <p>
             <Link href={`${process.env.ASSET_PREFIX}/community#involvement`}>Contributing</Link> &amp; <Link href={`${process.env.ASSET_PREFIX}/community#code-of-conduct`}>Code of Conduct</Link>
           </p>
