@@ -193,7 +193,6 @@ const Home = ({ comcastGithubIo }) => {
         <section>
           <h2 id="community">{communitySection.title}</h2>
           {communitySection.blurb && <p>{communitySection.blurb}</p>}
-          <div style={{ padding: '4rem', backgroundColor: '#ccc' }}>[Get Involved? CommunityFeature? Video?]</div>
           <Cta type="people" color="red" label={communitySection.cta.label} url={communitySection.cta.url} />
           <FeatureSection
             title={communitySection.feature.title}
