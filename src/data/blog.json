@@ -49,7 +49,7 @@
             "date": "March 24, 2021",
             "url": "https://www.aswf.io/diversity/the-truth-about-women-and-open-source/",
             "image": "/images/blog/posts/The-Truth-About-Women-and-Open-Source.png",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Setup Kuberhealthy with Prometheus and Grafana on Minikube by Rocky Chen",
@@ -63,7 +63,7 @@
             "date": "November 27, 2020",
             "url": "https://opensource.com/article/20/11/inner-source",
             "image": "/images/blog/posts/whiteboard-brainstorming-brainmapping-design-thinking-postits-kanban.jpg",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "RealLIST Engineers 2020: Meet 21 influential technologists building a better Philadelphia by Paige Gross",
@@ -77,7 +77,7 @@
             "date": "November 17, 2020",
             "url":"https://podcasts.apple.com/us/podcast/e08-nithya-ruff-chair-linux-foundation-head-comcasts/id1525973271?i=1000498842461",
             "image": "/images/blog/posts/mza_15502101781722997149.jpg",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Expert advice on open source from Google, Microsoft, and Comcast by Matt Asay",
@@ -91,7 +91,7 @@
             "date": "November 13, 2020",
             "url": "https://opensource.com/article/20/11/selfless-culture",
             "image": "/images/blog/posts/handshake_teamwork_meeting_office_space.jpg",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
@@ -105,7 +105,7 @@
             "date": "October 14, 2020",
             "url": "https://open.spotify.com/show/5ZGTCyhjpnyZk5RDVH4WjS",
             "image": "",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "GPL Initiative Grows Over 40%; More Than 60 Companies Have Joined the Campaign for Greater Predictability in Open Source Licensing",
@@ -140,7 +140,7 @@
             "date": "August 19, 2020",
             "url": "https://www.finos.org/blog/posts/why-your-ospo-needs-to-invest-in-more-than-compliance-nithya-ruff-comcast",
             "image": "",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Code for Philly’s new technical fellowship offers paid skills development and mentorship by Michael Butler",
@@ -154,7 +154,7 @@
             "date": "August 5, 2020",
             "url": "https://opensource.com/article/20/8/capsule-networking",
             "image": "/images/blog/posts/server_data_system_admin.png",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
@@ -189,7 +189,7 @@
             "date": "May 29, 2020",
             "url": "https://kubernetes.io/blog/posts/2020/05/29/k8s-kpis-with-kuberhealthy/",
             "image": "",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "A Big Thank You to OSS Summit + Embedded Linux Conference NA 2020 Program Committee Members!",
@@ -203,7 +203,7 @@
             "date": "May 6, 2020",
             "url":"https://www.linkedin.com/pulse/committing-innovation-comcasts-nithya-ruff-talks-open-erica-brescia/?trackingId=05hzrZWrTW%2B0Nl2FMcRpDg%3D%3D",
             "image": "",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Collaboration for a Cause by Shilla Saebi",
@@ -217,7 +217,7 @@
             "date": "February 28, 2020",
             "url": "https://medium.com/@ShillaSaebi/black-history-month-hear-from-5-technology-innovators-ec6954ca2d61",
             "image": "",
-            "section": "comcast"
+            "section": "web"
         },
         {
             "title": "Meet the Community Devroom Speakers Alison & Shilla by Leslie Hawthorn & Laura Czajkowsk",
