@@ -262,13 +262,6 @@
             "section": "web"
         },
         {
-            "title": "[prnewswire.com] The Linux Foundation Announces the Full Line-up of Sessions for the Open Source Summit + Embedded Linux Conference Europe 2020 Virtual Experience, October 26 - 29 Open for all - Anytime. Anywhere.",
-            "date": "September 3, 2020",
-            "url": "https://www.prnewswire.com/news-releases/the-linux-foundation-announces-the-full-line-up-of-sessions-for-the-open-source-summit--embedded-linux-conference-europe-2020-virtual-experience-october-26---29-open-for-all---anytime-anywhere-301123877.html",
-            "image": "",
-            "section": "web"
-        },
-        {
             "title": "[opensource.com] Why Comcast open sourced its DNS management tool by Paul James Cleary",
             "date": "August 28, 2020",
             "url": "https://opensource.com/article/20/9/open-source-dns",
@@ -301,27 +294,6 @@
             "date": "July 30, 2020",
             "url": "https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/",
             "image": "/images/blog/posts/d05c303f-walkway-828684_1280.jpg",
-            "section": "web"
-        },
-        {
-            "title": "Open source contributions face friction over company IP",
-            "date": "July 6, 2020",
-            "url":"https://searchitoperations.techtarget.com/news/252485541/Open-source-contributions-face-friction-over-company-IP",
-            "image": "",
-            "section": "web"
-        },
-        {
-            "title": "[Mobile World Magazine] Comcast's Larry Maccherone on driving digital transformation by Sean Galea-Pace",
-            "date": "July 2, 2020",
-            "url":"https://www.mobileworldmagazine.com/interviews/comcasts-larry-maccherone-driving-digital-transformation",
-            "image": "",
-            "section": "web"
-        },
-        {
-            "title": "[Mobile World Magazine] Comcast: Introducing DevSecOps at Scale by Sean Galea-Pace",
-            "date": "July 1, 2020",
-            "url": "https://www.mobileworldmagazine.com/company/comcast-introducing-devsecops-scale",
-            "image": "",
             "section": "web"
         },
         {
