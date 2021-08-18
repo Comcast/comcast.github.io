@@ -10,13 +10,6 @@
     },
     "blogTitle": "In the News",
     "blogList": [{
-            "title": "[Tech Republic] Open source is leaving its vendor roots behind by Matt Asay",
-            "date": "May 7, 2021",
-            "url": "https://www.techrepublic.com/article/open-source-is-leaving-its-vendor-roots-behind/",
-            "image": "/images/blog/posts/open-source-linux-code.jpg",
-            "section": "web"
-        },
-        {
             "title": "Two Comcast Open-Source Projects Reach Key Community Milestone by Shilla Saebi",
             "date": "April 12, 2021",
             "url":"https://corporate.comcast.com/stories/two-comcast-open-source-projects-reach-key-community-milestone",
@@ -171,13 +164,6 @@
             "section": "web"
         },
         {
-            "title": "[SDX Central] Comcast Monitoring Tools Dive Into CNCF Sandbox by Sydney Sawaya",
-            "date": "April 12, 2021",
-            "url": "https://www.sdxcentral.com/articles/news/comcast-monitoring-tools-dive-into-cncf-sandbox/2021/04/",
-            "image": "/images/blog/posts/sandbox.png",
-            "section": "web"
-        },
-        {
             "title": "[Light Reading] Comcast makes waves in open source by Jeff Baumgartner",
             "date": "April 12, 2021",
             "url": "https://www.lightreading.com/service-provider-cloud/comcast-makes-waves-in-open-source/d/d-id/768693",
@@ -220,24 +206,10 @@
             "section": "web"
         },
         {
-            "title": "[Tech Republic] Expert advice on open source from Google, Microsoft, and Comcast by Matt Asay",
-            "date": "November 16, 2020",
-            "url":"https://www.techrepublic.com/article/expert-advice-on-open-source-from-google-microsoft-and-comcast/",
-            "image": "/images/blog/posts/open-source-linux-code.jpg",
-            "section": "web"
-        },
-        {
             "title": "[opensource.com] Three ways managers can build a team culture around open source by Shishir Kamboj",
             "date": "November 13, 2020",
             "url": "https://opensource.com/article/20/11/selfless-culture",
             "image": "/images/blog/posts/handshake_teamwork_meeting_office_space.jpg",
-            "section": "web"
-        },
-        {
-            "title": "[Tech Republic] Google's Kelsey Hightower offers tips on how to centralize and evolve IT practices by Matt Asay",
-            "date": "October 16, 2020",
-            "url": "https://www.techrepublic.com/article/googles-kelsey-hightower-offers-tips-on-how-to-centralize-and-evolve-it-practices/",
-            "image": "/images/blog/posts/femaleengineer-istock-1146417905-metamorworks.jpg",
             "section": "web"
         },
         {
@@ -287,13 +259,6 @@
             "date": "August 5, 2020",
             "url": "https://opensource.com/article/20/8/capsule-networking",
             "image": "/images/blog/posts/server_data_system_admin.png",
-            "section": "web"
-        },
-        {
-            "title": "[The New Stack] Why You Should Consider Establishing an Open Source Program Office by Myles Fenlon",
-            "date": "July 30, 2020",
-            "url": "https://thenewstack.io/why-you-should-consider-establishing-an-open-source-program-office/",
-            "image": "/images/blog/posts/d05c303f-walkway-828684_1280.jpg",
             "section": "web"
         },
         {
