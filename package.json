@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Comcast/comcast.github.io.git"
+    "url": "git@github.com:Comcast/comcast.github.io-website.git"
   },
   "author": "Comcast_Open_Source_Services@comcast.com",
   "license": "Apache-2.0",
