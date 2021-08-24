@@ -25,8 +25,6 @@ import { affiliates } from '../data/community.json';
 import { blogList } from '../data/blog.json';
 import { projects } from '../data/projects.json';
 
-const API_ENDPOINT = 'https://api.github.com/graphql';
-
 export async function getStaticProps() {
   const site_stats = await fetch("https://osstats.opensource.comcast.net/site-stats")
     .then(response => response.json());
