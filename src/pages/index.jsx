@@ -30,7 +30,7 @@ const API_ENDPOINT = 'https://api.github.com/graphql';
 export async function getStaticProps() {
   const graphQLClient = new GraphQLClient(API_ENDPOINT, {
     headers: {
-      authorization: 'Bearer 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',
+      authorization: 'Bearer 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',
     },
   });
 
