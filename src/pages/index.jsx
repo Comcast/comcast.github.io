@@ -28,53 +28,13 @@ import { projects } from '../data/projects.json';
 const API_ENDPOINT = 'https://api.github.com/graphql';
 
 export async function getStaticProps() {
-  const graphQLClient = new GraphQLClient(API_ENDPOINT, {
-    headers: {
-      authorization: 'Bearer ***REMOVED***',
-    },
-  });
-
-  const query = gql`
-  {
-    repository(name: "Comcast.github.io", owner: "comcast") {
-      name
-      description
-      updatedAt
-      description
-      url
-      licenseInfo {
-        name
-      }
-      mentionableUsers{
-        totalCount
-      }
-      commit: object(expression:"main") {
-        ... on Commit {
-          history {
-            totalCount
-          }
-        }
-      }
-      repositoryTopics(first: 20) {
-        totalCount
-        edges {
-          node {
-            topic {
-              name
-            }
-          }
-        }
-      }
-    }
-  }`;
-
-  const data = await graphQLClient.request(query);
+  const site_stats = await fetch("https://osstats.opensource.comcast.net/site-stats")
+    .then(response => response.json());
 
   return {
     props: {
-      comcastGithubIo: data.repository,
-      // error: data.error || '',
-    },
+      comcastGithubIo: site_stats.repository,
+    }
   };
 }
 
