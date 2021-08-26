@@ -69,9 +69,9 @@ const Home = ({ comcastGithubIo }) => {
   // if (error) {
   //   return <p>ERROR</p>;
   // }
-  if (!comcastGithubIo) {
-    return <p>Loading...</p>;
-  }
+  // if (!comcastGithubIo) {
+  //   return <p>Loading...</p>;
+  // }
 
   return (
     <>
