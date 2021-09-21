@@ -316,6 +316,7 @@ select:-moz-focusring {
 /*------------------------------------*\
     A11Y HELPERS
 \*------------------------------------*/
+/* visibly hidden class */
 .vh {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -325,6 +326,17 @@ select:-moz-focusring {
   white-space: nowrap;
   width: 1px;
 }
+
+/* Reduced Motion Query for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 
 main {
   flex: 1 0 auto;
@@ -862,6 +874,14 @@ a.cta:focus:after {
   }
   .nav li a {
     color: #ffffff;    
+  }
+
+  .siteId > a {
+    outline: .2rem solid rgba(255,255,255,0);
+    outline-offset: .2rem;
+    transition: .3s outline-color ease-out;
+    padding: .5rem .5rem .75rem;
+    margin-left: .4rem;
   }
 
   .footer__site {
