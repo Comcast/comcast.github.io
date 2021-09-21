@@ -49,3 +49,15 @@ a.articleLink:focus .articleTitle {
   width: 15rem;
   position: relative;
 }
+
+@media (max-width: 639px) {
+  .article {
+    display: block;
+  }
+  .articleMessage {
+    width: 100%;
+  }
+  .articleImage {
+    width: 100%;
+  }
+}

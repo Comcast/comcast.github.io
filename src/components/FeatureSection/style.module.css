@@ -27,6 +27,7 @@
 
 .featureImage {
   height: auto;
+  max-width: 20rem;
   padding: 0 2rem;
   width: 100%;
 }
@@ -62,19 +63,56 @@
   font-weight: 400;
 }
 
-.more {
+.more,
+.moreMobile {
   color: #fff;
-  font-size: 10rem;
   line-height: .666;
   outline: .2rem solid rgba(255,255,255,0);
   text-decoration: none;
 }
 
+.more {
+  font-size: 10rem;
+  display: block;
+}
+
+.moreMobile {
+  display: none;
+}
+
 .more:hover,
-.more:focus {
+.more:focus,
+.moreMobilehover,
+.moreMobile:focus {
   color: #ccc;
   outline: 0px solid #fff0;
   text-decoration: none;
+}
+
+.moreMobile:after {
+  content: "\E900";
+  display: inline-block;
+  font-family: comcorp-icons !important;
+  font-size: 1.5em;
+  margin-left: .5rem;
+  transform: translate(0, 20%);
+  transition: transform 0.2s ease-out;
+}
+
+.moreMobile:hover:after,
+.moreMobile:focus:after {
+  outline: 0px solid #fff0;
+  transform: translate(1.125rem, 20%);
+}
+
+@media (max-width: 639px) {
+  .more {
+    display: none;
+  }
+  .moreMobile {
+    display: block;
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 959px) {

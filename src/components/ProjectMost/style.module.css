@@ -31,6 +31,6 @@
 
 @media (max-width: 639px) {
   .project {
-    width: 48%;
+    width: 100%;
   }
 }

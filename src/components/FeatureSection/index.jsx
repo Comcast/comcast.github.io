@@ -10,6 +10,7 @@ import {
   featureImage,
   featureItems,
   more,
+  moreMobile,
 } from './style.module.css';
 
 const FeatureSection = ({
@@ -35,6 +36,9 @@ const FeatureSection = ({
       <p>
         <Link href={updateUrl(url)}>
           <a className={more} href={updateUrl(url)} aria-label={link} title={link}>⋮</a>
+        </Link>
+        <Link href={updateUrl(url)}>
+          <a className={moreMobile} href={updateUrl(url)} aria-label={link} title={link}>{link}</a>
         </Link>
       </p>
     )}

@@ -1,8 +1,9 @@
 .document {
-  padding: 3rem;
   background-color: #f4f4f4;
   border-left-style: solid;
   border-left-width: .2rem;
+  overflow: hidden;
+  padding: 3rem;
 }
 
 .document > h3:first-child {

@@ -2,7 +2,6 @@
   margin: 0;
   padding: 1rem .5rem 2rem;
   text-align: center;
-  width: 31%;
 }
 
 .number {
@@ -14,5 +13,11 @@
   text-transform: uppercase;
   font-size: .8rem;
   font-weight: 700;
+}
+
+@media (max-width: 639px) {
+  .figure {
+    width: 50%;
+  }
 }
 
