@@ -52,3 +52,18 @@ button.page:focus {
 .selected {
   border-bottom: .15rem solid #0089cf;
 }
+
+@media (max-width: 639px) {
+  .pagination {
+    display: block;
+  }
+  .paginationButtons {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .repoCount,
+  .pagesCount {
+    width: 100%;
+    text-align: center;
+  }
+}

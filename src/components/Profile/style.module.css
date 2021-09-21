@@ -35,8 +35,20 @@
   justify-content: space-around;
 }
 
+@media (max-width: 959px) {
+  .profile {
+    flex-basis: 66%;
+  }
+  .image {
+    height: 18rem;
+  }
+}
+
 @media (max-width: 639px) {
   .profile {
-    flex-basis: 51%;
+    flex-basis: 100%;
+  }
+  .image {
+    height: 24rem;
   }
 }

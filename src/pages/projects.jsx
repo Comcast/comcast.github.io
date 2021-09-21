@@ -24,8 +24,8 @@ import {
 const asOf = () => formatDate(new Date());
 
 export async function getStaticProps() {
-  const stats = await fetch("https://osstats.opensource.comcast.net/stats")
-    .then(response => response.json());
+  const stats = await fetch('https://osstats.opensource.comcast.net/stats')
+    .then((response) => response.json());
 
   return stats;
 }
@@ -142,7 +142,7 @@ const Projects = ({
           <h2>Overall Statistics</h2>
           <div>
             <p>as of {staticToday}</p>
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
               <NumberFigure color="orange" number={totalRepos} caption="Total Public Repos" />
               <NumberFigure color="blue" number={totalSourceRepos} caption="Total Source Repos" />
               <NumberFigure color="red" number={totalForkedRepos} caption="Total Forked Repos" />
