@@ -10,6 +10,20 @@
     },
     "blogTitle": "In the News",
     "blogList": [{
+            "title": "A New Era for OSPOs: A Panel Discussion",
+            "date": "October 10, 2021",
+            "url":"https://www.marketscreener.com/quote/stock/VMWARE-INC-58476/news/A-New-Era-for-OSPOs-A-Panel-Discussion-36608304/",
+            "image": "/images/blog/posts/vmos.jpg",
+            "section": "web"
+        },
+        {
+            "title": "The Linux Foundation Announces Agenda and Speaker Lineup for the 2021 Linux Foundation Member Summit by The Linux Foundation",
+            "date": "September 21, 2021",
+            "url":"https://www.prnewswire.com/news-releases/the-linux-foundation-announces-agenda-and-speaker-lineup-for-the-2021-linux-foundation-member-summit-301381273.html",
+            "image": "/images/blog/posts/prnews.jpg",
+            "section": "web"
+        },
+        {
             "title": "Two Comcast Open-Source Projects Reach Key Community Milestone by Shilla Saebi",
             "date": "April 12, 2021",
             "url":"https://corporate.comcast.com/stories/two-comcast-open-source-projects-reach-key-community-milestone",
