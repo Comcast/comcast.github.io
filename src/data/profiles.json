@@ -1,24 +1,20 @@
 [
   {
-    "name": "Nithya Ruff",
-    "title": "Executive Director, Open Source Program Office, Comcast",
-    "image": "/images/people/profiles/nithyaruff.png",
+    "name": "Chan Voong",
+    "title": "Technical Program Manager, Open Source Program Office, Comcast",
+    "image": "/images/people/profiles/chan.png",
     "bio": "???",
     "connect": [
       {
         "name": "GitHub",
-        "link": "https://github.com/nruff"},
+        "link": "https://github.com/voongc"},
       {
         "name": "LinkedIn",
-        "link": "https://www.linkedin.com/in/nithyaruff/"
-      },
-      {
-        "name": "Twitter",
-        "link": "https://twitter.com/nithyaruff"
+        "link": "https://www.linkedin.com/in/chan-voong-pmp-45226049/"
       },
       {
         "name": "Website",
-        "link": "http://www.behindthetech.org/nithya-ruff"
+        "link": "http://comcast.github.io"
       }
     ]
   },
