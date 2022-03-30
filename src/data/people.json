@@ -25,6 +25,13 @@
   "talksTitle": "Talks",
   "talksList": [
     {
+      "title": "The Future of AI, Open Source, and Enterprise SaaS with Databricks CEO Ali Ghodsi and Comcast",
+      "date": "December 7, 2021",
+      "author": "Nithya Ruff",
+      "url": "https://www.youtube.com/watch?v=gsnpZS2S8dw",
+      "image": ""
+    },
+    {
       "title": "KubeCon EU: Building Your Brand with CNCF",
       "date": "May 5, 2021",
       "author": "Shilla Saebi, Bill Mulligan",
