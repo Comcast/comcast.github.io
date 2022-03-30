@@ -16,9 +16,6 @@ const Event = ({ events, talks, speakers }) => (
         const backgroundImage = `linear-gradient(0deg, #000c 0%, #0006 100%), url(${process.env.ASSET_PREFIX}${event.image})`;
         const keynote = talks.filter((talk) => talk.title === event.keynote);
         const selectedTalks = talks.filter((talk) => event.specificTalks.includes(talk.title));
-        const selectedSpeakers = speakers.filter((speaker) => (
-          selectedTalks.map((talk) => talk.author.includes(speaker.name)).includes(true)
-        ));
 
         return (
           <article className={conference} style={{ backgroundImage }} key={event.title}>
@@ -27,7 +24,7 @@ const Event = ({ events, talks, speakers }) => (
               <p className={overview}>{event.openingRemarksOverview}</p>
               <p>{event.openingRemarksDescription}</p>
             </section>
-            <h3>Keynote</h3>
+            {keynote.length > 0 && <h3>Keynote</h3> }
             {keynote.map((talk) => (
               <article key={`keynote_${talk.title}`} className={card}>
                 <ArticleItem
@@ -41,7 +38,7 @@ const Event = ({ events, talks, speakers }) => (
                 />
               </article>
             ))}
-            <h3>Topic Talks</h3>
+            {selectedTalks.length > 0 && <h3>Topic Talks</h3> }
             {selectedTalks.map((talk) => (
               <div key={`talks_${talk.title}`} className={card}>
                 <ArticleItem
@@ -55,9 +52,9 @@ const Event = ({ events, talks, speakers }) => (
                 />
               </div>
             ))}
-            <h3>Speakers</h3>
+            { speakers.length > 0 && <h3>Profiles</h3> }
             <section className={`${speakerList} profiles`}>
-              {selectedSpeakers.map((speaker) => (
+              {speakers.map((speaker) => (
                 <Profile key={`speakers_${speaker.name}`} person={speaker} defaultImage={event.image} />
               ))}
             </section>
