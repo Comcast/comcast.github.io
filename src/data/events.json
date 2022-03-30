@@ -8,6 +8,18 @@
   "pastTitle": "Past Events",
   "eventList": [
      {
+      "title":  "ApacheCon North America",
+      "description": "ApacheCon North America 2022 will be held at the Sheraton, Canal Street, New Orleans, October 3-6 2022.",
+      "location": {
+        "city": "New Orleans",
+        "state": "LA",
+        "country": "USA"
+     },
+      "url": "https://www.apachecon.com/acna2022/",
+      "start": "Oct 3 2022 00:00:00 GMT-0400",
+      "end": "Oct 6 2022 23:59:59 GMT-0400"
+     },
+     {
       "title":  "DevOps Enterpise Summit 2022",
       "description": "DevOps Enterprise Summit US Flagship Event",
       "location": {
