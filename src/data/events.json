@@ -7,6 +7,52 @@
   "upcomingTitle": "Upcoming Events",
   "pastTitle": "Past Events",
   "eventList": [
+     {
+      "title":  "DevOps Enterpise Summit 2022",
+      "description": "DevOps Enterprise Summit US Flagship Event",
+      "location": {
+        "online": true
+     },
+      "url": "https://events.itrevolution.com",
+      "start": "Aug 2 2022 00:00:00 GMT-0400",
+      "end": "Aug 4 2022 23:59:59 GMT-0400"
+     },
+     {
+      "title":  "KubeCon + CloudNativeCon North America",
+      "description": "The Cloud Native Computing Foundation’s flagship conference gathers adopters and technologists from leading open source and cloud native communities in Detroit, Michigan from October 24 – 28, 2022.",
+      "location": {
+        "city": "Detroit",
+        "state": "MI",
+        "country": "USA"
+    },
+      "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
+      "start": "Oct 24 2022 00:00:00 GMT-0400",
+      "end": "Oct 28 2022 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "All Things Open",
+      "description": "We’re celebrating 10 years of All Things Open next October 30 – November 2, and we kindly request you save the date(s) and join us.",
+      "location": {
+        "city": "Raleigh",
+        "state": "NC",
+        "country": "USA"
+    },
+      "url": "https://2021.allthingsopen.org/save-the-date-2022/",
+      "start": "Oct 30 2022 00:00:00 GMT-0400",
+      "end": "Nov 2 2022 23:59:59 GMT-0400"
+    },
+    {
+      "title":  "OSPOCon",
+      "description": "OSPOCon is where those working in open source program offices in organizations that rely on open source technologies come together to learn and share best practices, experiences and tooling to overcome challenges they face. OSPOCon is presented by the TODO Group and The Linux Foundation.",
+      "location": {
+        "city": "Austin",
+        "state": "TX",
+        "country": "USA"
+    },
+      "url": "https://events.linuxfoundation.org/open-source-summit-north-america/about/ospocon/",
+      "start": "Jun 21 2022 00:00:00 GMT-0400",
+      "end": "Jun 24 2022 23:59:59 GMT-0400"
+    },
     {
       "title":  "Open Source Summit + Embedded Linux Conference",
       "description": "Open Source Summit connects the open source ecosystem under one roof. It’s a unique environment for cross-collaboration between developers, sysadmins, devops, architects and others who are driving technology forward.",
