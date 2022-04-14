@@ -25,6 +25,13 @@
   "talksTitle": "Talks",
   "talksList": [
     {
+      "title": "Community Building for InnerSource Projects with Shilla Saebi (Comcast), Georg J.P. Link (Bitergia) and Isabel Drost-Fromm (Europace)",
+      "date": "March 31, 2022",
+      "author": "Shilla Saebi",
+      "url": "https://www.youtube.com/watch?v=M90FawnArJ4&t=14s",
+      "image": ""
+    },
+    {
       "title": "The Future of AI, Open Source, and Enterprise SaaS with Databricks CEO Ali Ghodsi and Comcast",
       "date": "December 7, 2021",
       "author": "Nithya Ruff",
