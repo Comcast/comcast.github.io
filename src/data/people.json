@@ -12,7 +12,7 @@
       "topicKey": "cloud",
       "beginDate": "2021-01-21",
       "endDate": "2021-12-31",
-      "openingRemarksOverview": "We’re pleased to welcome you to our conference presentation digest.",
+      "openingRemarksOverview": "We're pleased to welcome you to our conference presentation digest.",
       "openingRemarksDescription": "Each year the Comcast Open Source Program Office will highlight a curated list of presentations and talks given by the people of Comcast at various events on topics related to Open Source Software.",
       "featured": "Why Diversity in Open Source Will Lead to Better Products for Everyone",
       "specificTalks": [
@@ -24,6 +24,13 @@
   ],
   "talksTitle": "Talks",
   "talksList": [
+    {
+      "title": "Community Building for InnerSource Projects with Shilla Saebi (Comcast), Georg J.P. Link (Bitergia) and Isabel Drost-Fromm (Europace)",
+      "date": "March 31, 2022",
+      "author": "Shilla Saebi",
+      "url": "https://www.youtube.com/watch?v=M90FawnArJ4&t=14s",
+      "image": ""
+    },
     {
       "title": "The Future of AI, Open Source, and Enterprise SaaS with Databricks CEO Ali Ghodsi and Comcast",
       "date": "December 7, 2021",
@@ -116,7 +123,7 @@
       "image": ""
     },
     {
-      "title": "Panel: “Allies for Diversity”",
+      "title": "Panel: \"Allies for Diversity\"",
       "date": "July 22, 2020",
       "author": "Jon Moore, Nithya Ruff, & Shane Portfolio. Moderated by Kendra Lee",
       "url": "https://www.comcastlabsconnect.com/2020-inclusion-schedule/panel-allies-for-diversity-moderated-by-kendra-lee-of-comcast",

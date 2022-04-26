@@ -8,7 +8,7 @@
   "pastTitle": "Past Events",
   "eventList": [
     {
-      "title":  "Philly Mobile Development Conference",
+      "title": "Philly Mobile Development Conference",
       "description": "Building large-scale mobile applications
       Join us for a full-day, two-track virtual event designed specifically for mobile developers
       The Philly Mobile Development Conference examines how distributed mobile development teams collaborate and develop apps at scale while embracing the latest mobile trends. We’ll feature the latest in Android & iOS mobile development, including technologies, collaborative processes, and solution.",
@@ -16,25 +16,25 @@
         "city": "Virtual",
         "state": " ",
         "country": "USA"
-     },
+      },
       "url": "https://www.comcastlabsconnect.com/2022-mobile",
       "start": "May 5 2022 00:00:00 GMT-0400",
       "end": "May 5 2022 23:59:59 GMT-0400"
-     },
-     {
-      "title":  "Innovation for Inclusion of Diversity & Accessibility",
+    },
+    {
+      "title": "Innovation for Inclusion of Diversity & Accessibility",
       "description": "Inclusive products deliver a better experience for everyone, and innovation is only possible when diversity and accessibility are at the forefront of development. The Innovation for Inclusion of Diversity & Accessibility conference embraces our diverse world and the development of technology for everyone.",
       "location": {
         "city": "Virtual",
         "state": " ",
         "country": "USA"
-     },
+      },
       "url": "https://www.comcastlabsconnect.com/2022-inclusion",
       "start": "June 9 2022 00:00:00 GMT-0400",
       "end": "June 9 2022 23:59:59 GMT-0400"
-     },
-     {
-      "title":  "PHLAI - Artificial Intelligence & Machine Learning",
+    },
+    {
+      "title": "PHLAI - Artificial Intelligence & Machine Learning",
       "description": "AI technologies have been impacting our daily lives positively from entertainment, autonomous driving, smart home, personal health and finance among many other applications. AI researchers and practitioners continuously develop state-of-the-art technologies of machine learning /deep learning (ML/DL), Reinforcement Learning and Artificial General Intelligence (AGI), and adapt them to practical problems in a scalable way.
 
       At this year's conference, we will have the opportunity to hear about the advances of deep learning and AI from leading innovators and researchers on computer vision, NLP, speech AI to big data analytics, and to hear from the AI experts and practitioners across industries to share how they used AI to make an impact in the real world and discuss the challenges and opportunities pertaining to ML technologies and MLOps including development process to design, build, test, reproduce, scale, and evolve AI-powered capabilities.",
@@ -42,25 +42,25 @@
         "city": "Virtual",
         "state": " ",
         "country": "USA"
-     },
+      },
       "url": "https://www.comcastlabsconnect.com/2022-phlai",
       "start": "September 8 2022 00:00:00 GMT-0400",
       "end": "September 8 2022 23:59:59 GMT-0400"
-     },
+    },
     {
-      "title":  "ApacheCon North America",
+      "title": "ApacheCon North America",
       "description": "ApacheCon North America 2022 will be held at the Sheraton, Canal Street, New Orleans, October 3-6 2022.",
       "location": {
         "city": "New Orleans",
         "state": "LA",
         "country": "USA"
-     },
+      },
       "url": "https://www.apachecon.com/acna2022/",
       "start": "Oct 3 2022 00:00:00 GMT-0400",
       "end": "Oct 6 2022 23:59:59 GMT-0400"
-     },
-     {
-      "title":  "Security by the Schuylkill",
+    },
+    {
+      "title": "Security by the Schuylkill",
       "description": "The Emerging Threat Landscape
       The world is changing at a rapid pace. Global threats such as ransomware continue to rise. Consumers are more aware of how organizations leverage their personal information. Legislations around data privacy are evolving. These challenges require organizations to reassess their cybersecurity and data privacy strategies.
       
@@ -69,60 +69,60 @@
         "city": "Virtual",
         "state": "LA",
         "country": "USA"
-     },
+      },
       "url": "https://www.comcastlabsconnect.com/cybersecurity-2022",
       "start": "October 20 2022 00:00:00 GMT-0400",
       "end": "October 20 2022 23:59:59 GMT-0400"
-     },
-     {
-      "title":  "DevOps Enterpise Summit 2022",
+    },
+    {
+      "title": "DevOps Enterpise Summit 2022",
       "description": "DevOps Enterprise Summit US Flagship Event",
       "location": {
         "online": true
-     },
+      },
       "url": "https://events.itrevolution.com",
       "start": "Aug 2 2022 00:00:00 GMT-0400",
       "end": "Aug 4 2022 23:59:59 GMT-0400"
-     },
-     {
-      "title":  "KubeCon + CloudNativeCon North America",
-      "description": "The Cloud Native Computing Foundation’s flagship conference gathers adopters and technologists from leading open source and cloud native communities in Detroit, Michigan from October 24 – 28, 2022.",
+    },
+    {
+      "title": "KubeCon + CloudNativeCon North America",
+      "description": "The Cloud Native Computing Foundation's flagship conference gathers adopters and technologists from leading open source and cloud native communities in Detroit, Michigan from October 24 - 28, 2022.",
       "location": {
         "city": "Detroit",
         "state": "MI",
         "country": "USA"
-    },
+      },
       "url": "https://events.linuxfoundation.org/kubecon-cloudnativecon-north-america/",
       "start": "Oct 24 2022 00:00:00 GMT-0400",
       "end": "Oct 28 2022 23:59:59 GMT-0400"
     },
     {
-      "title":  "All Things Open",
-      "description": "We’re celebrating 10 years of All Things Open next October 30 – November 2, and we kindly request you save the date(s) and join us.",
+      "title": "All Things Open",
+      "description": "We're celebrating 10 years of All Things Open next October 30 - November 2, and we kindly request you save the date(s) and join us.",
       "location": {
         "city": "Raleigh",
         "state": "NC",
         "country": "USA"
-    },
+      },
       "url": "https://2021.allthingsopen.org/save-the-date-2022/",
       "start": "Oct 30 2022 00:00:00 GMT-0400",
       "end": "Nov 2 2022 23:59:59 GMT-0400"
     },
     {
-      "title":  "OSPOCon",
+      "title": "OSPOCon",
       "description": "OSPOCon is where those working in open source program offices in organizations that rely on open source technologies come together to learn and share best practices, experiences and tooling to overcome challenges they face. OSPOCon is presented by the TODO Group and The Linux Foundation.",
       "location": {
         "city": "Austin",
         "state": "TX",
         "country": "USA"
-    },
+      },
       "url": "https://events.linuxfoundation.org/open-source-summit-north-america/about/ospocon/",
       "start": "Jun 21 2022 00:00:00 GMT-0400",
       "end": "Jun 24 2022 23:59:59 GMT-0400"
     },
     {
-      "title":  "Open Source Summit + Embedded Linux Conference",
-      "description": "Open Source Summit connects the open source ecosystem under one roof. It’s a unique environment for cross-collaboration between developers, sysadmins, devops, architects and others who are driving technology forward.",
+      "title": "Open Source Summit + Embedded Linux Conference",
+      "description": "Open Source Summit connects the open source ecosystem under one roof. It's a unique environment for cross-collaboration between developers, sysadmins, devops, architects and others who are driving technology forward.",
       "location": {
         "online": true
       },
@@ -131,7 +131,7 @@
       "end": "Sep 30 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "All Things Open",
+      "title": "All Things Open",
       "description": "All Things Open, the largest open source / tech / web conference on the U.S. east coast, is going virtual.",
       "location": {
         "online": true
@@ -141,7 +141,7 @@
       "end": "Oct 19 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "Innovation for Inclusion of Diversity & Accessibility",
+      "title": "Innovation for Inclusion of Diversity & Accessibility",
       "description": "Innovation for Inclusion of Diversity & Accessibility intends to bring technology to all groups and to bring all groups into the development of technology. This conference will focus on approaches and methods that bring the margins of technology back toward the center.",
       "location": {
         "online": true
@@ -151,7 +151,7 @@
       "end": "Jun 17 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "PHLAI - Artificial Intelligence & Machine Learning",
+      "title": "PHLAI - Artificial Intelligence & Machine Learning",
       "description": "PHLAI unites the brightest industry professionals in numerous data science and technical fields to talk about innovative methods in AI and the use of AI automation at scale.",
       "location": {
         "online": true
@@ -161,7 +161,7 @@
       "end": "Sep 9 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "InnerSource Commons Community Call - InnerSource & DevOps",
+      "title": "InnerSource Commons Community Call - InnerSource & DevOps",
       "description": "Join us for an InnerSource Commons Community Call where we will discuss the topic of InnerSource & DevOps.",
       "location": {
         "online": true
@@ -171,8 +171,8 @@
       "end": "Jun 1 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "KubeCon + CloudNativeCon North America",
-      "description": "The Cloud Native Computing Foundation’s flagship conference gathers adopters and technologists from leading open source and cloud native communities.",
+      "title": "KubeCon + CloudNativeCon North America",
+      "description": "The Cloud Native Computing Foundation's flagship conference gathers adopters and technologists from leading open source and cloud native communities.",
       "location": {
         "city": "Los Angeles",
         "state": "CA",
@@ -183,7 +183,7 @@
       "end": "Oct 15 2021 23:59:59 GMT-0400"
     },
     {
-      "title":  "Hacktoberfest 2020",
+      "title": "Hacktoberfest 2020",
       "description": "Hacktoberfest is an event that takes place every year for the entire month of October to encourage open source contributions. Here at Comcast we produce and work on many open source projects.",
       "location": {
         "online": true
@@ -193,8 +193,8 @@
       "end": "Oct 31 2020 23:59:59 GMT-0400"
     },
     {
-      "title":  "Open Source Summit North America",
-      "description": "The Open Source Summit + Embedded Linux Conference North America 2020 Virtual Experience! We welcomed over 4000 attendees, from 109 countries – thank you to all the attendees, sponsors and speakers that joined us virtually this year.",
+      "title": "Open Source Summit North America",
+      "description": "The Open Source Summit + Embedded Linux Conference North America 2020 Virtual Experience! We welcomed over 4000 attendees, from 109 countries - thank you to all the attendees, sponsors and speakers that joined us virtually this year.",
       "location": {
         "online": true
       },
@@ -203,7 +203,7 @@
       "end": "July 2 2020 23:59:59 GMT-0400"
     },
     {
-      "title":  "Open Source World",
+      "title": "Open Source World",
       "description": "Hear the latest Open Source news and project updates, gain access to in-depth technical sessions, participate in networking opportunities, meet potential collaborators and review and discuss detailed case studies of Open Source projects.",
       "location": {
         "city": "Miami",
@@ -215,8 +215,8 @@
       "end": "Jun 25 2021 23:59:59 GMT-0500"
     },
     {
-      "title":  "Comcast TXPO (Tech Expo)",
-      "description": "Hear from some premier thought leaders in technology. This interactive workshop is designed to give technology enthusiasts a closer look at the cutting edge innovations our company is developing, while learning more about the inclusive and diverse culture. Look for the Open Source Panel at 4 o’clock!",
+      "title": "Comcast TXPO (Tech Expo)",
+      "description": "Hear from some premier thought leaders in technology. This interactive workshop is designed to give technology enthusiasts a closer look at the cutting edge innovations our company is developing, while learning more about the inclusive and diverse culture. Look for the Open Source Panel at 4 o'clock!",
       "location": {
         "online": true
       },
@@ -225,7 +225,7 @@
       "end": "Nov 18 2020 17:20:00 GMT-0400"
     },
     {
-      "title":  "Open Source 101",
+      "title": "Open Source 101",
       "description": "A day of 45 and 90-minute sessions delivered by open source thought leaders from world-class companies and organizations",
       "location": {
         "city": "Austin",
