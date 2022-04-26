@@ -7,7 +7,47 @@
   "upcomingTitle": "Upcoming Events",
   "pastTitle": "Past Events",
   "eventList": [
+    {
+      "title":  "Philly Mobile Development Conference",
+      "description": "Building large-scale mobile applications
+      Join us for a full-day, two-track virtual event designed specifically for mobile developers
+      The Philly Mobile Development Conference examines how distributed mobile development teams collaborate and develop apps at scale while embracing the latest mobile trends. We’ll feature the latest in Android & iOS mobile development, including technologies, collaborative processes, and solution.",
+      "location": {
+        "city": "Virtual",
+        "state": " ",
+        "country": "USA"
+     },
+      "url": "https://www.comcastlabsconnect.com/2022-mobile",
+      "start": "May 5 2022 00:00:00 GMT-0400",
+      "end": "May 5 2022 23:59:59 GMT-0400"
+     },
      {
+      "title":  "Innovation for Inclusion of Diversity & Accessibility",
+      "description": "Inclusive products deliver a better experience for everyone, and innovation is only possible when diversity and accessibility are at the forefront of development. The Innovation for Inclusion of Diversity & Accessibility conference embraces our diverse world and the development of technology for everyone.",
+      "location": {
+        "city": "Virtual",
+        "state": " ",
+        "country": "USA"
+     },
+      "url": "https://www.comcastlabsconnect.com/2022-inclusion",
+      "start": "June 9 2022 00:00:00 GMT-0400",
+      "end": "June 9 2022 23:59:59 GMT-0400"
+     },
+     {
+      "title":  "PHLAI - Artificial Intelligence & Machine Learning",
+      "description": "AI technologies have been impacting our daily lives positively from entertainment, autonomous driving, smart home, personal health and finance among many other applications. AI researchers and practitioners continuously develop state-of-the-art technologies of machine learning /deep learning (ML/DL), Reinforcement Learning and Artificial General Intelligence (AGI), and adapt them to practical problems in a scalable way.
+
+      At this year's conference, we will have the opportunity to hear about the advances of deep learning and AI from leading innovators and researchers on computer vision, NLP, speech AI to big data analytics, and to hear from the AI experts and practitioners across industries to share how they used AI to make an impact in the real world and discuss the challenges and opportunities pertaining to ML technologies and MLOps including development process to design, build, test, reproduce, scale, and evolve AI-powered capabilities.",
+      "location": {
+        "city": "Virtual",
+        "state": " ",
+        "country": "USA"
+     },
+      "url": "https://www.comcastlabsconnect.com/2022-phlai",
+      "start": "September 8 2022 00:00:00 GMT-0400",
+      "end": "September 8 2022 23:59:59 GMT-0400"
+     },
+    {
       "title":  "ApacheCon North America",
       "description": "ApacheCon North America 2022 will be held at the Sheraton, Canal Street, New Orleans, October 3-6 2022.",
       "location": {
@@ -18,6 +58,21 @@
       "url": "https://www.apachecon.com/acna2022/",
       "start": "Oct 3 2022 00:00:00 GMT-0400",
       "end": "Oct 6 2022 23:59:59 GMT-0400"
+     },
+     {
+      "title":  "Security by the Schuylkill",
+      "description": "The Emerging Threat Landscape
+      The world is changing at a rapid pace. Global threats such as ransomware continue to rise. Consumers are more aware of how organizations leverage their personal information. Legislations around data privacy are evolving. These challenges require organizations to reassess their cybersecurity and data privacy strategies.
+      
+      Join us as we explore, network, and foster the exchange of innovative ideas with practitioners, academics, and business professionals for a full day composed of two learning tracks.",
+      "location": {
+        "city": "Virtual",
+        "state": "LA",
+        "country": "USA"
+     },
+      "url": "https://www.comcastlabsconnect.com/cybersecurity-2022",
+      "start": "October 20 2022 00:00:00 GMT-0400",
+      "end": "October 20 2022 23:59:59 GMT-0400"
      },
      {
       "title":  "DevOps Enterpise Summit 2022",
