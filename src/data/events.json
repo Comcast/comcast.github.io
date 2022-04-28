@@ -9,9 +9,7 @@
   "eventList": [
     {
       "title": "Philly Mobile Development Conference",
-      "description": "Building large-scale mobile applications
-      Join us for a full-day, two-track virtual event designed specifically for mobile developers
-      The Philly Mobile Development Conference examines how distributed mobile development teams collaborate and develop apps at scale while embracing the latest mobile trends. We’ll feature the latest in Android & iOS mobile development, including technologies, collaborative processes, and solution.",
+      "description": "Building large-scale mobile applications? Join us for a full-day, two-track virtual event designed specifically for mobile developers. The Philly Mobile Development Conference examines how distributed mobile development teams collaborate and develop apps at scale while embracing the latest mobile trends. We'll feature the latest in Android & iOS mobile development, including technologies, collaborative processes, and solution.",
       "location": {
         "city": "Virtual",
         "state": " ",
@@ -35,9 +33,7 @@
     },
     {
       "title": "PHLAI - Artificial Intelligence & Machine Learning",
-      "description": "AI technologies have been impacting our daily lives positively from entertainment, autonomous driving, smart home, personal health and finance among many other applications. AI researchers and practitioners continuously develop state-of-the-art technologies of machine learning /deep learning (ML/DL), Reinforcement Learning and Artificial General Intelligence (AGI), and adapt them to practical problems in a scalable way.
-
-      At this year's conference, we will have the opportunity to hear about the advances of deep learning and AI from leading innovators and researchers on computer vision, NLP, speech AI to big data analytics, and to hear from the AI experts and practitioners across industries to share how they used AI to make an impact in the real world and discuss the challenges and opportunities pertaining to ML technologies and MLOps including development process to design, build, test, reproduce, scale, and evolve AI-powered capabilities.",
+      "description": "AI technologies have been impacting our daily lives positively from entertainment, autonomous driving, smart home, personal health and finance among many other applications. AI researchers and practitioners continuously develop state-of-the-art technologies of machine learning /deep learning (ML/DL), Reinforcement Learning and Artificial General Intelligence (AGI), and adapt them to practical problems in a scalable way.  At this year's conference, we will have the opportunity to hear about the advances of deep learning and AI from leading innovators and researchers on computer vision, NLP, speech AI to big data analytics, and to hear from the AI experts and practitioners across industries to share how they used AI to make an impact in the real world and discuss the challenges and opportunities pertaining to ML technologies and MLOps including development process to design, build, test, reproduce, scale, and evolve AI-powered capabilities.",
       "location": {
         "city": "Virtual",
         "state": " ",
@@ -61,10 +57,7 @@
     },
     {
       "title": "Security by the Schuylkill",
-      "description": "The Emerging Threat Landscape
-      The world is changing at a rapid pace. Global threats such as ransomware continue to rise. Consumers are more aware of how organizations leverage their personal information. Legislations around data privacy are evolving. These challenges require organizations to reassess their cybersecurity and data privacy strategies.
-      
-      Join us as we explore, network, and foster the exchange of innovative ideas with practitioners, academics, and business professionals for a full day composed of two learning tracks.",
+      "description": "The Emerging Threat Landscape - The world is changing at a rapid pace. Global threats such as ransomware continue to rise. Consumers are more aware of how organizations leverage their personal information. Legislations around data privacy are evolving. These challenges require organizations to reassess their cybersecurity and data privacy strategies.  Join us as we explore, network, and foster the exchange of innovative ideas with practitioners, academics, and business professionals for a full day composed of two learning tracks.",
       "location": {
         "city": "Virtual",
         "state": "LA",

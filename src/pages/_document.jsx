@@ -32,6 +32,14 @@ class MyDocument extends Document {
           <link rel="mask-icon" href={updateUrl('/images/favicon/safari-pinned-tab.svg')} color="#5bbad5" />
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102911798-1"></script>
+          <script async dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-102911798-1');`
+          }}/>
         </Head>
         <body>
           <article className="page">
