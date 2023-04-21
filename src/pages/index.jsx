@@ -26,8 +26,10 @@ import { blogList } from '../data/blog.json';
 import { projects } from '../data/projects.json';
 
 export async function getStaticProps() {
+  console.log("Inside Async=======>")
   const site_stats = await fetch("https://osstats.opensource.comcast.net/site-stats")
     .then(response => response.json());
+    console.log(site_stats.repository)
 
   return {
     props: {
