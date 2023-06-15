@@ -6,12 +6,12 @@
   "color": "red",
   "conference": [
     {
-      "title": "2021",
+      "title": "2023",
       "confTopic": "Open Source",
       "image": "/images/carousel/corporate_10G-HeroImage_5x2_v5.png",
       "topicKey": "cloud",
       "beginDate": "2021-01-21",
-      "endDate": "2021-12-31",
+      "endDate": "2023-12-31",
       "openingRemarksOverview": "We're pleased to welcome you to our conference presentation digest.",
       "openingRemarksDescription": "Each year the Comcast Open Source Program Office will highlight a curated list of presentations and talks given by the people of Comcast at various events on topics related to Open Source Software.",
       "featured": "Why Diversity in Open Source Will Lead to Better Products for Everyone",
@@ -24,6 +24,20 @@
   ],
   "talksTitle": "Talks",
   "talksList": [
+    {
+      "title": "Layoffs and Hiring Freezes in OSPOs: Challenges and Open Issues by Shilla Saebi, Comcast and other TODOGroup Steering Committee Members",
+      "date": "May 31, 2023",
+      "author": "Shilla Saebi",
+      "url": "https://www.youtube.com/watch?v=XuPqvqWgD_A",
+      "image": ""
+    },
+    {
+      "title": "The First All-Women OSPO by Chan Voong",
+      "date": "May 11, 2023",
+      "author": "Chan Voong",
+      "url": "https://www.youtube.com/watch?v=Uc7eDhORfAI",
+      "image": ""
+    },
     {
       "title": "Community Building for InnerSource Projects with Shilla Saebi (Comcast), Georg J.P. Link (Bitergia) and Isabel Drost-Fromm (Europace)",
       "date": "March 31, 2022",
