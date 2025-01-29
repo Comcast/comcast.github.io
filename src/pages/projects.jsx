@@ -65,7 +65,7 @@ const Projects = ({
   }
 
   const languageArray = [].concat(...allRepos
-    .map((data) => (data.node.languages.edges
+    .map((data) => (data?.node.languages.edges
       .map((language) => language.node.name))))
     .reduce((categoryArray, currentCategory) => {
       const newArray = categoryArray;
@@ -78,7 +78,7 @@ const Projects = ({
     .sort((a, b) => ((b.optionLabel < a.optionLabel) ? 1 : -1));
 
   const filteredList = allRepos
-    .filter((item) => (item.node.name !== '.github'))
+    .filter((item) => (item?.node.name !== '.github'))
     .filter((data) => {
       if (keyword && projectLanguage) {
         return data.node.languages.edges

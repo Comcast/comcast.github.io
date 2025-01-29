@@ -1,0 +1,30 @@
+{
+  "title": "Cybersecurity Research",
+  "overview": "Comcast is committed to cybersecurity. We use it to protect our customers, our products, and our networks.",
+  "description": "Comcast is committed to cybersecurity. We use it to protect our customers, our products, and our networks.",
+  "featuredImage": "/images/cybersecurity/background.jpg",
+  "color": "orange",
+  "sections": {
+    "about": "We are researchers, developers, and engineers who build nextgen cybersecurity & privacy engineering tools, while finding solutions for everyday gaps to drive down business risk & protect Comcast customers. ",
+    "research_areas": [
+      "Cybersecurity",
+      "Privacy Engineering",
+      "Emerging Technologies",
+      "Evidence based Public Policy"
+    ],
+    "opensource_tools": [
+      {
+        "name": "xGitGuard",
+        "description": "xGitGuard is a machine learning-based scanner to detect exposed secrets on GitHub at scale. Leveraging advanced Natural Language Processing (NLP), it detects sensitive information like API keys and passwords across GitHub environments daily. Unlike existing solutions, xGitGuard utilizes AI to streamline detection, thus saving time and reducing errors. Its intelligent workflow efficiently scans code repositories, filters out irrelevant results, and sends the findings to a portal where product teams can view and remediate"
+      },
+      {
+        "name": "xCOMPASS",
+        "description": "xCOMPASS (COMcast Privacy ASessment Solution) is a simple tool that allows product teams to determine their privacy engineering requirements early in the product development lifecycle. The input to xCOMPASS is answers to a list of questions about the design of the application, how it is meant to be used, and what kind of data it processes. The output is a list of privacy design strategies along with associated Global Privacy Tool or GPT obligations. The output also includes a list of personas that can be shared with developers to make it easier to understand the impact of the privacy engineering concerns identified by xCOMPASS. xCOMPASS is meant to be used when onboarding a team or application to Privacy Development Lifecycle (PDL), especially before privacy threat models, so it can be used as reference by threat model architects and privacy leads. "
+      },
+      {
+        "name": "GuardRail",
+        "description": "AI/ML applications have unique security threats. Project GuardRail is a set of security and privacy requirements that AI/ML applications should meet during their design phase that serve as guardrails against these threats. These requirements help scope the threats such applications must be protected against."
+      }
+    ]
+  }
+}

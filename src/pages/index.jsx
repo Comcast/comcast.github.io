@@ -36,7 +36,6 @@ export async function getStaticProps() {
 }
 
 const Home = ({ comcastGithubIo }) => {
-  // const { data, data: repository, error } = useSWR(comcastGithubQuery, fetcher);
   const plural = (number) => (number > 1 ? 's' : '');
   const ago = (timestamp) => {
     const now = new Date();
@@ -65,12 +64,6 @@ const Home = ({ comcastGithubIo }) => {
     }
     return <><strong>{hoursAgo}</strong> hour{plural(hoursAgo)} ago</>;
   };
-  // if (error) {
-  //   return <p>ERROR</p>;
-  // }
-  // if (!comcastGithubIo) {
-  //   return <p>Loading...</p>;
-  // }
 
   return (
     <>
@@ -85,7 +78,6 @@ const Home = ({ comcastGithubIo }) => {
         <meta property="og:description" content={overview || description} />
         <meta property="og:image" content={`${process.env.ASSET_PREFIX}/images/favicon/android-chrome-512x512.png`} />
 
-        {/* <meta name="twitter:card" content="summary" /> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comcast" />
         <meta name="twitter:creator" content="@comcast" />
@@ -209,7 +201,6 @@ Home.propTypes = {
       })),
     }),
   }),
-  // error: PropTypes.object,
 };
 
 export default Home;
