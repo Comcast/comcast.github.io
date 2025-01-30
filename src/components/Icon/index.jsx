@@ -1,46 +1,52 @@
-import { textColor } from 'src/shared/colors';
-import {
-  icon,
-} from './style.module.css';
-import Atom from './Atom';
-import Avatar from './Avatar';
-import BarGraph from './BarGraph';
-import Calendar from './Calendar';
-import Chip from './Chip';
-import House from './House';
-import Messages from './Messages';
-import People from './People';
-import Question from './Question';
+import { textColor } from "src/shared/colors";
+import { icon } from "./style.module.css";
+import Atom from "./Atom";
+import Avatar from "./Avatar";
+import BarGraph from "./BarGraph";
+import Calendar from "./Calendar";
+import Chip from "./Chip";
+import Clear from "./Clear";
+import House from "./House";
+import LeftArrow from "./LeftArrow";
+import Messages from "./Messages";
+import People from "./People";
+import Question from "./Question";
 
-const Icon = ({ type = 'question', color = 'blue' }) => {
+const Icon = ({ type = "question", color = "blue" }) => {
   let iconComponent = <Question />;
   switch (type) {
-    case 'atom':
+    case "atom":
       iconComponent = <Atom />;
       break;
-    case 'avatar':
+    case "avatar":
       iconComponent = <Avatar />;
       break;
-    case 'bargraph':
+    case "bargraph":
       iconComponent = <BarGraph />;
       break;
-    case 'calendar':
+    case "calendar":
       iconComponent = <Calendar />;
       break;
-    case 'chip':
+    case "chip":
       iconComponent = <Chip />;
       break;
-    case 'house':
+    case "clear":
+      iconComponent = <Clear />;
+      break;
+    case "house":
       iconComponent = <House />;
       break;
-    case 'messages':
+    case "messages":
       iconComponent = <Messages />;
       break;
-    case 'people':
+    case "people":
       iconComponent = <People />;
       break;
-    case 'question':
+    case "question":
       iconComponent = <Question />;
+      break;
+    case "leftarrow":
+      iconComponent = <LeftArrow />;
       break;
     default:
       iconComponent = <Question />;
@@ -48,9 +54,7 @@ const Icon = ({ type = 'question', color = 'blue' }) => {
 
   return (
     <>
-      <span className={`${icon} ${textColor(color)}`}>
-        {iconComponent}
-      </span>
+      <span className={`${icon} ${textColor(color)}`}>{iconComponent}</span>
     </>
   );
 };

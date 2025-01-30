@@ -1,7 +1,7 @@
 .nav {
   background-color: red;
   padding: 2rem;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 @media (max-width: 959px) {
@@ -27,6 +27,6 @@
     display: block;
   }
   .nav li a {
-    color: #fff;    
+    color: #fff;
   }
-};
+}
