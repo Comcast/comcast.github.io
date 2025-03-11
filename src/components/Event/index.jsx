@@ -52,12 +52,12 @@ const Event = ({ events, talks, speakers }) => (
                 />
               </div>
             ))}
-            { speakers.length > 0 && <h3>Profiles</h3> }
+            {/* { speakers.length > 0 && <h3>Profiles</h3> }
             <section className={`${speakerList} profiles`}>
               {speakers.map((speaker) => (
                 <Profile key={`speakers_${speaker.name}`} person={speaker} defaultImage={event.image} />
               ))}
-            </section>
+            </section> */}
           </article>
         );
       })

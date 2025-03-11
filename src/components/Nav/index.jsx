@@ -57,8 +57,8 @@ const Nav = () => {
         <li><Link href={`${process.env.ASSET_PREFIX}/projects`}>Projects</Link></li>
         <li><Link href={`${process.env.ASSET_PREFIX}/people`}>Talks</Link></li>
         <li><Link href={`${process.env.ASSET_PREFIX}/community`}>Community</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/events`}>Events</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/blog`}>News</Link></li>
+        {/* <li><Link href={`${process.env.ASSET_PREFIX}/events`}>Events</Link></li>
+        <li><Link href={`${process.env.ASSET_PREFIX}/blog`}>News</Link></li> */}
       </ul>
     </nav>
   );
