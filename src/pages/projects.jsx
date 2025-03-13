@@ -138,7 +138,7 @@ const Projects = ({
           {overview && <p className="overview">{overview}</p>}
           {description && <p>{description}</p>}
         </section>
-        <section className="repo">
+        {/* <section className="repo">
           <h2>Overall Statistics</h2>
           <div>
             <p>as of {staticToday}</p>
@@ -151,7 +151,7 @@ const Projects = ({
           </div>
           <Cta type="atom" color="yellow" label="View All Comcast Repos on GitHub" url="https://github.com/Comcast/" />
           <hr className="rainbowSegment" />
-        </section>
+        </section> */}
         <section>
           <h2>{projects.featuredProjects.title}</h2>
           {projects.featuredDescription && <p>{projects.featuredProjects.description}</p>}

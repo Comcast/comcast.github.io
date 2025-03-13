@@ -67,7 +67,7 @@ const Community = ({ contributeMarkdown, conductMarkdown }) => (
         {grants.description && <p>{grants.description}</p>}
         <Cta type="chip" color="blue" label={grants.cta.label} url={grants.cta.url} />
       </section>
-      <section>
+      {/* <section>
         <h2 id="socialMedia">{socialMedia.title}</h2>
         {socialMedia.description && <p>{socialMedia.description}</p>}
         <h3>Twitter Lists</h3>
@@ -82,7 +82,7 @@ const Community = ({ contributeMarkdown, conductMarkdown }) => (
             <a className="twitter-timeline" data-height="600" href="https://twitter.com/carlism/lists/comcast-ospo">Comcast Open Source Program Office</a>
           </div>
         </div>
-      </section>
+      </section> */}
       <script async src="https://platform.twitter.com/widgets.js" charSet="utf-8" />
       <section>
         <h2 id="affiliates">{affiliates.title}</h2>

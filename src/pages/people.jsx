@@ -95,7 +95,7 @@ const People = () => {
         <section>
           <Event events={conference} talks={talksList} speakers={speakers} />
         </section>
-        <section>
+        {/* <section>
           <h2 id="talks">{talksTitle}</h2>
           <Filter
             data={filteredList}
@@ -109,7 +109,7 @@ const People = () => {
             content={filteredList.slice(pageNumber * 10, (pageNumber * 10) + 10)}
             defaultImage={featuredImage}
           />
-        </section>
+        </section> */}
       </Layout>
     </>
   );

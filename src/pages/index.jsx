@@ -99,7 +99,7 @@ const Home = ({ comcastGithubIo }) => {
             {overview && <p className="overview">{overview}</p>}
             {description && <p>{description}</p>}
           </section>
-          <FeatureSection image="/comcast_open_source_profile.svg" alt="Comcast Open Source Site Details" color="mercury">
+          {/* <FeatureSection image="/comcast_open_source_profile.svg" alt="Comcast Open Source Site Details" color="mercury">
             <div className="bug">
               <h3>GitHub Repo</h3>
               <p><a href={comcastGithubIo.url}>{comcastGithubIo.name}</a></p>
@@ -132,7 +132,7 @@ const Home = ({ comcastGithubIo }) => {
               <h3>Tags</h3>
               <p>{comcastGithubIo.repositoryTopics.edges.map((topic, index) => (`${topic.node.topic.name}${index < comcastGithubIo.repositoryTopics.edges.length - 1 ? ', ' : ''}`))}</p>
             </div>
-          </FeatureSection>
+          </FeatureSection> */}
         </section>
         <section className="repo">
           <h2 id="projects">{projectsSection.title}</h2>
