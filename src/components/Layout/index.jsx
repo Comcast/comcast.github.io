@@ -118,7 +118,7 @@ const Layout = ({ children }) => (
           <ul className="social">
             <li className="technology menu-item"><a href="https://corporate.comcast.com/technology" title="Technology @ Comcast"><span className="vh">Technology @ Comcast</span></a></li>
             <li className="github menu-item"><a href="https://github.com/Comcast/Comcast.github.io" title="Comcast Open Source on GitHub"><span className="vh">Comcast Open Source on GitHub</span></a></li>
-            <li className="humans menu-item"><a href="humans.txt" title="Comcast Open Source humans.txt"><span className="vh">Comcast Open Source Site humans.txt</span></a></li>
+            {/* <li className="humans menu-item"><a href="humans.txt" title="Comcast Open Source humans.txt"><span className="vh">Comcast Open Source Site humans.txt</span></a></li> */}
           </ul>
         </section>
         <section>
