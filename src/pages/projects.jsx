@@ -1,17 +1,17 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { GraphQLClient, gql } from 'graphql-request';
-import Head from 'next/head';
-import Layout from 'src/components/Layout';
-import Header from 'src/components/Header';
-import NumberFigure from 'src/components/NumberFigure';
-import ProjectCard from 'src/components/ProjectCard';
-import ProjectMost from 'src/components/ProjectMost';
-import Cta from 'src/components/Cta';
-import TabList from 'src/components/TabList';
-import Filter from 'src/components/Filter';
-import DataTable from 'src/components/DataTable';
-import { formatDate } from 'src/shared/formatDate';
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { GraphQLClient, gql } from "graphql-request";
+import Head from "next/head";
+import Layout from "src/components/Layout";
+import Header from "src/components/Header";
+import NumberFigure from "src/components/NumberFigure";
+import ProjectCard from "src/components/ProjectCard";
+import ProjectMost from "src/components/ProjectMost";
+import Cta from "src/components/Cta";
+import TabList from "src/components/TabList";
+import Filter from "src/components/Filter";
+import DataTable from "src/components/DataTable";
+import { formatDate } from "src/shared/formatDate";
 import {
   title,
   overview,
@@ -19,13 +19,14 @@ import {
   featuredImage,
   color,
   projects,
-} from 'src/data/projects.json';
+} from "src/data/projects.json";
 
 const asOf = () => formatDate(new Date());
 
 export async function getStaticProps() {
-  const stats = await fetch('https://osstats.opensource.comcast.net/stats')
-    .then((response) => response.json());
+  const stats = await fetch(
+    "https://osstats.opensource.comcast.net/stats"
+  ).then((response) => response.json());
 
   return stats;
 }
@@ -64,9 +65,12 @@ const Projects = ({
     return self.indexOf(value) === index;
   }
 
-  const languageArray = [].concat(...allRepos
-    .map((data) => (data.node.languages.edges
-      .map((language) => language.node.name))))
+  const languageArray = []
+    .concat(
+      ...allRepos.map((data) =>
+        data?.node.languages.edges.map((language) => language.node.name)
+      )
+    )
     .reduce((categoryArray, currentCategory) => {
       const newArray = categoryArray;
       newArray[currentCategory] = (newArray[currentCategory] || 0) + 1;
@@ -75,38 +79,62 @@ const Projects = ({
 
   const languageList = Object.keys(languageArray)
     .map((key) => ({ optionLabel: key, optionCount: languageArray[key] }))
-    .sort((a, b) => ((b.optionLabel < a.optionLabel) ? 1 : -1));
+    .sort((a, b) => (b.optionLabel < a.optionLabel ? 1 : -1));
 
   const filteredList = allRepos
-    .filter((item) => (item.node.name !== '.github'))
+    .filter((item) => item?.node.name !== ".github")
     .filter((data) => {
       if (keyword && projectLanguage) {
-        return data.node.languages.edges
-          .map((language) => language.node.name.toLowerCase()
-            === projectLanguage?.toLowerCase()).includes(true)
-          && (
-            data.node.name.toLowerCase().includes(keyword?.toLowerCase())
-            || data.node.repositoryTopics.edges
-              .map((topic) => topic.node.topic.name.toLowerCase()
-                .includes(keyword?.toLowerCase())).includes(true)
-            || data.node.languages.edges
-              .map((language) => language.node.name.toLowerCase()
-                .includes(keyword?.toLowerCase())).includes(true)
-          );
+        return (
+          data.node.languages.edges
+            .map(
+              (language) =>
+                language.node.name.toLowerCase() ===
+                projectLanguage?.toLowerCase()
+            )
+            .includes(true) &&
+          (data.node.name.toLowerCase().includes(keyword?.toLowerCase()) ||
+            data.node.repositoryTopics.edges
+              .map((topic) =>
+                topic.node.topic.name
+                  .toLowerCase()
+                  .includes(keyword?.toLowerCase())
+              )
+              .includes(true) ||
+            data.node.languages.edges
+              .map((language) =>
+                language.node.name
+                  .toLowerCase()
+                  .includes(keyword?.toLowerCase())
+              )
+              .includes(true))
+        );
       }
       if (keyword && !projectLanguage) {
-        return data.node.name.toLowerCase().includes(keyword?.toLowerCase())
-          || data.node.repositoryTopics.edges
-            .map((topic) => topic.node.topic.name.toLowerCase()
-              .includes(keyword?.toLowerCase())).includes(true)
-          || data.node.languages.edges
-            .map((language) => language.node.name.toLowerCase()
-              .includes(keyword?.toLowerCase())).includes(true);
+        return (
+          data.node.name.toLowerCase().includes(keyword?.toLowerCase()) ||
+          data.node.repositoryTopics.edges
+            .map((topic) =>
+              topic.node.topic.name
+                .toLowerCase()
+                .includes(keyword?.toLowerCase())
+            )
+            .includes(true) ||
+          data.node.languages.edges
+            .map((language) =>
+              language.node.name.toLowerCase().includes(keyword?.toLowerCase())
+            )
+            .includes(true)
+        );
       }
       if (!keyword && projectLanguage) {
         return data.node.languages.edges
-          .map((language) => language.node.name.toLowerCase()
-            === projectLanguage?.toLowerCase()).includes(true);
+          .map(
+            (language) =>
+              language.node.name.toLowerCase() ===
+              projectLanguage?.toLowerCase()
+          )
+          .includes(true);
       }
 
       return data;
@@ -123,13 +151,19 @@ const Projects = ({
         <meta property="og:url" content="https://comcast.github.io/" />
         <meta property="og:title" content={title} />
         <meta property="og:description" content={overview || description} />
-        <meta property="og:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+        <meta
+          property="og:image"
+          content={`${process.env.ASSET_PREFIX}${featuredImage}`}
+        />
 
         {/* <meta name="twitter:card" content="summary" /> */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@comcast" />
         <meta name="twitter:creator" content="@comcast" />
-        <meta name="twitter:image" content={`${process.env.ASSET_PREFIX}${featuredImage}`} />
+        <meta
+          name="twitter:image"
+          content={`${process.env.ASSET_PREFIX}${featuredImage}`}
+        />
         <meta name="twitter:image:alt" content={title} />
       </Head>
       <Layout>
@@ -154,9 +188,13 @@ const Projects = ({
         </section> */}
         <section>
           <h2>{projects.featuredProjects.title}</h2>
-          {projects.featuredDescription && <p>{projects.featuredProjects.description}</p>}
-          <TabList items={projects.featuredProjects.list
-            .sort((a, b) => new Date(a.date) - new Date(b.date))}
+          {projects.featuredDescription && (
+            <p>{projects.featuredProjects.description}</p>
+          )}
+          <TabList
+            items={projects.featuredProjects.list.sort(
+              (a, b) => new Date(a.date) - new Date(b.date)
+            )}
           />
         </section>
         <section className="repo">
@@ -165,7 +203,7 @@ const Projects = ({
           {/* <Loader title="Loading Projects..." loaded={false} /> */}
           <Filter
             data={filteredList.filter(onlyUnique)}
-            itemType={['project', 'projects']}
+            itemType={["project", "projects"]}
             categoryTitle="languages"
             categoryList={languageList}
             currentPage={pageNumber}
@@ -173,7 +211,9 @@ const Projects = ({
             onSearch={projectSearch}
             onSelect={selectLanguage}
           />
-          <DataTable data={filteredList.slice(pageNumber * 10, (pageNumber * 10) + 10)} />
+          <DataTable
+            data={filteredList.slice(pageNumber * 10, pageNumber * 10 + 10)}
+          />
         </section>
         <section className="repo">
           <h2>Project Statistics</h2>
@@ -250,60 +290,70 @@ const Projects = ({
 
 Projects.propTypes = {
   staticToday: PropTypes.string.isRequired,
-  allRepos: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    description: PropTypes.string,
-    url: PropTypes.string,
-    forkCount: PropTypes.number,
-    stargazerCount: PropTypes.number,
-    updatedAt: PropTypes.string,
-    createdAt: PropTypes.string,
-    isArchived: PropTypes.bool,
-  })),
-  newRepos: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    description: PropTypes.string,
-    url: PropTypes.string,
-    forkCount: PropTypes.number,
-    stargazerCount: PropTypes.number,
-    updatedAt: PropTypes.string,
-    createdAt: PropTypes.string,
-    isArchived: PropTypes.bool,
-  })),
-  updateRepos: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    description: PropTypes.string,
-    url: PropTypes.string,
-    forkCount: PropTypes.number,
-    stargazerCount: PropTypes.number,
-    updatedAt: PropTypes.string,
-    createdAt: PropTypes.string,
-    isArchived: PropTypes.bool,
-  })),
+  allRepos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      forkCount: PropTypes.number,
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      createdAt: PropTypes.string,
+      isArchived: PropTypes.bool,
+    })
+  ),
+  newRepos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      forkCount: PropTypes.number,
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      createdAt: PropTypes.string,
+      isArchived: PropTypes.bool,
+    })
+  ),
+  updateRepos: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      forkCount: PropTypes.number,
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      createdAt: PropTypes.string,
+      isArchived: PropTypes.bool,
+    })
+  ),
   totalRepos: PropTypes.number,
   totalForkedRepos: PropTypes.number,
   totalSourceRepos: PropTypes.number,
   totalMembers: PropTypes.number,
-  mostStarred: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    description: PropTypes.string,
-    url: PropTypes.string,
-    forkCount: PropTypes.number,
-    stargazerCount: PropTypes.number,
-    updatedAt: PropTypes.string,
-    createdAt: PropTypes.string,
-    isArchived: PropTypes.bool,
-  })),
-  mostForked: PropTypes.arrayOf(PropTypes.shape({
-    name: PropTypes.string,
-    description: PropTypes.string,
-    url: PropTypes.string,
-    forkCount: PropTypes.number,
-    stargazerCount: PropTypes.number,
-    updatedAt: PropTypes.string,
-    createdAt: PropTypes.string,
-    isArchived: PropTypes.bool,
-  })),
+  mostStarred: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      forkCount: PropTypes.number,
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      createdAt: PropTypes.string,
+      isArchived: PropTypes.bool,
+    })
+  ),
+  mostForked: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string,
+      description: PropTypes.string,
+      url: PropTypes.string,
+      forkCount: PropTypes.number,
+      stargazerCount: PropTypes.number,
+      updatedAt: PropTypes.string,
+      createdAt: PropTypes.string,
+      isArchived: PropTypes.bool,
+    })
+  ),
 };
 
 export default Projects;

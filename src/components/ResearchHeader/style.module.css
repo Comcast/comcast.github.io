@@ -1,0 +1,28 @@
+.researchHeader {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-items: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1rem 0;
+  z-index: 2;
+  position: absolute;
+  top: 12rem;
+  left: 8rem;
+}
+.researchHeader header {
+  justify-self: center;
+  align-self: center;
+  font-weight: bold;
+  padding: 1rem 1rem;
+}
+.researchHeader section {
+  justify-self: center;
+  align-self: center;
+  padding: 1rem 1rem;
+}

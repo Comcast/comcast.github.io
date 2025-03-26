@@ -1,6 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
-// import { nav } from './style.module.css';
+import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 const KEYCODE_TAB = 9;
 const ESC = 27;
 
@@ -10,7 +9,9 @@ const Nav = () => {
   const navCloseRef = useRef(null);
 
   useEffect(() => {
-    if (open === null) { return; }
+    if (open === null) {
+      return;
+    }
     if (open) {
       navCloseRef.current.focus();
     } else {
@@ -20,14 +21,16 @@ const Nav = () => {
 
   useEffect(() => {
     if (open) {
-      const focusableEls = document.querySelector('.nav').querySelectorAll('.navigation__close, a[href]');
+      const focusableEls = document
+        .querySelector(".nav")
+        .querySelectorAll(".navigation__close, a[href]");
       const firstFocusableEl = focusableEls[0];
       const lastFocusableEl = focusableEls[focusableEls.length - 1];
       const listener = (event) => {
         if (event.keyCode === ESC) {
           setOpen(false);
         }
-        if (event.key === 'Tab' || event.keyCode === KEYCODE_TAB) {
+        if (event.key === "Tab" || event.keyCode === KEYCODE_TAB) {
           if (event.shiftKey) {
             if (document.activeElement === firstFocusableEl) {
               lastFocusableEl.focus();
@@ -39,26 +42,57 @@ const Nav = () => {
           }
         }
       };
-      document.addEventListener('keydown', listener);
+      document.addEventListener("keydown", listener);
 
       return () => {
-        document.removeEventListener('keydown', listener);
+        document.removeEventListener("keydown", listener);
       };
     }
-    return '';
+    return "";
   });
 
   return (
-    <nav className={`nav ${open ? 'open' : ''}`}>
-      <button className="navigation__button" type="button" aria-expanded={!!open} aria-label="Expand navigation menu" onClick={() => setOpen(!open)} ref={navOpenRef} />
-      <button className="navigation__close" type="button" aria-expanded={!!open} aria-label="Close navigation menu" onClick={() => setOpen(!open)} ref={navCloseRef} />
+    <nav className={`nav ${open ? "open" : ""}`}>
+      <button
+        className="navigation__button"
+        type="button"
+        aria-expanded={!!open}
+        aria-label="Expand navigation menu"
+        onClick={() => setOpen(!open)}
+        ref={navOpenRef}
+      />
+      <button
+        className="navigation__close"
+        type="button"
+        aria-expanded={!!open}
+        aria-label="Close navigation menu"
+        onClick={() => setOpen(!open)}
+        ref={navCloseRef}
+      />
       <ul>
-        <li><Link href={`${process.env.ASSET_PREFIX}/`}>About</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/projects`}>Projects</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/people`}>Talks</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/community`}>Community</Link></li>
-        {/* <li><Link href={`${process.env.ASSET_PREFIX}/events`}>Events</Link></li>
-        <li><Link href={`${process.env.ASSET_PREFIX}/blog`}>News</Link></li> */}
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/`}>About</Link>
+        </li>
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/projects`}>Projects</Link>
+        </li>
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/people`}>Talks</Link>
+        </li>
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/community`}>Community</Link>
+        </li>
+        {/* <li>
+          <Link href={`${process.env.ASSET_PREFIX}/events`}>Events</Link>
+        </li>
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/blog`}>News</Link>
+        </li> */}
+        <li>
+          <Link href={`${process.env.ASSET_PREFIX}/cybersecurity_research`}>
+            Cybersecurity
+          </Link>
+        </li>
       </ul>
     </nav>
   );
