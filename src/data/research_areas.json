@@ -1,0 +1,25 @@
+{
+  "title": "Research Areas",
+  "overview": "Comcast is committed to cybersecurity. We use it to protect our customers, our products, and our networks.",
+  "description": "Comcast is committed to cybersecurity. We use it to protect our customers, our products, and our networks.",
+  "featuredImage": "/images/cybersecurity/background.jpg",
+  "color": "orange",
+  "pages": {
+    "cybersecurity": {
+      "page_title": "Cybersecurity Publications",
+      "description": "Comcast Cyber Security (CCS) Research is a team within Comcast Cybersecurity that conducts original applied and fundamental cybersecurity research. CCS Research works with technology teams throughout Comcast to help identify and explore security gaps in the broader cyber ecosystem. This page lists the CCS Research team’s activities on selected topics/ projects."
+    },
+    "privacy_engineering": {
+      "page_title": "Privacy Engineering Publications",
+      "description": "Human error may be the biggest obstacle to creating secure technologies and systems. All technologies, including security solutions, are constrained by the limits of human cognition. Many security incidents can be traced back to vulnerabilities grounded in the human element, e.g. phishing and social engineering. CCS Research explores human cognition and its impact on cybersecurity design and implementation."
+    },
+    "emerging_technologies": {
+      "page_title": "Emerging Technologies Publications",
+      "description": "Cybersecurity will never be a finished product, since defenders are in a constant arms race with attackers. CCS Research works to address this tension by helping to identify emerging threats and exploring potential defenses."
+    },
+    "evidence_based_public_policy": {
+      "page_title": "Evidence Based Public Policy Publications",
+      "description": "Comcast Cyber Security (CCS) Research is a team within Comcast Cybersecurity that conducts original applied and fundamental cybersecurity research. CCS Research works with technology teams throughout Comcast to help identify and explore security gaps in the broader cyber ecosystem. This page lists the CCS Research team’s activities on selected topics/ projects."
+    }
+  }
+}
