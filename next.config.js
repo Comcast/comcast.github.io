@@ -1,11 +1,12 @@
 const webpack = require('webpack');
 // const path = require('path');
 const isProd = (process.env.NODE_ENV || 'production') === 'production';
-const assetPrefix = isProd ? '/comcast.github.io' : '';
+const assetPrefix = isProd ? '' : '';
 
 module.exports = {
   output: 'export',
-  assetPrefix, // Ensures all static routes end with a `/`
+  assetPrefix,
+  trailingSlash: true, // Ensures all static routes end with a `/`
   images: {
     unoptimized: true, // Fixes `next/image` for static exports
   },
