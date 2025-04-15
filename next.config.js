@@ -5,8 +5,7 @@ const assetPrefix = isProd ? '/comcast.github.io' : '';
 
 module.exports = {
   output: 'export',
-  assetPrefix,
-  trailingSlash: true, // Ensures all static routes end with a `/`
+  assetPrefix, // Ensures all static routes end with a `/`
   images: {
     unoptimized: true, // Fixes `next/image` for static exports
   },
