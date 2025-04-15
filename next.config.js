@@ -4,6 +4,12 @@ const isProd = (process.env.NODE_ENV || 'production') === 'production';
 const assetPrefix = isProd ? '/comcast.github.io' : '';
 
 module.exports = {
+  output: 'export',
+  assetPrefix,
+  trailingSlash: true, // Ensures all static routes end with a `/`
+  images: {
+    unoptimized: true, // Fixes `next/image` for static exports
+  },
   // future: {
   //   webpack5: true,
   // },
@@ -33,7 +39,6 @@ module.exports = {
   //     '/src/pages/projects': { page: '/projects' },
   //   };
   // },
-  assetPrefix,
   webpack: (config) => {
     config.plugins.push(
       new webpack.DefinePlugin({
